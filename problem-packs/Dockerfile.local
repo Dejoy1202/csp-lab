@@ -1,0 +1,3 @@
+FROM csp-lab-pack-builder:latest
+COPY worker/sandbox.py worker/checkers.py /app/
+COPY problem-packs/ /app/

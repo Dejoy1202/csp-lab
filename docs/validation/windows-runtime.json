@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "platform": "Windows 11; no Docker/WSL",
+  "javaTests": 12,
+  "sandboxChecks": 15,
+  "liveApiTests": 19,
+  "browserTests": 5,
+  "referenceProblems": 50,
+  "formalPoints": 934,
+  "mockExam": {
+    "batch": "202509",
+    "examId": 10,
+    "durationSeconds": 14400,
+    "totalScore": 500,
+    "sampleScore": 0,
+    "partialScores": [
+      60,
+      85,
+      40,
+      20,
+      20
+    ]
+  },
+  "databaseRestart": {
+    "businessTables": 17,
+    "allRowHashesUnchanged": true,
+    "mysqlServiceStopped": false
+  },
+  "backup": {
+    "filename": "csp-lab-20261010-172850.sql.gz",
+    "gzipAndUtf8Verified": true,
+    "uncompressedBytes": 798494724,
+    "sqlSha256": "326f351fb26edfd722f61b6c5632786f7508befe8776dec8f6bbccc8f1da3967"
+  },
+  "limitations": [
+    "Scores and tests are site simulations, not official hidden data or certification scores",
+    "MySQL is a shared Windows service; application processes were restarted, not that service",
+    "Unbacked old Docker personal records were not restored",
+    "Compiler directory byte cap is monitored, not a filesystem hard quota"
+  ]
+}

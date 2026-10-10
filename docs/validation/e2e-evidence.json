@@ -1,0 +1,118 @@
+{
+  "backend": "Spring Boot/JDK21/MySQL8",
+  "liveDocker": true,
+  "evidence": [
+    {
+      "test": "AC",
+      "submissionId": 131,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 4
+    },
+    {
+      "test": "WA",
+      "submissionId": 132,
+      "status": "WA",
+      "score": 0,
+      "testPoints": 4
+    },
+    {
+      "test": "CE",
+      "submissionId": 133,
+      "status": "CE",
+      "score": 0,
+      "testPoints": 0
+    },
+    {
+      "test": "TLE",
+      "submissionId": 134,
+      "status": "TLE",
+      "score": 0,
+      "testPoints": 4
+    },
+    {
+      "test": "MLE",
+      "submissionId": 135,
+      "status": "MLE",
+      "score": 0,
+      "testPoints": 4
+    },
+    {
+      "test": "RE",
+      "submissionId": 136,
+      "status": "RE",
+      "score": 0,
+      "testPoints": 4
+    },
+    {
+      "test": "PARTIAL",
+      "submissionId": 137,
+      "status": "WA",
+      "score": 50,
+      "testPoints": 4
+    },
+    {
+      "test": "OLE",
+      "submissionId": 138,
+      "status": "OLE",
+      "score": 0,
+      "testPoints": 4
+    },
+    {
+      "test": "BUNDLED_PARTIAL",
+      "submissionId": 142,
+      "status": "WA",
+      "score": 40,
+      "testPoints": 4
+    },
+    {
+      "test": "CSP_T1",
+      "submissionId": 143,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 10
+    },
+    {
+      "test": "CSP_T2",
+      "submissionId": 144,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 10
+    },
+    {
+      "test": "CSP_T3",
+      "submissionId": 145,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 7
+    },
+    {
+      "test": "CSP_T4",
+      "submissionId": 146,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 19
+    },
+    {
+      "test": "CSP_T5",
+      "submissionId": 147,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 18
+    },
+    {
+      "test": "ISOLATION",
+      "submissionId": 149,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 4
+    },
+    {
+      "test": "LEASE_RECOVERY",
+      "submissionId": 150,
+      "status": "TLE",
+      "score": 0,
+      "testPoints": 4
+    }
+  ]
+}

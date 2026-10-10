@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "boundaryCases": 20,
+  "literalRecurrenceChecks": 12800,
+  "checks": [
+    "all-zero initial array followed by 10^12 update",
+    "new higher digits after initialization",
+    "odd composite bases",
+    "wrapping least digit",
+    "partial update crossing 700-element oracle blocks",
+    "k near 10^9"
+  ]
+}

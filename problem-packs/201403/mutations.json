@@ -1,0 +1,175 @@
+[
+  {
+    "position": 1,
+    "name": "double-count-opposite-pairs",
+    "reason": "同一相反数对只能计数一次",
+    "edits": [
+      [
+        "x > 0 && present.count(-x)",
+        "present.count(-x)"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "ignore-endpoint-1000",
+    "reason": "绝对值上限1000仍然合法",
+    "edits": [
+      [
+        "x > 0 && present.count(-x)",
+        "x > 0 && x < 1000 && present.count(-x)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "exclude-window-boundary",
+    "reason": "窗口四条边及角点属于窗口",
+    "edits": [
+      [
+        "w.x1 <= x && x <= w.x2 && w.y1 <= y && y <= w.y2",
+        "w.x1 < x && x < w.x2 && w.y1 < y && y < w.y2"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "forget-front-reordering",
+    "reason": "点击后遮挡顺序改变",
+    "edits": [
+      [
+        "stack.erase(stack.begin() + j); stack.push_back(chosen);",
+        ""
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "reject-hyphen-argument",
+    "reason": "带参数选项的参数可以以短横线开头",
+    "edits": [
+      [
+        "            found[word[1]] = argument;",
+        "            if (accepts[word[1]] && !argument.empty() && argument[0]=='-') break;\n            found[word[1]] = argument;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "erase-last-valid-duplicate",
+    "reason": "末尾缺参数不能擦除之前已解析的合法值",
+    "edits": [
+      [
+        "if (accepts[word[1]] && !(words >> argument)) break;",
+        "if (accepts[word[1]] && !(words >> argument)) { found.erase(word[1]); break; }"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "ignore-new-router-budget",
+    "reason": "最短路线不能超过新增路由器数量限制",
+    "edits": [
+      [
+        "int total = n + m;",
+        "k=m; int total = n + m;"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "squared-distance-int32-overflow",
+    "reason": "坐标差及距离平方需要64位整数",
+    "edits": [
+      [
+        "long long dx=point[i].first-point[j].first, dy=point[i].second-point[j].second;",
+        "int dx=point[i].first-point[j].first, dy=point[i].second-point[j].second;"
+      ],
+      [
+        "dx*dx+dy*dy <= r*r",
+        "dx*dx+dy*dy <= (int)r*(int)r"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "ignore-dual-cpu-gpu-mode",
+    "reason": "四种执行模式耗时不保证单调",
+    "edits": [
+      [
+        "upper+=min(job[1],job[3])",
+        "upper+=job[1]"
+      ],
+      [
+        "dual=min(job[1],job[3])",
+        "dual=job[1]"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "wrong-gpu-mode-duration",
+    "reason": "CPU+GPU模式使用c而不是a",
+    "edits": [
+      [
+        "c=job[2]",
+        "c=job[0]"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "positive-one-omitted",
+    "reason": "正1与负1也须配对",
+    "edits": [
+      [
+        "x > 0 && present.count(-x)",
+        "x > 1 && present.count(-x)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "bottom-window-first",
+    "reason": "点击须优先最上层覆盖窗口",
+    "edits": [
+      [
+        "for (int j = n - 1; j >= 0; --j)",
+        "for (int j = 0; j < n; ++j)"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "continue-after-invalid-token",
+    "reason": "遇到非法选项或普通参数就停止解析",
+    "edits": [
+      [
+        "if (word.size() != 2 || word[0] != '-' || !accepts.count(word[1])) break;",
+        "if (word.size() != 2 || word[0] != '-' || !accepts.count(word[1])) continue;"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "radio-radius-strict",
+    "reason": "恰好等于通信半径的两路由器可以连接",
+    "edits": [
+      [
+        "dx*dx+dy*dy <= r*r",
+        "dx*dx+dy*dy < r*r"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "omit-single-cpu-mode",
+    "reason": "单CPU模式可能优于其它三种模式",
+    "edits": [
+      [
+        "add(x+a,y,z); add(x,y+a,z);",
+        ""
+      ]
+    ]
+  }
+]

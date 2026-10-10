@@ -1,0 +1,191 @@
+{
+  "date": "2026-10-09",
+  "batch": "202605",
+  "examNumber": 42,
+  "status": "PASS",
+  "scoringType": "SITE_SIMULATION",
+  "officialHiddenData": false,
+  "ordinaryAccount": true,
+  "liveDocker": true,
+  "paper": {
+    "problems": 5,
+    "formalGradingPoints": 100,
+    "distinctFormalInputs": 100,
+    "smallDifferentialChecks": 200,
+    "extraCompleteStateDifferentialChecks": 295,
+    "originalSamples": 5,
+    "selectedMutants": 16,
+    "allSelectedMutantsRejected": true
+  },
+  "resources": [
+    {
+      "problem": "202605-1",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 3,
+      "referenceMaxMemoryKb": 12872
+    },
+    {
+      "problem": "202605-2",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 3,
+      "referenceMaxMemoryKb": 12824
+    },
+    {
+      "problem": "202605-3",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 3,
+      "referenceMaxMemoryKb": 12836
+    },
+    {
+      "problem": "202605-4",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 1070,
+      "referenceMaxMemoryKb": 115024
+    },
+    {
+      "problem": "202605-5",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 183,
+      "referenceMaxMemoryKb": 86052
+    }
+  ],
+  "mockExam": {
+    "batch": "202605",
+    "status": "PASS",
+    "ordinaryAccount": true,
+    "liveDocker": true,
+    "examId": 53,
+    "durationSeconds": 14400,
+    "totalScore": 500,
+    "sampleScore": 0,
+    "construction": null,
+    "extraWitnesses": [
+      {
+        "label": "small-scale-only",
+        "problem": "202605-4",
+        "submissionId": 213,
+        "status": "WA",
+        "score": 30
+      },
+      {
+        "label": "up-to-3000-only",
+        "problem": "202605-5",
+        "submissionId": 214,
+        "status": "WA",
+        "score": 60
+      },
+      {
+        "label": "one-GiB-memory-bound",
+        "problem": "202605-5",
+        "submissionId": 215,
+        "status": "MLE",
+        "score": 0
+      }
+    ],
+    "partialScore": 60,
+    "partialSubmissionId": 212,
+    "highestScorePreserved": true,
+    "evidence": [
+      {
+        "problem": "202605-1",
+        "submissionId": 206,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202605-2",
+        "submissionId": 207,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202605-3",
+        "submissionId": 208,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202605-4",
+        "submissionId": 209,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202605-5",
+        "submissionId": 210,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      }
+    ]
+  },
+  "browser": {
+    "command": "npx playwright test --grep '202605试卷|44个批次' --reporter=line",
+    "passed": 2,
+    "failed": 0,
+    "durationSeconds": 8.8,
+    "checks": [
+      "44 batches, 220 titles, 7 ready papers",
+      "BUILDING exam creation rejected",
+      "202605 five questions with KaTeX and local Monaco",
+      "Real sample run passes and contributes zero points",
+      "Browser exam finish and review"
+    ]
+  },
+  "java": {
+    "command": "mvn -o verify",
+    "passed": 10,
+    "failed": 0,
+    "memoryBoundaryMiB": [
+      31,
+      32,
+      1024,
+      1025
+    ]
+  },
+  "frontend": {
+    "productionBuild": "PASS",
+    "lintExitCode": 0,
+    "existingWarningsRemain": true
+  },
+  "largePackUpload": {
+    "compressedBytes": 46936117,
+    "expandedBytes": 119534480,
+    "httpStatus": 409,
+    "existingCodeRejected": true,
+    "businessCountsUnchanged": true
+  },
+  "database": {
+    "fullVerifiedProblems": 5,
+    "formalTestCases": 100,
+    "storedAssets": 17,
+    "allStoredAssetContentsNonempty": true,
+    "memoryLimitMigration": "V12 applied successfully"
+  },
+  "readyPapers": [
+    "201312",
+    "201403",
+    "201409",
+    "201412",
+    "202403",
+    "202605",
+    "202609"
+  ],
+  "remainingBuildingPapers": 37,
+  "persistenceReport": "latest-csp42-persistence.json",
+  "baselineTests": "Worker, sandbox and preset checker implementations are unchanged; their earlier test results are retained and not described as newly rerun",
+  "limitations": [
+    "Self-built test data and site scores are not official hidden tests or certification results",
+    "Independent differential checks and selected defect witnesses do not establish correctness for every possible input",
+    "The four large randomly relabelled tree fixtures use small internal kernels with many leaves; additional medium arbitrary trees and exhaustive small labelled trees provide separate coverage"
+  ]
+}

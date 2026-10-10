@@ -1,0 +1,1060 @@
+[
+  {
+    "problem": "202609-1",
+    "status": "VERIFIED",
+    "seed": 2026094301,
+    "officialHiddenData": false,
+    "scoringType": "SITE_SIMULATION",
+    "answerSource": "C++ reference output cross-checked by independent oracle",
+    "smallDifferentialCases": 48,
+    "samplesVerified": 1,
+    "cases": [
+      {
+        "ordinal": 1,
+        "inputBytes": 42,
+        "outputBytes": 7,
+        "inputSha256": "02dfec92d3f5fc5d5eb6909291ab214411d470466bf2d98066e45dafc4971318",
+        "outputSha256": "b4e5a1330a846d354a52194954ec8b4620dada6082702ec3638c945cc5d5793e",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1988
+      },
+      {
+        "ordinal": 2,
+        "inputBytes": 42,
+        "outputBytes": 7,
+        "inputSha256": "202bff0243132aac323163561a7bfa0794ff57db98360789386db06583d6f609",
+        "outputSha256": "64a14d23b3fd9339e4f5b0defbce684404aedd2d4fb17c5b34bc53c377352ab9",
+        "referenceTimeMs": 15,
+        "referenceMemoryKb": 1960
+      },
+      {
+        "ordinal": 3,
+        "inputBytes": 42,
+        "outputBytes": 7,
+        "inputSha256": "81bcd65aac9d12845b2d65c5e8592167faee6d9520da0af9dbb253635992c89b",
+        "outputSha256": "8fe3cae9d62412844c75f12e5193c4fceee457c7ece0baefc85c7a84be0d87a6",
+        "referenceTimeMs": 32,
+        "referenceMemoryKb": 1976
+      },
+      {
+        "ordinal": 4,
+        "inputBytes": 54,
+        "outputBytes": 7,
+        "inputSha256": "36e64bfde080cc0712b952f08b8385bbc7f6474797c471b81bd1f3f8073098a6",
+        "outputSha256": "b4e5a1330a846d354a52194954ec8b4620dada6082702ec3638c945cc5d5793e",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1960
+      },
+      {
+        "ordinal": 5,
+        "inputBytes": 56,
+        "outputBytes": 7,
+        "inputSha256": "ff6c7c6fe0ebccdfe977d9b05abadf2324c6fdff36884a133376f46803e49949",
+        "outputSha256": "8fe3cae9d62412844c75f12e5193c4fceee457c7ece0baefc85c7a84be0d87a6",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 1976
+      },
+      {
+        "ordinal": 6,
+        "inputBytes": 42,
+        "outputBytes": 7,
+        "inputSha256": "3dc952a782d8c4899e03a948c5f6905b0bc280d1e1e533a749a5e62558d03b3f",
+        "outputSha256": "b4e5a1330a846d354a52194954ec8b4620dada6082702ec3638c945cc5d5793e",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 1976
+      },
+      {
+        "ordinal": 7,
+        "inputBytes": 42,
+        "outputBytes": 7,
+        "inputSha256": "732b32d68678592fd3043d610314837533102b192b146f7b20f35adf2bcc8710",
+        "outputSha256": "c884f1a176d6066dfb0acd87de63c8570c3c3525a0ffaf00818cac7def32c043",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 1964
+      },
+      {
+        "ordinal": 8,
+        "inputBytes": 66,
+        "outputBytes": 7,
+        "inputSha256": "0a271cd5c147de170746161d4c5cc787d73ea3066f7ec72568e83210b49ff6b4",
+        "outputSha256": "ab431d8663b4c1e9189a6263a581d1ce15dad8cc944d7207fb4b29a08807450f",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 1980
+      },
+      {
+        "ordinal": 9,
+        "inputBytes": 42,
+        "outputBytes": 7,
+        "inputSha256": "3dab0e62fd2be2fb9d427b4762ce1b78fe3ecef8241310144965f182f04d4302",
+        "outputSha256": "77ed6212736e8d302a27e48f3193c0e756c5786ebafdb0938f488eb5a97c6c0f",
+        "referenceTimeMs": 15,
+        "referenceMemoryKb": 1924
+      },
+      {
+        "ordinal": 10,
+        "inputBytes": 42,
+        "outputBytes": 7,
+        "inputSha256": "ef96e1e60ad167ba62c1971c5f5bfa5373b4942a49e12072318a27a7e7e48c10",
+        "outputSha256": "b4e5a1330a846d354a52194954ec8b4620dada6082702ec3638c945cc5d5793e",
+        "referenceTimeMs": 32,
+        "referenceMemoryKb": 1968
+      },
+      {
+        "ordinal": 11,
+        "inputBytes": 1449,
+        "outputBytes": 7,
+        "inputSha256": "7d7e517773ce3133f78e798e9995b4ebad2f86d64a8c567d6b108914bc0d3630",
+        "outputSha256": "685091c999067c600f1bd6bc4bdd289733058ef5e4d2db6580690ea7c31b555b",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1972
+      },
+      {
+        "ordinal": 12,
+        "inputBytes": 66,
+        "outputBytes": 7,
+        "inputSha256": "fc7e749480726ceb5aca08f43a65bbd8b19e29e972d00f8da86682804ee4eee1",
+        "outputSha256": "3dab1bf970c49cbfd740e911b2435e0767cca861422870d0872eacc426ce39d9",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1944
+      },
+      {
+        "ordinal": 13,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "c53e1ec2d54b1e171fa67d3ddeb431b0a2e1e3e5737ac4960af745f050717beb",
+        "outputSha256": "7e8cb62321b55e032ce5201acdc468e39b613a67205e206ff8165bd165d78d5c",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1976
+      },
+      {
+        "ordinal": 14,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "3334ad87f20176538ea64d60d8c270fc9a1d066143159a1daf7e0aac27e74f79",
+        "outputSha256": "c884f1a176d6066dfb0acd87de63c8570c3c3525a0ffaf00818cac7def32c043",
+        "referenceTimeMs": 32,
+        "referenceMemoryKb": 1960
+      },
+      {
+        "ordinal": 15,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "12c0efbec1ae8a4155f152d8ed4a37cc90d4c5ffea19e4d75c9d00e1f51a9c8f",
+        "outputSha256": "4b309e331ae34cbecfca833e9d067c7cca607f9e2e9cf5bf71c3a82ab34f6ba0",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1968
+      },
+      {
+        "ordinal": 16,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "a323705400d3e2072dc9e4e5f4176b8a30a4f310c51fa3a5fefe7cecd939ff39",
+        "outputSha256": "3dab1bf970c49cbfd740e911b2435e0767cca861422870d0872eacc426ce39d9",
+        "referenceTimeMs": 15,
+        "referenceMemoryKb": 1960
+      },
+      {
+        "ordinal": 17,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "5b76f7febdc7d739c3dc21a5f8b7e77a5813b6dcbccd9b053f82b9feef8ce745",
+        "outputSha256": "ab431d8663b4c1e9189a6263a581d1ce15dad8cc944d7207fb4b29a08807450f",
+        "referenceTimeMs": 32,
+        "referenceMemoryKb": 1972
+      },
+      {
+        "ordinal": 18,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "fa02d9c22a8cbf1bbcdc2b7875c31086070ca4530c65ec5f4b4ebb536f183aeb",
+        "outputSha256": "d8e0801c80ec992f307775800b3258dd866feb17f8f2d6733182f3c1d8c001f5",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1984
+      },
+      {
+        "ordinal": 19,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "c0c260cbea364c37bcbeebfdddbad9ea69b6f2ae1ea5327081d2b4d3ddf1b7da",
+        "outputSha256": "685091c999067c600f1bd6bc4bdd289733058ef5e4d2db6580690ea7c31b555b",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1912
+      },
+      {
+        "ordinal": 20,
+        "inputBytes": 1450,
+        "outputBytes": 7,
+        "inputSha256": "64c04e749e0cd07e8b66afd42dc6374462f88d45f6878af6317f56270e60ffb0",
+        "outputSha256": "4be8b1bab6da57d5c89428e90222616ee1d07a554a77aa7821450bf56361294c",
+        "referenceTimeMs": 15,
+        "referenceMemoryKb": 1980
+      }
+    ],
+    "reference": "independent C++17",
+    "oracle": "High-precision decimal nearest lookup; exhaustive subsets and weight DP; millisecond scheduler; explicit small graph bipartiteness plus certified large families; path enumeration and independent star/chain/monochrome counting",
+    "repair": "Binary floating midpoint cancellation; CDF table validation",
+    "boundaryCases": [
+      "exact non-binary midpoint",
+      "cancellation with tiny positive delta",
+      "either side of midpoint",
+      "both table endpoints",
+      "variance sum of 100 terms"
+    ],
+    "cdfValidation": "Independent 80-digit Decimal integration series checks every rounded table value"
+  },
+  {
+    "problem": "202609-2",
+    "status": "VERIFIED",
+    "seed": 2026094301,
+    "officialHiddenData": false,
+    "scoringType": "SITE_SIMULATION",
+    "answerSource": "C++ reference output cross-checked by independent oracle",
+    "smallDifferentialCases": 40,
+    "samplesVerified": 1,
+    "cases": [
+      {
+        "ordinal": 1,
+        "inputBytes": 16,
+        "outputBytes": 2,
+        "inputSha256": "03f236121b999e376e67c943fac1f8293d80aba6a7bcf9677b7128cf1a55f239",
+        "outputSha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12576
+      },
+      {
+        "ordinal": 2,
+        "inputBytes": 16,
+        "outputBytes": 2,
+        "inputSha256": "e054989dcf192184c94b95106c795e654403e4e11f97cda0d26da85c577029e4",
+        "outputSha256": "2e6d31a5983a91251bfae5aefa1c0a19d8ba3cf601d0e8a706b4cfa9661a6b8a",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12768
+      },
+      {
+        "ordinal": 3,
+        "inputBytes": 22,
+        "outputBytes": 3,
+        "inputSha256": "e468d929e9c7b676e237b0c8ed9ed3de509e366a85c0026af175b9b07bf7ca0a",
+        "outputSha256": "7ee29791fc17e986b97128845622b077fb45e349fdb80523fac9dba879b4ad60",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12532
+      },
+      {
+        "ordinal": 4,
+        "inputBytes": 813,
+        "outputBytes": 6,
+        "inputSha256": "4c34e5f87fe10b6e39fdb11dafc4edcb383d43ccc7f9c7b88d200d8832349255",
+        "outputSha256": "876e13f4e07bb39705302c01f445ffd2d2c3b180a207e4d959d6b671c67da09b",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12572
+      },
+      {
+        "ordinal": 5,
+        "inputBytes": 612,
+        "outputBytes": 2,
+        "inputSha256": "7fc9c4043d86a71927f1fc20f1ca22b208133d5133762cf167b232efe8bcd467",
+        "outputSha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12532
+      },
+      {
+        "ordinal": 6,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "4d1fe2f9cfbb06f8d8ef612673f78ec9a385ea0d7ca6d4bd7f9be8b1627f180d",
+        "outputSha256": "5fbadeb35dab9ec7de3fec0945a74cad29b0b2933c9c509b0a71645b91078157",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12772
+      },
+      {
+        "ordinal": 7,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "4c38779a2065d87db03e10bba1ed02f5a257a9fbfe6522d823d12d8db91ea91c",
+        "outputSha256": "7a689f1115f79fb1e938c6ecb0a040c1a9b3d3043748c05bcebfd0deab696079",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12752
+      },
+      {
+        "ordinal": 8,
+        "inputBytes": 712,
+        "outputBytes": 4,
+        "inputSha256": "6f5c264f59b35f803835a12adfdc4b2f81b8300a9dfd737ff8075e30ea26be89",
+        "outputSha256": "8ba48da128a05fc906b023153699a1d100fbb0325bd7ec13c024b1792a98a058",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12520
+      },
+      {
+        "ordinal": 9,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "80cf0706746edf5a6ba6ab5d7f9dfca9c4c6b55e5d1b9cbece27e407f8c2def4",
+        "outputSha256": "1353235582ad57b789611472928659e0fbee2135ef4c4df6a05cf7eab00fe7f1",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12488
+      },
+      {
+        "ordinal": 10,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "c0be546a3a9814864bdd13d0e6b273d191b0f93ee720dca42cdcd5b030dd6ac4",
+        "outputSha256": "58c175f07dca7d6959cee1554154511992e1b237ff52f5de61087c362e5c891b",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12544
+      },
+      {
+        "ordinal": 11,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "286e868d520c5b2d7a1abf6287c2de6c187238d28ea981b3643bb46e14bf4b93",
+        "outputSha256": "7920c64416d3e048b51e05904a3e15762fa9d4dd391d9889b7b35d8f3097ab23",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12572
+      },
+      {
+        "ordinal": 12,
+        "inputBytes": 712,
+        "outputBytes": 4,
+        "inputSha256": "e2ef187e2a6d3a60709c3173aebf34f893f8e9aab902b3146fa6f07565f751a6",
+        "outputSha256": "4c3c4e46c36538b813fff26ea17e8695dfcde1e87c12593645ffeed40e6a4d0c",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12772
+      },
+      {
+        "ordinal": 13,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "cdcbc89590585ef14b400cc3616099cc97d754e065736b7d710cda4f74f309c8",
+        "outputSha256": "8cc83b935ca33b698078a39d5674803f7e95fe9c45119dd727ec40a6ecd1f7a4",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12520
+      },
+      {
+        "ordinal": 14,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "0cebc30758fa3a5649da89cb2f9f8c2ae7f912480725491dcc9f90abf8698079",
+        "outputSha256": "f932f15ce9feee8ba7d661ecdc75e1b34365acae7bdfaea5295a7fe5c78d6d91",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12696
+      },
+      {
+        "ordinal": 15,
+        "inputBytes": 712,
+        "outputBytes": 5,
+        "inputSha256": "84ec1771ec9d4570b907b207027af8aaec01f1fc1a41ada9ab06f6bf58327d05",
+        "outputSha256": "461c96e5a4f69597e15de7178ac4a58d4a2bdcd8737a9d22b2e4644a4d85bd8d",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12476
+      },
+      {
+        "ordinal": 16,
+        "inputBytes": 612,
+        "outputBytes": 4,
+        "inputSha256": "6809fe2f97304a0ca3e5a6d9f153d9ed9b33337ba1bf81a5e285c280a046e2b3",
+        "outputSha256": "d92c61b32619f9f894b657941a45489569d9d4e48ddd9e2d0b2f375ecd28299c",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12696
+      },
+      {
+        "ordinal": 17,
+        "inputBytes": 28,
+        "outputBytes": 3,
+        "inputSha256": "56bfe5459ca6e7eddade2167311552a9bc5b773c69cc13df388f809cb4dccdab",
+        "outputSha256": "238903180cc104ec2c5d8b3f20c5bc61b389ec0a967df8cc208cdc7cd454174f",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12776
+      },
+      {
+        "ordinal": 18,
+        "inputBytes": 32,
+        "outputBytes": 4,
+        "inputSha256": "251901bf4f8d565acd07b48468a2278f91d6712a3897bcdc536f9a45a05adeb3",
+        "outputSha256": "97b912eb4a61df5f806ca6239dde3e1a4f51ad20aced1642cbb83dc510a5fa6b",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12764
+      },
+      {
+        "ordinal": 19,
+        "inputBytes": 705,
+        "outputBytes": 5,
+        "inputSha256": "035b2a8780985d8a21c0a05d1c96a8c1f805fe5fe0b8c1909f0d77922254b894",
+        "outputSha256": "b453073fc165bd695722476121a4c90823365ebad5212fcc8a2d829336f1f2dd",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12584
+      },
+      {
+        "ordinal": 20,
+        "inputBytes": 704,
+        "outputBytes": 5,
+        "inputSha256": "b0262f23aa6b3c15cf0a10c899946de8e0dec8e870d0cc17777ff5ab04781f46",
+        "outputSha256": "97728b17529c370934d37cf0935a610294a2acc708b06da684ff668ff5971b3a",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12704
+      }
+    ],
+    "reference": "independent C++17",
+    "oracle": "High-precision decimal nearest lookup; exhaustive subsets and weight DP; millisecond scheduler; explicit small graph bipartiteness plus certified large families; path enumeration and independent star/chain/monochrome counting"
+  },
+  {
+    "problem": "202609-3",
+    "status": "VERIFIED",
+    "seed": 2026094301,
+    "officialHiddenData": false,
+    "scoringType": "SITE_SIMULATION",
+    "answerSource": "C++ reference output cross-checked by independent oracle",
+    "smallDifferentialCases": 40,
+    "samplesVerified": 1,
+    "cases": [
+      {
+        "ordinal": 1,
+        "inputBytes": 23,
+        "outputBytes": 3,
+        "inputSha256": "bf41b56fb0214448b2ec5671034a615a6d2d014c5f0446a96933230854880d3a",
+        "outputSha256": "c5295c00ead93b36a700b78c0cae17503dba4fe423425220b23f8519b5f734cc",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12584
+      },
+      {
+        "ordinal": 2,
+        "inputBytes": 23,
+        "outputBytes": 3,
+        "inputSha256": "ddd013b11987f96c50e9aea76b39f79289d18bc86f97723a2b7ac714c27c9707",
+        "outputSha256": "8c90963d8f3da9bf0465279550af369a2c6eb885f63e793ed53b47c3cfa30a2e",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12704
+      },
+      {
+        "ordinal": 3,
+        "inputBytes": 27,
+        "outputBytes": 5,
+        "inputSha256": "38f23d0b2f1494c69be192b3c28bc443ce027b13e3637b8416498c9473bcf2fe",
+        "outputSha256": "a9e6b80db1f867c9ad71268d0e2cb6dd70e270cad8b97a7a15b7a582b31030ce",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12704
+      },
+      {
+        "ordinal": 4,
+        "inputBytes": 30219,
+        "outputBytes": 301,
+        "inputSha256": "d08177f8db73fdbb7a0f642e33063fee353d7f1502b4e8abac851921aeb7c38b",
+        "outputSha256": "e645d1cd26d0784784c80cdc669198622f67b4f195be85980f69656a00e15806",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12516
+      },
+      {
+        "ordinal": 5,
+        "inputBytes": 14027,
+        "outputBytes": 290,
+        "inputSha256": "f325b77fe0b85e185b7c5b11983e3c79d4f44dfb21e200be833ce51407514c38",
+        "outputSha256": "b805aaf6ad296cdc9fccf240d6382fc7d400c81896456365d740c3ca732853fd",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12764
+      },
+      {
+        "ordinal": 6,
+        "inputBytes": 15713,
+        "outputBytes": 291,
+        "inputSha256": "ea8cbbe8e11263e34a08db12b92adc2f0ac55dd8e369a82991dda05367f225c1",
+        "outputSha256": "e55d8dc4dfb5927f8e43b1dcb2366da5d2c97d543167ad37a2a31d14eb963e2b",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12576
+      },
+      {
+        "ordinal": 7,
+        "inputBytes": 1685,
+        "outputBytes": 322,
+        "inputSha256": "59922435231b58b0570361df319584f92a72a702ecffbd9a854f27be693e5a07",
+        "outputSha256": "a888763d5f0da2a6b6855332428835b7af85474c12e30c5b7f08485c2723b54b",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12772
+      },
+      {
+        "ordinal": 8,
+        "inputBytes": 9644,
+        "outputBytes": 297,
+        "inputSha256": "7d9ccdd78e1165360becba6df8f982da0a493ec7783e3b07ba4255712c06cb8f",
+        "outputSha256": "e8ae8dc9148084442fd4e42f75947dae85b203c44fe52298ed7e43b782aab54c",
+        "referenceTimeMs": 4,
+        "referenceMemoryKb": 12584
+      },
+      {
+        "ordinal": 9,
+        "inputBytes": 18,
+        "outputBytes": 5,
+        "inputSha256": "92f5c495b10905f32da7d6059d3f5a5feb2cfec38b583c0865f03bb62e267637",
+        "outputSha256": "ef852d234daf6a51e16f342264a6aeb3b77d19190143b9411d14cf0e6986f87c",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12476
+      },
+      {
+        "ordinal": 10,
+        "inputBytes": 212,
+        "outputBytes": 3,
+        "inputSha256": "584f63a9df67cad005b8b029a523af0b958268463bc8e0917f68d8b0165b2dc5",
+        "outputSha256": "c5295c00ead93b36a700b78c0cae17503dba4fe423425220b23f8519b5f734cc",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12576
+      },
+      {
+        "ordinal": 11,
+        "inputBytes": 8016,
+        "outputBytes": 314,
+        "inputSha256": "a3bade66dab54db6de786ae336e871f43694e06e387ad2c7884dfd7519e116b0",
+        "outputSha256": "c58bdc8439c09ceb4d3167cde91ae707658fe67b8089808213cfd3e40f734224",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12572
+      },
+      {
+        "ordinal": 12,
+        "inputBytes": 4735,
+        "outputBytes": 342,
+        "inputSha256": "4b2a03fe09dca8a5c3b29f82582529db8b69869eaa9db05ab327466d40fd2e85",
+        "outputSha256": "8a8bdb0c7e1b30747ef1e886fe560640bd0a5d0534ea9a220a808954f05f013d",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12556
+      },
+      {
+        "ordinal": 13,
+        "inputBytes": 16504,
+        "outputBytes": 284,
+        "inputSha256": "5c4364095d490ea4acf8ad12ac95507346ef27d612bf8e2a3f740086db9e0338",
+        "outputSha256": "9262d20c9d86bece51ab341e6dafb56d066a43a98517496bd8de1f199a13665e",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12772
+      },
+      {
+        "ordinal": 14,
+        "inputBytes": 7822,
+        "outputBytes": 309,
+        "inputSha256": "843600d48f826206ae761448984b3eed67d6641e9d8d47e0afbce66cb4c079c7",
+        "outputSha256": "9fe528bdea9a192903ab919f6479289b318179d887b9d2906d78b095f1436ba6",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12508
+      },
+      {
+        "ordinal": 15,
+        "inputBytes": 8224,
+        "outputBytes": 293,
+        "inputSha256": "cf6ca962a77bcf3701f14c5a21b5c50f6d3e8888864a7d506a3da466ac567eb3",
+        "outputSha256": "571b424028442bcb0a14c0a0c3b0cdb8419ed4c0f2c2ff08cb1a7dc547bd96da",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12572
+      },
+      {
+        "ordinal": 16,
+        "inputBytes": 11637,
+        "outputBytes": 291,
+        "inputSha256": "e471c47a1199537683a8cdeae101bdf9bad5929bbdd8b826e3fc0ce7e56311d9",
+        "outputSha256": "41d845040d061977c5fdb8f111bfc44f45c7c7484bc2570684a11ffc0546085d",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12576
+      },
+      {
+        "ordinal": 17,
+        "inputBytes": 34,
+        "outputBytes": 9,
+        "inputSha256": "892fba9b90aa051d0c0f13eabb4da9a8b20f308f3e55eef7c7774722d0327351",
+        "outputSha256": "5c2092da0f61f6deb507a04580bd9101ceb8613c0a6edec168c0326466e3635d",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12872
+      },
+      {
+        "ordinal": 18,
+        "inputBytes": 26,
+        "outputBytes": 7,
+        "inputSha256": "53902999ff4ee1d1cbb48260b13929f8c9881b4c2fb44fd590d6d86843bcee6d",
+        "outputSha256": "2be1f33d1ae470c23397a96b0afb73e23ad175b84b3dfd6203d0f6bb691f7ca8",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12572
+      },
+      {
+        "ordinal": 19,
+        "inputBytes": 616,
+        "outputBytes": 401,
+        "inputSha256": "d6cf5eafd65164dc8a6068be8e01419428205ac865383972f366dc7c0972cd37",
+        "outputSha256": "7bcef19221392be13128361593fc55998b90a91dad4e81ffaf88fd7d319ca081",
+        "referenceTimeMs": 3,
+        "referenceMemoryKb": 12708
+      },
+      {
+        "ordinal": 20,
+        "inputBytes": 519,
+        "outputBytes": 377,
+        "inputSha256": "13457705a0f0ad68297f526864ae970f84b38ec986234e9ca66d60604166d3c4",
+        "outputSha256": "48d34000172067ed3b11e699abe960238c717aa84e11d9ca6b9e2c3a66c15b49",
+        "referenceTimeMs": 2,
+        "referenceMemoryKb": 12704
+      }
+    ],
+    "reference": "independent C++17",
+    "oracle": "High-precision decimal nearest lookup; exhaustive subsets and weight DP; millisecond scheduler; explicit small graph bipartiteness plus certified large families; path enumeration and independent star/chain/monochrome counting"
+  },
+  {
+    "problem": "202609-4",
+    "status": "VERIFIED",
+    "seed": 2026094301,
+    "officialHiddenData": false,
+    "scoringType": "SITE_SIMULATION",
+    "answerSource": "C++ reference output cross-checked by independent oracle",
+    "smallDifferentialCases": 42,
+    "samplesVerified": 1,
+    "cases": [
+      {
+        "ordinal": 1,
+        "inputBytes": 19,
+        "outputBytes": 21,
+        "inputSha256": "e1a38315831d9eed3b9be15d389052175cf3fc7f2e809732c97c785b91ad6856",
+        "outputSha256": "5e567e128207bf5c0dc351abc8d6500c027d3f9496c6d173a3751c56f66e839b",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 2004
+      },
+      {
+        "ordinal": 2,
+        "inputBytes": 11,
+        "outputBytes": 9,
+        "inputSha256": "ed591fd525e3ecd8056784e4af8d6bc010b434854ba40f69978dc13d52b2b78e",
+        "outputSha256": "0c49f1bd9a04075a623ad322ae769b10c525bcbbd8819ff62f53b874272f788e",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 1956
+      },
+      {
+        "ordinal": 3,
+        "inputBytes": 12,
+        "outputBytes": 12,
+        "inputSha256": "f2915e5bab761523ac65589d42b8b13cc852c2f383b4ae270ca8732db565085d",
+        "outputSha256": "6cb9fcf54941e26134aebb648c615b0c40bdd4a31ecb1e687bb01fb2ce4c4ff2",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 2004
+      },
+      {
+        "ordinal": 4,
+        "inputBytes": 54,
+        "outputBytes": 43,
+        "inputSha256": "f00022b865b79062e9a807cb3811c0d269e8f387e2551d590167c139d3dc8e49",
+        "outputSha256": "217d191f2ebe84fb1eaca9613a979190d6924bc3b1e6ffb12669d8255ac38221",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 2008
+      },
+      {
+        "ordinal": 5,
+        "inputBytes": 8902,
+        "outputBytes": 8904,
+        "inputSha256": "2ff6916ec2eede2556535e50eea729d916ee1f98bf7dce171603b918994345e5",
+        "outputSha256": "ebe820de8ec110d63eaf0621daef3f1ddd890ffb61843f15688357ce73e862b4",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 2024
+      },
+      {
+        "ordinal": 6,
+        "inputBytes": 11807,
+        "outputBytes": 11808,
+        "inputSha256": "766f341f8dbb5b4ccd4631b7267a36af849a95a0f1268f87054e97bbfc4b92cc",
+        "outputSha256": "084ee2d79258ba24eb6c9182534881e25848f83fd2812eefaad309cc444e314e",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 2020
+      },
+      {
+        "ordinal": 7,
+        "inputBytes": 3388906,
+        "outputBytes": 3388911,
+        "inputSha256": "e04f64cdaa9b05dafb3490aff565b3831214730589a10672e0bb8513ef7b5b93",
+        "outputSha256": "32d99c25c099001b2006ee197137dccbd3a164359a3e900b332c37ef63ea3ef5",
+        "referenceTimeMs": 156,
+        "referenceMemoryKb": 18032
+      },
+      {
+        "ordinal": 8,
+        "inputBytes": 5527810,
+        "outputBytes": 5527806,
+        "inputSha256": "0e2c7bd7ba1ff567d5b9817811c9bb533eed5f24c992e308829f293b052305a5",
+        "outputSha256": "4e157c15049ac852c11ccb1dc837a993f759f647cf1436899caf72ffdefa60cd",
+        "referenceTimeMs": 125,
+        "referenceMemoryKb": 15996
+      },
+      {
+        "ordinal": 9,
+        "inputBytes": 1900012,
+        "outputBytes": 1900010,
+        "inputSha256": "3411eb57452a0f4d8ebe6d94db8d3e20aefaadb088c2eb46b5dcae317f6f153f",
+        "outputSha256": "3961345de1d9b684f3e1da065cfea33f8bd6deda6a35e8cf36358fbef4f235ac",
+        "referenceTimeMs": 47,
+        "referenceMemoryKb": 5424
+      },
+      {
+        "ordinal": 10,
+        "inputBytes": 588915,
+        "outputBytes": 588904,
+        "inputSha256": "a38459d36c8a59621af387206817394e38dd064881e2380b124df81cb82d85fa",
+        "outputSha256": "5cc1c068ab5c63d9869b4e50d5a230ebcb9f9b0dcd4ce5f55e5c7a594d41c15d",
+        "referenceTimeMs": 47,
+        "referenceMemoryKb": 5484
+      },
+      {
+        "ordinal": 11,
+        "inputBytes": 789118,
+        "outputBytes": 789119,
+        "inputSha256": "3f5f670c2dd45a1795d2907eb15e42d025f043f41daf7a6fffb10381302053ac",
+        "outputSha256": "fbf87536c08651a7e6b9dd4b01023dc7424723750e2f0ca080a7932d70704fc7",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 5608
+      },
+      {
+        "ordinal": 12,
+        "inputBytes": 8902,
+        "outputBytes": 8908,
+        "inputSha256": "535ee24f4cb8034aedb374ec57bd2abe73b03ddef20cb94b9906cb43a5096a37",
+        "outputSha256": "b2a8fac1baff5c2f6c8d3c54cdac9a85beab94ace158ae3d846db37add34e6f4",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 2084
+      },
+      {
+        "ordinal": 13,
+        "inputBytes": 11,
+        "outputBytes": 11,
+        "inputSha256": "ae4cc24aa65758f7dcb03aa131b0831de509ab3995222276b00840c7b54cb35d",
+        "outputSha256": "f1d00ea29b3105b5a4f884d644f20e4b6e4946bd0e62cce7e0fa3fb812598f6f",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1948
+      },
+      {
+        "ordinal": 14,
+        "inputBytes": 54,
+        "outputBytes": 43,
+        "inputSha256": "78d12058defcc64bed5c3752af8d68ac348d144d970a7e766b834945ed64f2bd",
+        "outputSha256": "217d191f2ebe84fb1eaca9613a979190d6924bc3b1e6ffb12669d8255ac38221",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 2000
+      },
+      {
+        "ordinal": 15,
+        "inputBytes": 11768,
+        "outputBytes": 11774,
+        "inputSha256": "ec1be0ea0041489bb149aa629587538acf1dc117b59affa514433f09dd3eee1f",
+        "outputSha256": "3e51f31bcd7ccb600cba518b8f6abb4aa556c46bba41a75d7f4b483a054700a4",
+        "referenceTimeMs": 15,
+        "referenceMemoryKb": 2024
+      },
+      {
+        "ordinal": 16,
+        "inputBytes": 3388906,
+        "outputBytes": 3388917,
+        "inputSha256": "d06be58558c26c77f699d454e154a0d194209ce401a7fbdfeca12352c3ed6d1c",
+        "outputSha256": "1d0938e540a3a7b2c4c2e325e9c7a5dfdfb5615488b13852090dbd97b073a2b6",
+        "referenceTimeMs": 188,
+        "referenceMemoryKb": 23236
+      },
+      {
+        "ordinal": 17,
+        "inputBytes": 5527810,
+        "outputBytes": 5527806,
+        "inputSha256": "8faad748a42b316ba5509179fb37169f0941bba81b395deb6c49d8f8bdb1e7bf",
+        "outputSha256": "4e157c15049ac852c11ccb1dc837a993f759f647cf1436899caf72ffdefa60cd",
+        "referenceTimeMs": 125,
+        "referenceMemoryKb": 15980
+      },
+      {
+        "ordinal": 18,
+        "inputBytes": 1900012,
+        "outputBytes": 1900010,
+        "inputSha256": "6ab495919105536b83671a90048345f8d004d4e283a87ed1c275f18121cdd8d3",
+        "outputSha256": "3961345de1d9b684f3e1da065cfea33f8bd6deda6a35e8cf36358fbef4f235ac",
+        "referenceTimeMs": 47,
+        "referenceMemoryKb": 5432
+      },
+      {
+        "ordinal": 19,
+        "inputBytes": 1899930,
+        "outputBytes": 1899931,
+        "inputSha256": "6b71a8e258055733bd13b6b36123f05b922c802224b00cc03befe6bdecb93fa4",
+        "outputSha256": "12fc57c3c232085a35aec23ba347b0ac79b050ce8bc17884c4742f119ba1b19e",
+        "referenceTimeMs": 63,
+        "referenceMemoryKb": 6480
+      },
+      {
+        "ordinal": 20,
+        "inputBytes": 588906,
+        "outputBytes": 588915,
+        "inputSha256": "50a6a6809c01a032092894f599c444b4d666c691acfb6aec798f6ee46bc865a6",
+        "outputSha256": "9e0fb530963c636a578187bd3fb66c1a48a6c433eca7fad5e0412e13f582f197",
+        "referenceTimeMs": 62,
+        "referenceMemoryKb": 6080
+      },
+      {
+        "ordinal": 21,
+        "inputBytes": 8,
+        "outputBytes": 8,
+        "inputSha256": "dae1856451b1961c7f43f1a861ecc97eb7a7abd80feb450b186e4859743dd7d5",
+        "outputSha256": "a142cc33ba9d1d9048669e555e3bbaf4495ea000e68a120c4920426bb285669d",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1944
+      },
+      {
+        "ordinal": 22,
+        "inputBytes": 26,
+        "outputBytes": 26,
+        "inputSha256": "ee0a2ee6a28721191cb7364c2f10604b1cb857f77a603f8f95221d742d5edd94",
+        "outputSha256": "561c08eecef796814c542ea0cb201d7a6c4f84ea9668dca217249280082e3232",
+        "referenceTimeMs": 15,
+        "referenceMemoryKb": 2004
+      }
+    ],
+    "reference": "independent C++17",
+    "oracle": "High-precision decimal nearest lookup; exhaustive subsets and weight DP; millisecond scheduler; explicit small graph bipartiteness plus certified large families; path enumeration and independent star/chain/monochrome counting",
+    "leakageRepair": {
+      "checkedAt": "2026-10-10T13:11:34.565397+00:00",
+      "oldFormalPoints": 40,
+      "formalPoints": 44,
+      "newIndependentlyVerifiedInputs": 2,
+      "allExistingInputsRetained": true,
+      "scope": "All reference runs refreshed; new/changed inputs and small cases checked by independent oracle. Unchanged large answers retain prior independent certificates."
+    }
+  },
+  {
+    "problem": "202609-5",
+    "status": "VERIFIED",
+    "seed": 2026094301,
+    "officialHiddenData": false,
+    "scoringType": "SITE_SIMULATION",
+    "answerSource": "C++ reference output cross-checked by independent oracle",
+    "smallDifferentialCases": 43,
+    "samplesVerified": 1,
+    "cases": [
+      {
+        "ordinal": 1,
+        "inputBytes": 48062,
+        "outputBytes": 8146,
+        "inputSha256": "3d31ee72408f4a2d1152c2821b7e0ce132cd76018cec37b2c2b9f63594e10237",
+        "outputSha256": "56194bb25a6b613db3c2481ac70ba88bbfe560e72693ab5e9c8e2c814108ace7",
+        "referenceTimeMs": 47,
+        "referenceMemoryKb": 5972
+      },
+      {
+        "ordinal": 2,
+        "inputBytes": 46892,
+        "outputBytes": 10005,
+        "inputSha256": "0e6a4d8056fd0db4a77708fbbb5a8e1a708c23cc9e4967ba520a13b159ee7db5",
+        "outputSha256": "8e0258cdc5eba5d25981c6e8fbeca610d2b062affe764d2217b70654e4728b87",
+        "referenceTimeMs": 47,
+        "referenceMemoryKb": 5668
+      },
+      {
+        "ordinal": 3,
+        "inputBytes": 46969,
+        "outputBytes": 10005,
+        "inputSha256": "9f03a2b04a4fa43c73d1a4d4190c67188b2e6d8e9fbd60f302611c4a5cb0f84f",
+        "outputSha256": "d3c6e4dcf1b1eef83598529601ed252c89a98b913f47c23c2b8ae4067e735491",
+        "referenceTimeMs": 47,
+        "referenceMemoryKb": 4800
+      },
+      {
+        "ordinal": 4,
+        "inputBytes": 2755275,
+        "outputBytes": 1064815,
+        "inputSha256": "4abdd6b9e1acf23f32a19eb591868a9b1a404bc23832c1c6007ea414fbf3c078",
+        "outputSha256": "5818fa79328772576d2cf4b105fd9b0cc4f7fc9a0ee15ce8b1652afe0536b8b8",
+        "referenceTimeMs": 313,
+        "referenceMemoryKb": 115128
+      },
+      {
+        "ordinal": 5,
+        "inputBytes": 2366663,
+        "outputBytes": 1100011,
+        "inputSha256": "a069d5c6cc3db2c26fe4bf03bed4f80cd6b5afb1d0f03e7f76207ce6064dd339",
+        "outputSha256": "f844a5ac485d28d11138a20f4d3f35dff688242928ff652b925668f4f45e26ab",
+        "referenceTimeMs": 172,
+        "referenceMemoryKb": 42672
+      },
+      {
+        "ordinal": 6,
+        "inputBytes": 2726738,
+        "outputBytes": 1067006,
+        "inputSha256": "a895a58e7dd60f3c35c137ab6c7915daa1eecacf3c8c8a3015a8c961722ac20e",
+        "outputSha256": "0010db8eaf29bd72187a410ac1353a0eeac6cec55d01def46803c64f79b5b790",
+        "referenceTimeMs": 312,
+        "referenceMemoryKb": 83124
+      },
+      {
+        "ordinal": 7,
+        "inputBytes": 2444425,
+        "outputBytes": 1000010,
+        "inputSha256": "c0aa9181edf53ce962d8cffc4a5a5e400d784c77914faa177b1cc7b06c63b58d",
+        "outputSha256": "9bc52dab90f4ca1aa546921c31d33afeefcc84159b68dfe69b9b94bd320fb8d2",
+        "referenceTimeMs": 188,
+        "referenceMemoryKb": 42672
+      },
+      {
+        "ordinal": 8,
+        "inputBytes": 2444503,
+        "outputBytes": 871763,
+        "inputSha256": "c7cde3d6decfcaf39e8102dcf28040ea6e84b81cf14ef7bd06d3219a775f2133",
+        "outputSha256": "5efcca7cd4b69b501b375cad2deab86d8d1c6156ebf73ba5f2b14207669d63a1",
+        "referenceTimeMs": 171,
+        "referenceMemoryKb": 42664
+      },
+      {
+        "ordinal": 9,
+        "inputBytes": 2444196,
+        "outputBytes": 900009,
+        "inputSha256": "e458ac23857d1f7a6a1851deb342e6b651d7549de70a2a3e1a34ceafeed07c53",
+        "outputSha256": "92100115b67df723127d8443aad863be23a2b13d16e1f757bd4f7c64396cae89",
+        "referenceTimeMs": 188,
+        "referenceMemoryKb": 42644
+      },
+      {
+        "ordinal": 10,
+        "inputBytes": 2444319,
+        "outputBytes": 900009,
+        "inputSha256": "41873a1228def8d992a9bf303eaf273b46c82d86e4feb859af5e60b120f1b7c3",
+        "outputSha256": "9f532e08273da5fa1176eccc37d0f9e98557bbc18699bb790d238980769c46ff",
+        "referenceTimeMs": 203,
+        "referenceMemoryKb": 42660
+      },
+      {
+        "ordinal": 11,
+        "inputBytes": 2755991,
+        "outputBytes": 1011880,
+        "inputSha256": "3c2c32123a707d852ef858cfb7cc0f7c70ee0a442c836713bae0f6f86a47b98e",
+        "outputSha256": "31d48d38fa0d141cabee3cb79bb302dee4c9603afbf0d91f3b0c9d79a96d27ac",
+        "referenceTimeMs": 438,
+        "referenceMemoryKb": 125612
+      },
+      {
+        "ordinal": 12,
+        "inputBytes": 2366816,
+        "outputBytes": 1000010,
+        "inputSha256": "f9935eee2ccd58d7285d6cbf505690ac774652d839f9ecdefc1beb2d54e8c9fa",
+        "outputSha256": "5e91e0a6bf59eba4ea3d39edb0b739b68789c3a0c271c4d9798485407e1e6a9b",
+        "referenceTimeMs": 157,
+        "referenceMemoryKb": 42684
+      },
+      {
+        "ordinal": 13,
+        "inputBytes": 2755707,
+        "outputBytes": 1000010,
+        "inputSha256": "bce7e5b24bf0fa7ae4716ff5a754aa96fb5bde7c1dc95c3fa3253a2fbde0e6a7",
+        "outputSha256": "66ce14fd6890dc9cfb38e6fd991fb3127c68016e8cf58e1f35bbf38634a380e1",
+        "referenceTimeMs": 406,
+        "referenceMemoryKb": 125172
+      },
+      {
+        "ordinal": 14,
+        "inputBytes": 2366564,
+        "outputBytes": 969149,
+        "inputSha256": "a3b13f024550585fa9569c047f119ba659a6e95f8be8f037d768f77a1fb52a22",
+        "outputSha256": "07064c7d80613ba06d8211fcf75fff7aadc7ee2225f9f8ed6a362560c7a9f2b8",
+        "referenceTimeMs": 141,
+        "referenceMemoryKb": 42684
+      },
+      {
+        "ordinal": 15,
+        "inputBytes": 2443833,
+        "outputBytes": 900009,
+        "inputSha256": "95ae7ab14a2706b2afa57f369620718ecd36c9e92aa46868d3585cb747e967d9",
+        "outputSha256": "fef3358931b52a3a80365e4f9765c32a2e8dd3e30448a2dcc03e837ea4181b22",
+        "referenceTimeMs": 218,
+        "referenceMemoryKb": 49072
+      },
+      {
+        "ordinal": 16,
+        "inputBytes": 2833025,
+        "outputBytes": 602125,
+        "inputSha256": "14e622ff008de0880fb1dfcfa15310fed111e1362b638fb7cde458cd969bb094",
+        "outputSha256": "8a864e5275e7af514e8ecff7d102e7201ffd713108559ab078892521f2729016",
+        "referenceTimeMs": 2859,
+        "referenceMemoryKb": 296040
+      },
+      {
+        "ordinal": 17,
+        "inputBytes": 2444395,
+        "outputBytes": 831933,
+        "inputSha256": "dfeff0d5f93ccb16bd8c8064be38403025a81aabbbacef68d57282488fffb019",
+        "outputSha256": "96823fb8ee7f065406d9845558ebfa35e4c1e202687acfd14a06030ef4a19a73",
+        "referenceTimeMs": 203,
+        "referenceMemoryKb": 49072
+      },
+      {
+        "ordinal": 18,
+        "inputBytes": 2833070,
+        "outputBytes": 600006,
+        "inputSha256": "6201429042297cc75b6de7750950a0901570876717f621b4743a7809390febe2",
+        "outputSha256": "3e80052a86bd99dee087a3cbc07c038cd81b5292baa4a5908091070c55e4f5d9",
+        "referenceTimeMs": 2437,
+        "referenceMemoryKb": 296012
+      },
+      {
+        "ordinal": 19,
+        "inputBytes": 2744369,
+        "outputBytes": 1068593,
+        "inputSha256": "40a806d172bb6fa0f694673cd8fc4e9a4bdc6ad5979d011247d2c12a3f2c9d76",
+        "outputSha256": "d0748620a65fb8b16c2d07052fe514aa357a0c4443c3b968af2261dfb17e8dfe",
+        "referenceTimeMs": 594,
+        "referenceMemoryKb": 103488
+      },
+      {
+        "ordinal": 20,
+        "inputBytes": 2726940,
+        "outputBytes": 1067181,
+        "inputSha256": "9cfeb7b58efe8a266fb11ddb10997ad168388ddfcdf4aa37150fb6502ace84b2",
+        "outputSha256": "830750fb016661681a64a69e96e7c2d911ed1244827bdd51ca8b11c107be0082",
+        "referenceTimeMs": 516,
+        "referenceMemoryKb": 91108
+      },
+      {
+        "ordinal": 21,
+        "inputBytes": 14,
+        "outputBytes": 3,
+        "inputSha256": "726bc0072f13ebac1069bca063ac07b276c31e52b553892fad8179a354bb1dc8",
+        "outputSha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 1996
+      },
+      {
+        "ordinal": 22,
+        "inputBytes": 21,
+        "outputBytes": 3,
+        "inputSha256": "e7d474f2c944b5899f1eec6b7e01f1f1b5049645dac1bdeebabfea7b117498d3",
+        "outputSha256": "df4e26a04a444901b95afef44e4a96cfae34690fff2ad2c66389c70079cdff2b",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 1984
+      },
+      {
+        "ordinal": 23,
+        "inputBytes": 26,
+        "outputBytes": 21,
+        "inputSha256": "07ebc166988dbc4c6d4124c7573db15696175f0bc8f9128629e287f990476ec1",
+        "outputSha256": "8a8ae15519a4c48f18d72990bb19fe018bd9db66f5e77f9d7162a573104f55d1",
+        "referenceTimeMs": 16,
+        "referenceMemoryKb": 2008
+      },
+      {
+        "ordinal": 24,
+        "inputBytes": 38138,
+        "outputBytes": 6,
+        "inputSha256": "3a6653d3a9e7825e7dd49ee74a6f2946df236638dda08972f22e3852f0028950",
+        "outputSha256": "d8da41ec5c9d21acad6ffb98e3736ea109eac817679f6520db7d58b6497f6a61",
+        "referenceTimeMs": 31,
+        "referenceMemoryKb": 4728
+      },
+      {
+        "ordinal": 25,
+        "inputBytes": 1855314,
+        "outputBytes": 10,
+        "inputSha256": "9ba95df6ccec2f7fc859be673cc55ee7489d2ee635081a8e67fc8ca5bef15cbc",
+        "outputSha256": "e9297fa56232912d363e9b21d8cb57b67617b2655e50ce60441f5379122c140a",
+        "referenceTimeMs": 125,
+        "referenceMemoryKb": 49056
+      }
+    ],
+    "reference": "independent C++17",
+    "oracle": "High-precision decimal nearest lookup; exhaustive subsets and weight DP; millisecond scheduler; explicit small graph bipartiteness plus certified large families; path enumeration and independent star/chain/monochrome counting",
+    "leakageRepair": {
+      "checkedAt": "2026-10-10T13:12:06.093428+00:00",
+      "oldFormalPoints": 20,
+      "formalPoints": 25,
+      "newIndependentlyVerifiedInputs": 5,
+      "allExistingInputsRetained": true,
+      "scope": "All reference runs refreshed; new/changed inputs and small cases checked by independent oracle. Unchanged large answers retain prior independent certificates."
+    }
+  }
+]

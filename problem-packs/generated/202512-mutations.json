@@ -1,0 +1,204 @@
+{
+  "batch": "202512",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "202512-1",
+      "mutant": "size-is-equality",
+      "reason": "Equal set cardinality does not imply equal elements",
+      "rejectedAtTestPoint": 12,
+      "status": "WA",
+      "inputSha256": "8f60f6f2cb36ef9e193fb8ba55c4c4f90eb08a75b6cb243db4cdd265b54f14c4",
+      "sourceSha256": "ecd008ac26371aaadc49c28281fcdfcdb00a0bf9827793c79570fa7cd6e7dda6"
+    },
+    {
+      "problem": "202512-1",
+      "mutant": "no-collision-check",
+      "reason": "Treat every XOR equality as reliable",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "34ee3aab5fb8928e979363e435a9a109408f798e91ba3a2c087b99026167f3b7",
+      "sourceSha256": "2540bf186dcd0cc90021b8e36e7d2fc22efdc9eead8a7f335c2d9ac0dc8a265a"
+    },
+    {
+      "problem": "202512-1",
+      "mutant": "sum-not-xor",
+      "reason": "Use sum instead of XOR",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "34ee3aab5fb8928e979363e435a9a109408f798e91ba3a2c087b99026167f3b7",
+      "sourceSha256": "970eed45091d3b36e88524016954beac96d74cdacb7f4785699a41816c81e1d4"
+    },
+    {
+      "problem": "202512-2",
+      "mutant": "identity-instead-of-inverse",
+      "reason": "Output ciphertext",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "cd5dff9c8861baf52cbace8aecd1b12d5b984e1ef017c3933c2acc3fc9a2bc47",
+      "sourceSha256": "3a13ae8b391b36e363a7af01948322911d21d73d026a1d3db54e20b050f9bd3d"
+    },
+    {
+      "problem": "202512-2",
+      "mutant": "reverse-key-order",
+      "reason": "Forward rounds use keys in the wrong order",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "cd5dff9c8861baf52cbace8aecd1b12d5b984e1ef017c3933c2acc3fc9a2bc47",
+      "sourceSha256": "c37cb6741544f6f3b895f3ffffd59132720665ebbbcaa4c38d8d24f916961e51"
+    },
+    {
+      "problem": "202512-2",
+      "mutant": "xor-instead-of-square",
+      "reason": "Confuse mathematical power and C++ XOR",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "e143ec05631e8515c810286dceeeaa93d4d433bd83ed980079e7da1958c8a17e",
+      "sourceSha256": "ee4fa52ab461d94baa1288f27fe5b1f1e704ff2c3702a07595d4a6636f8b3a28"
+    },
+    {
+      "problem": "202512-3",
+      "mutant": "wrong-whole-rotation",
+      "reason": "Undo global rotation in wrong direction",
+      "rejectedAtTestPoint": 11,
+      "status": "WA",
+      "inputSha256": "abd5b3bb486f84934e9d8a2403d05b7208fafca0192b9d707de20f5ee21470ae",
+      "sourceSha256": "8e95082ba8f9271381d32d1b51450de99ef57c3f754975ad213720cc69e6dea5"
+    },
+    {
+      "problem": "202512-3",
+      "mutant": "decode-forward-order",
+      "reason": "Undo operations in their original order",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "7cc2e05de073c3cdfaa9a82b08b70f80e038b657d3ce91a88b5dd6130f213aee",
+      "sourceSha256": "7f103d9fb099c532a7428ba43d813f4db1449997894b5c1534af4a1e6cb7bc35"
+    },
+    {
+      "problem": "202512-3",
+      "mutant": "swapped-flip-directions",
+      "reason": "Swap vertical and horizontal flips",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "7cc2e05de073c3cdfaa9a82b08b70f80e038b657d3ce91a88b5dd6130f213aee",
+      "sourceSha256": "4efe7de25d688dc3f1e35d28244a366c8b108bc147fc129fbd36d79f179d6510"
+    },
+    {
+      "problem": "202512-4",
+      "mutant": "ignore-perfect-filter",
+      "reason": "Return all arrays for both op values",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "3f11ad6bbc7ecca0b2416b713dee77f1a635c00aaeaa946e14cde1c2bfae56d5",
+      "sourceSha256": "1329aa3cb59eb8bf98bc1ced20424304e4d86ab32dc8acb7e6f7915e889769c5"
+    },
+    {
+      "problem": "202512-4",
+      "mutant": "wrong-inclusion-exclusion",
+      "reason": "Origin intersection must have coefficient 5",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "3f11ad6bbc7ecca0b2416b713dee77f1a635c00aaeaa946e14cde1c2bfae56d5",
+      "sourceSha256": "edcbb2ebfabf0c44a01124d20fb972ab9b70ead4d9b8b884c46f4897ba0b63c4"
+    },
+    {
+      "problem": "202512-4",
+      "mutant": "strict-size-bound",
+      "reason": "Exclude arrays with B=n",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "665ae877edd92e755fe8504188724e0438a217c62edad817b262fb85e6289a88",
+      "sourceSha256": "008b30646dff6965f699fd80c040779b48b62da0ffd2ee44e1a349a8136e86a6"
+    },
+    {
+      "problem": "202512-5",
+      "mutant": "all-conflict",
+      "reason": "Count every element as a required color",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "c81bbbe15dc21b7467a8aa9b2f02232ce9371ec8d6f3d9741f9287d5caf772c7",
+      "sourceSha256": "0327d08b6ed2a0a74187857b03eadbe087d0b352c730d370ba47753d819c8c40"
+    },
+    {
+      "problem": "202512-5",
+      "mutant": "lose-multiplicity",
+      "reason": "Do not count duplicate inserted elements",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "8fba7d9bc8c59b9a44f66a0bf18c11bbb4f10c656abfe0b2593f6e467842d9f1",
+      "sourceSha256": "b125d9a98646cfa72dd2bebbd4f888baf34211e247dcb8f97247113293199f26"
+    },
+    {
+      "problem": "202512-5",
+      "mutant": "merge-as-sum",
+      "reason": "A merged cost can drop below sum of separate costs",
+      "rejectedAtTestPoint": 5,
+      "status": "WA",
+      "inputSha256": "95b7c12b0fa1eece041befaedff0ed0be0a2b9eb89eed20624e67816a188057d",
+      "sourceSha256": "6abe4f56869653024dcafaf6d6ec9f662101b07bbc83de1b37d931d0fbcd60df"
+    },
+    {
+      "problem": "202512-5",
+      "mutant": "low-threshold-off-by-one",
+      "reason": "Threshold relation is strict XOR<W",
+      "rejectedAtTestPoint": 8,
+      "status": "WA",
+      "inputSha256": "365c786c98d67ff78cda11a98890ca27d42e053710a55eb5032db5e76162163c",
+      "sourceSha256": "8b9d0232adbfdb54c0fc0b79d792493311155bf8f7b4c6e78acc1c18d72c98b5"
+    },
+    {
+      "problem": "202512-1",
+      "mutant": "collision-requires-same-size",
+      "reason": "异大小集合也可能产生相同异或值",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "34ee3aab5fb8928e979363e435a9a109408f798e91ba3a2c087b99026167f3b7",
+      "sourceSha256": "83b713380c77036a3e43e210ba371be12fb20041a03f1286b28da575120449ef"
+    },
+    {
+      "problem": "202512-2",
+      "mutant": "missing-plaintext-511",
+      "reason": "9位明文的上界511也须求逆",
+      "rejectedAtTestPoint": 17,
+      "status": "WA",
+      "inputSha256": "956a8553e5f0ad3aee2fa745b52b08691d78e7e36fd378eb65483446a9d9bd5b",
+      "sourceSha256": "0e239421ea0e0ecb5b794ca5441e8f5e8ee52575b89a8fd8c2816fc79a121cd4"
+    },
+    {
+      "problem": "202512-3",
+      "mutant": "assume-square-original",
+      "reason": "解密后的原矩阵可以非正方形",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "7cc2e05de073c3cdfaa9a82b08b70f80e038b657d3ce91a88b5dd6130f213aee",
+      "sourceSha256": "4cfaf526ab97553f1654f0801e1eb29ade33c22b379b80f319078430a471242d"
+    },
+    {
+      "problem": "202512-4",
+      "mutant": "prime-power-as-prime",
+      "reason": "质数幂需处理指数大于1的局部贡献",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "aca8cbbe96ba89bf0fd068d4b4069213909923c48085dca9e63b124bc1544bcb",
+      "sourceSha256": "9c340275b4a8c684d015cfa1e5ffa2661ad0e9caa5b778ca65c9311e8119ebb8"
+    },
+    {
+      "problem": "202512-5",
+      "mutant": "stale-trie-cache",
+      "reason": "插入或合并后必须刷新相关缓存",
+      "rejectedAtTestPoint": 6,
+      "status": "WA",
+      "inputSha256": "09f83b53ce803243927d10e53a59fb4a1f8af8d025afd13752cd813e1d3fe2ef",
+      "sourceSha256": "e4629549522f8754f59240edae41d73ccdd54fd8b8e6d7792759e769dff4f74b"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

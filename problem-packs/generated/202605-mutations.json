@@ -1,0 +1,204 @@
+{
+  "batch": "202605",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "202605-1",
+      "mutant": "always-round-half-up",
+      "reason": "小数5且整数部分为偶数时应保持偶数",
+      "rejectedAtTestPoint": 11,
+      "status": "WA",
+      "inputSha256": "c4eea03f6f3ccd0dd8b1ec9bacb8f99d67cb5cf93d5c4159f15dee224706b5a3",
+      "sourceSha256": "f4431f8a9ce58b7f899786a3cc47592d99babf90c84af8a66ae6f52f3e528470"
+    },
+    {
+      "problem": "202605-1",
+      "mutant": "always-round-half-down",
+      "reason": "奇数整数部分在半值时应进位",
+      "rejectedAtTestPoint": 12,
+      "status": "WA",
+      "inputSha256": "681b061412960ce2dbc43d7acad62b4adfab20a3a7309d3b27b3fa8a4479aa04",
+      "sourceSha256": "0e5c5ff01422f5e3a7a1ad5a867fccf9071dfae22deed8fb28aca0c4af27835c"
+    },
+    {
+      "problem": "202605-2",
+      "mutant": "floor-spoilage",
+      "reason": "损耗必须向上取整",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "14c00cbe2875dac54a3e051f4f9728541bc5e6108e4e471111041c4e6b12d128",
+      "sourceSha256": "54dbbe9b9c7f528cf836831524f94405fcc6dc5b84cf32229674a209b5c9a773"
+    },
+    {
+      "problem": "202605-2",
+      "mutant": "forbid-empty-last-day",
+      "reason": "最后一天恰好吃完仍然合法",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "14c00cbe2875dac54a3e051f4f9728541bc5e6108e4e471111041c4e6b12d128",
+      "sourceSha256": "fcf94a66941af4ec8f17131a79a52a13f201e8300fa7ea667570e0670f55b48d"
+    },
+    {
+      "problem": "202605-2",
+      "mutant": "truncate-initial-stock",
+      "reason": "初始数量可超过32位",
+      "rejectedAtTestPoint": 17,
+      "status": "WA",
+      "inputSha256": "d0f510e982dedb06a4e75b18aa5a513b67feced583e391a56a319650c87a456d",
+      "sourceSha256": "cdee359019452b42c563308f7404f56f471862d01f8fda758d1b71af1cce1980"
+    },
+    {
+      "problem": "202605-3",
+      "mutant": "smallest-forced-owner",
+      "reason": "同时强制抢夺由最大编号C类持有资源",
+      "rejectedAtTestPoint": 17,
+      "status": "WA",
+      "inputSha256": "2c00665c7dcfb09a16625f9348c9571b512bd9cb77b32b2b49ea109dc5215b7a",
+      "sourceSha256": "564a02bc20debb3f5de1cfbe7bd28063589d256f79cef39a7b302828d4ff64e1"
+    },
+    {
+      "problem": "202605-3",
+      "mutant": "steal-one-segment-early",
+      "reason": "C类在失败w次后的下一段强制申请",
+      "rejectedAtTestPoint": 17,
+      "status": "WA",
+      "inputSha256": "2c00665c7dcfb09a16625f9348c9571b512bd9cb77b32b2b49ea109dc5215b7a",
+      "sourceSha256": "dfaf797ddfa33eae5f7d4283eb7e55bb6898f0dd95d41994a51c69e4136dc3d9"
+    },
+    {
+      "problem": "202605-3",
+      "mutant": "credit-lost-resources",
+      "reason": "收益按实际持有数量，不能算已放弃或被抢走资源",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "6f8306ebeeff0987e398d99781ca3ecf16ab582c83bda5fd61b56a7c9f2daf06",
+      "sourceSha256": "96b694f6e0ee6607b21654c2f718c90ee642d2f6fc900dedb1b5266c793fdcd5"
+    },
+    {
+      "problem": "202605-3",
+      "mutant": "never-release-A-resources",
+      "reason": "A类放弃要在段末真正释放",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "6f8306ebeeff0987e398d99781ca3ecf16ab582c83bda5fd61b56a7c9f2daf06",
+      "sourceSha256": "ca9b49efff9803af97c5cf6218c31eef13eae311fb29da8baa683942670b1473"
+    },
+    {
+      "problem": "202605-3",
+      "mutant": "B-starts-one-segment-late",
+      "reason": "B类第w次失败当段就运行",
+      "rejectedAtTestPoint": 10,
+      "status": "WA",
+      "inputSha256": "05a1730c341954578a13519c4aaa983a0e2181881b5850706a73863b77e2db40",
+      "sourceSha256": "768e2dbb7422bd11900b76585361608fe1c255bfbb4f9f97cf9b7b2de32b335f"
+    },
+    {
+      "problem": "202605-4",
+      "mutant": "xor-all-positions",
+      "reason": "必胜条件只取子区间的奇数位置",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "6a4c056da2a785f5d2d6a9d12382a0556b5cf4cc6aeabe2d9d508c82a1b6af0f",
+      "sourceSha256": "d66caf92a93caf323aca923fea2d708cdcca1a9aee9935f3a642db103ccce206"
+    },
+    {
+      "problem": "202605-4",
+      "mutant": "exclude-right-endpoint",
+      "reason": "结束在R上的区间也算成功",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "8334cf15a26cb4ead9f1d6e20cdce50e033075f732b7d8c3586f495cc6966eb4",
+      "sourceSha256": "93454b163e9e3a5c5490fd94af304f8f5223b0c0641b5e1489dabaf0f5a41355"
+    },
+    {
+      "problem": "202605-4",
+      "mutant": "cannot-skip-losing-prefix",
+      "reason": "可用非必胜单点跨过不合适的起点",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "6a4c056da2a785f5d2d6a9d12382a0556b5cf4cc6aeabe2d9d508c82a1b6af0f",
+      "sourceSha256": "e6c045a0d4ac030bc398890fb68edf4b756c974da0d3eb83a3e6ad032773146d"
+    },
+    {
+      "problem": "202605-5",
+      "mutant": "start-only-at-node-one",
+      "reason": "最优第一次中心不一定是点1",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "b76dcb05f60ed9aaf9c01d53f0e1ec1cb0b937204c33ba7cdbc11a686e49f709",
+      "sourceSha256": "707943c744a85d5307b95cb77f3b2116cc9ebf8669147a1635c1fad8f3dbc385"
+    },
+    {
+      "problem": "202605-5",
+      "mutant": "sort-all-labels",
+      "reason": "全部排序不一定能通过合法聚拢实现",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "b584ef8fde430ac42fa37ff73158268d54efd908586aee33a7272e36a84b6d07",
+      "sourceSha256": "735f5e840740fe117b37e9a4aff70a8bce92f29acc6b509146067d0cbbf4b18a"
+    },
+    {
+      "problem": "202605-5",
+      "mutant": "append-instead-of-prepend",
+      "reason": "比当前串首更小的字符要插在前面",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "b584ef8fde430ac42fa37ff73158268d54efd908586aee33a7272e36a84b6d07",
+      "sourceSha256": "4c0cf8de8e17936fea0a74f39e39f49e5f77355136d969995926aa8ae1f32609"
+    },
+    {
+      "problem": "202605-1",
+      "mutant": "ordinary-rounding-also-bankers",
+      "reason": "普通四舍五入与银行家舍入在偶整数半值不同",
+      "rejectedAtTestPoint": 11,
+      "status": "WA",
+      "inputSha256": "c4eea03f6f3ccd0dd8b1ec9bacb8f99d67cb5cf93d5c4159f15dee224706b5a3",
+      "sourceSha256": "7318708091a410f39ee2c89d3961b132ad343e2d6433c96d022ff4603098a35f"
+    },
+    {
+      "problem": "202605-2",
+      "mutant": "eat-before-spoilage",
+      "reason": "当天先损耗再吃，顺序不能调换",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "14c00cbe2875dac54a3e051f4f9728541bc5e6108e4e471111041c4e6b12d128",
+      "sourceSha256": "44b7982a14db09d3a3dd0455d4e35ba83dbce4ea67ca016d17da79d81178d444"
+    },
+    {
+      "problem": "202605-3",
+      "mutant": "ordinary-request-priority-reversed",
+      "reason": "普通同时申请按较小进程编号优先",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "70766b2210f0262871d05c0951daabf06cd6223c10f7ef9bedef76c788497a52",
+      "sourceSha256": "f628f8889cfd9bad78139aae358155618a0fdbe0372b97fdbae004c0551d27d8"
+    },
+    {
+      "problem": "202605-4",
+      "mutant": "reuse-interval-last-position",
+      "reason": "相邻选择区间不能重叠最后一位",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "af62079a8d08425ffc73b513013bf7a7c511802c7ab6bc7c5cae4aad965f4352",
+      "sourceSha256": "99276901e676d562122d64707b2da739faeb3ce70b310cfb930a8e32939ac2b1"
+    },
+    {
+      "problem": "202605-5",
+      "mutant": "adjacency-not-sorted",
+      "reason": "候选中心搜索所用邻居顺序须按编号递增",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "d3495869dada55e2698b47a5eb5208214db5f1ada622376b7505e202d1d532fe",
+      "sourceSha256": "87db71a446ba209d047f18ec93c89d4fbd13703231d62ff17610596945a2fc50"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

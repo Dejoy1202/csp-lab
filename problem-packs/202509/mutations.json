@@ -1,0 +1,237 @@
+[
+  {
+    "position": 1,
+    "name": "exclude-circle-boundary",
+    "reason": "圆周必须计入；严格小于丢失边界点",
+    "edits": [
+      [
+        "x*x+y*y<=r*r",
+        "x*x+y*y<r*r"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "integer-division",
+    "reason": "估计值不能使用整数除法",
+    "edits": [
+      [
+        "4.0*inside/n",
+        "4*inside/n"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "drop-decimal-coordinates",
+    "reason": "输入的两位小数不可截断",
+    "edits": [
+      [
+        "stoll(whole)*100+stoll(fraction)",
+        "stoll(whole)*100"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "strict-white-threshold",
+    "reason": "灰度等于k是白色",
+    "edits": [
+      [
+        "high=min(high,a[top+r][left+c]);",
+        "high=min(high,a[top+r][left+c]-1);"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "black-equality",
+    "reason": "黑色位置必须严格小于k",
+    "edits": [
+      [
+        "a[top+r][left+c]+1",
+        "a[top+r][left+c]"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "fixed-eight-bit",
+    "reason": "L可以为65536",
+    "edits": [
+      [
+        "int low=1,high=L-1;",
+        "int low=1,high=min(L-1,255);"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "omit-h-escape",
+    "reason": "HH开头只删一个H",
+    "edits": [
+      [
+        "return s.substr(1);",
+        "return s;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "decode-padding-as-data",
+    "reason": "最后一字节表示补零数且补零不得解码",
+    "edits": [
+      [
+        "int bits=int(bytes.size()*8)-padding",
+        "int bits=int(bytes.size()*8)"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "wrong-dynamic-index",
+    "reason": "动态表在插入时顺序变化",
+    "edits": [
+      [
+        "(head+index-S-1)%D",
+        "(head+index-S)%D"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "index-type-three",
+    "reason": "字面量不索引不得修改动态表",
+    "edits": [
+      [
+        "if(type==2){",
+        "if(type>=2){"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "ignore-final-complement",
+    "reason": "路径补集包含最后一个区间",
+    "edits": [
+      [
+        "answer=min(answer,minimum(next,n-1));",
+        ""
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "forbid-zero-mex",
+    "reason": "0是合法答案",
+    "edits": [
+      [
+        "cout<<answer<<'\\n';",
+        "cout<<max(1,answer)<<'\\n';"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "exclude-path-endpoint",
+    "reason": "路径包含端点",
+    "edits": [
+      [
+        "max(pos[x],pos[y])",
+        "max(pos[x],pos[y])-1"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "lose-flat-cost-partial-count",
+    "reason": "相同边际费用允许预算落在跳跃中间",
+    "edits": [
+      [
+        "answer+=min(nextK-k,(budget-cost)/marginal);",
+        "answer+=0;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "disallow-same-day-work",
+    "reason": "同一天上午制作的题可下午验证",
+    "edits": [
+      [
+        "center=min(P{0,0},add(up,down))",
+        "center=P{0,0}"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "all-tasks-or-none",
+    "reason": "未能全部完成时仍可完成部分",
+    "edits": [
+      [
+        "ll answer=k;",
+        "ll answer=0;"
+      ],
+      [
+        "answer+=min(nextK-k,(budget-cost)/marginal);",
+        "answer+=0;"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "two-decimal-estimate",
+    "reason": "只保留两位小数可能超出允许误差",
+    "edits": [
+      [
+        "setprecision(9)",
+        "setprecision(2)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "last-watermark-row-omitted",
+    "reason": "贴底的完整水印也须枚举",
+    "edits": [
+      [
+        "top+5<=n",
+        "top+5<n"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "lsb-first-compressed-bits",
+    "reason": "压缩字节从高位向低位解码",
+    "edits": [
+      [
+        "(7-i%8)",
+        "(i%8)"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "singleton-path-is-whole-tree",
+    "reason": "同端点路径仅包含该节点",
+    "edits": [
+      [
+        "--x;--y;vector<pair<int,int>>intervals;",
+        "--x;--y;if(x==y){cout<<n<<'\\n';continue;}vector<pair<int,int>>intervals;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "marginal-cost-cap-too-small",
+    "reason": "同日两项工作的边际成本可达20亿",
+    "edits": [
+      [
+        "high=2000000001LL",
+        "high=1000000001LL"
+      ]
+    ]
+  }
+]

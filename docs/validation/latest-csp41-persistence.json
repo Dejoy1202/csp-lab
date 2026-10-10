@@ -1,0 +1,85 @@
+{
+  "date": "2026-10-09",
+  "status": "PASS",
+  "method": "All business columns encoded as JSON_ARRAY; per-row SHA-256 ordered by primary key; aggregate per-table SHA-256 compared before/after stopping and starting MySQL, backend and worker",
+  "namedVolumePreserved": true,
+  "businessTables": 17,
+  "allTablesUnchanged": true,
+  "passwordLoginAfterRestart": true,
+  "ordinaryAccount": true,
+  "paperReadyAfterRestart": true,
+  "batch": "202603",
+  "examId": 55,
+  "examStatusAfterRestart": "FINISHED",
+  "examHighestScoreSumAfterRestart": 500,
+  "tables": {
+    "auth_failures": {
+      "count": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code_drafts": {
+      "count": 23,
+      "sha256": "abaf651b4b46a98d2982cd3a34bd66f27b6a3b99ed90fc0a73ba806a26eb819e"
+    },
+    "csp_papers": {
+      "count": 44,
+      "sha256": "d6dbcb7cbb9ab12990ccb488e64d2123ac2184601c2806dd31787dcc28fd49f3"
+    },
+    "mock_exam_problems": {
+      "count": 280,
+      "sha256": "92650f7aca79de8f27babdc6af0243993d42b24be053694a220c254801e1fbe5"
+    },
+    "mock_exams": {
+      "count": 56,
+      "sha256": "a5231751ce0f63b72d4b4f990677dc2ea0f4097904e4096b4fcdc7b66ffb636e"
+    },
+    "notes": {
+      "count": 4,
+      "sha256": "a930a9a99a20bee82e194a7f04bec40c97fd6fec0806d4ebc8c9c3b9c72af330"
+    },
+    "practice_sessions": {
+      "count": 64,
+      "sha256": "6e2d667e4c265db318a02de6c64200079ec9607de5f6c453c5c4639ff1446ff6"
+    },
+    "problem_assets": {
+      "count": 155,
+      "sha256": "885f8afd55b6b2fd6b0a8f5b030c768b0f1dfaeba0b346ac2b338d052d1a7410"
+    },
+    "problem_samples": {
+      "count": 117,
+      "sha256": "f3990176710687dd911f76e2d703f2691f52879f41ccf895e8449698e77c448e"
+    },
+    "problem_subtasks": {
+      "count": 67,
+      "sha256": "915686a0ae6e34a201680ea3ff8231f37a092f39ac7fe2b2badce44057677f72"
+    },
+    "problem_versions": {
+      "count": 121,
+      "sha256": "088cb652a182b3a28ff8742bd1b90798c3a5b4c5d7e6f789b3e77db409e3add6"
+    },
+    "problems": {
+      "count": 293,
+      "sha256": "c731b407da08120db5ae4643c99fc6aad8b0827150aafa55e9ac01c811207e8d"
+    },
+    "submission_results": {
+      "count": 2096,
+      "sha256": "3e72cdba65ff9a045c1275633387843a0be2bbd28bee125cb83f60765cb75b7d"
+    },
+    "submission_subtasks": {
+      "count": 175,
+      "sha256": "a8d71567e6211b248c923d6c5d14be75d06f01f80be18b4f388ed8b71b0dfce0"
+    },
+    "submissions": {
+      "count": 230,
+      "sha256": "7aa058d22067ecb9fb62b2d7282483d650593e489fd39435eb981e904762aa81"
+    },
+    "test_cases": {
+      "count": 974,
+      "sha256": "f264e9bef4e8bee6cb306fb4cac073a2767a4aa27c659cbeeda36bbca847a2ed"
+    },
+    "users": {
+      "count": 61,
+      "sha256": "a36e8cd152772cc559b43b8ba8f62b130f844ea76850ae1566c3cdbb1648a6e3"
+    }
+  }
+}

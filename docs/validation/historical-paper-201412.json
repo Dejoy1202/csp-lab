@@ -1,0 +1,147 @@
+{
+  "date": "2026-10-09",
+  "batch": "201412",
+  "examNumber": 3,
+  "status": "PASS",
+  "scoringType": "SITE_SIMULATION",
+  "officialHiddenData": false,
+  "ordinaryAccount": true,
+  "liveDocker": true,
+  "paper": {
+    "problems": 5,
+    "formalGradingPoints": 100,
+    "distinctFormalInputs": 99,
+    "smallDifferentialChecks": 200,
+    "originalSamples": 5,
+    "selectedMutants": 12,
+    "allSelectedMutantsRejected": true
+  },
+  "resources": [
+    {
+      "problem": "201412-1",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 3,
+      "referenceMaxMemoryKb": 12864
+    },
+    {
+      "problem": "201412-2",
+      "formalPoints": 20,
+      "distinctInputs": 19,
+      "referenceMaxTimeMs": 16,
+      "referenceMaxMemoryKb": 12776
+    },
+    {
+      "problem": "201412-3",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 4,
+      "referenceMaxMemoryKb": 12872
+    },
+    {
+      "problem": "201412-4",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 15,
+      "referenceMaxMemoryKb": 12868
+    },
+    {
+      "problem": "201412-5",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 152,
+      "referenceMaxMemoryKb": 12780
+    }
+  ],
+  "mockExam": {
+    "batch": "201412",
+    "status": "PASS",
+    "ordinaryAccount": true,
+    "liveDocker": true,
+    "examId": 51,
+    "durationSeconds": 14400,
+    "totalScore": 500,
+    "sampleScore": 0,
+    "construction": null,
+    "partialScore": 25,
+    "partialSubmissionId": 204,
+    "highestScorePreserved": true,
+    "evidence": [
+      {
+        "problem": "201412-1",
+        "submissionId": 198,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "201412-2",
+        "submissionId": 199,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "201412-3",
+        "submissionId": 200,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "201412-4",
+        "submissionId": 201,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "201412-5",
+        "submissionId": 202,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      }
+    ]
+  },
+  "browser": {
+    "command": "npx playwright test --grep '201412试卷|44个批次' --reporter=line",
+    "passed": 2,
+    "failed": 0,
+    "durationSeconds": 9.6,
+    "checks": [
+      "44 batches,220 titles,6 ready papers",
+      "BUILDING exam creation rejected",
+      "201412 five questions and KaTeX display",
+      "T5 actual Monaco sample run succeeds, sample contributes zero",
+      "Browser exam finish and review"
+    ]
+  },
+  "database": {
+    "fullVerifiedProblems": 5,
+    "formalTestCases": 100,
+    "scorePerProblem": 100,
+    "storedAssets": 15,
+    "assetKinds": [
+      "REFERENCE",
+      "GENERATOR",
+      "VALIDATOR"
+    ],
+    "allStoredAssetContentsNonempty": true
+  },
+  "readyPapers": [
+    "201312",
+    "201403",
+    "201409",
+    "201412",
+    "202403",
+    "202609"
+  ],
+  "remainingBuildingPapers": 38,
+  "baselineTests": "Existing Java, checker, sandbox, and persistence results retained; unchanged backend/worker not rerun for this data-only paper addition",
+  "limitations": [
+    "Self-built data and site scores do not represent official hidden tests or certification results",
+    "Selected counterexamples and differential checks are not a proof against every incorrect program",
+    "Problem 3 formal fixtures guarantee positive matched volume because zero-volume pricing is not specified in the source rules"
+  ]
+}

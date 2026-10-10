@@ -1,0 +1,119 @@
+services:
+  mysql:
+    image: ${MYSQL_IMAGE:-mysql:8.4}
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-csp_lab}
+      MYSQL_USER: ${MYSQL_USER:-csp}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:?Copy .env.example to .env}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:?Set MYSQL_ROOT_PASSWORD}
+      TZ: Asia/Shanghai
+    command: ["--character-set-server=utf8mb4", "--collation-server=utf8mb4_0900_ai_ci"]
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "MYSQL_PWD=$$MYSQL_PASSWORD mysql -h 127.0.0.1 -u$$MYSQL_USER $$MYSQL_DATABASE -e 'SELECT 1'"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+    mem_limit: 768m
+    networks: [database]
+
+  backend:
+    build:
+      context: ./backend
+      args:
+        MAVEN_IMAGE: ${MAVEN_IMAGE:-maven:3.9.11-eclipse-temurin-21}
+        JAVA_IMAGE: ${JAVA_IMAGE:-eclipse-temurin:21-jre-jammy}
+    environment:
+      DB_URL: jdbc:mysql://mysql:3306/${MYSQL_DATABASE:-csp_lab}?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      DB_USER: ${MYSQL_USER:-csp}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+      API_KEY: ${API_KEY:?Set API_KEY}
+      ADMIN_USERNAME: ${ADMIN_USERNAME:-cspadmin}
+      ADMIN_INITIAL_PASSWORD: ${ADMIN_INITIAL_PASSWORD:?Set ADMIN_INITIAL_PASSWORD}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:5173,http://127.0.0.1:5173}
+      TZ: Asia/Shanghai
+    ports: ["127.0.0.1:${API_PORT:-8080}:8080"]
+    depends_on:
+      mysql: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/actuator/health"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+    restart: unless-stopped
+    mem_limit: 1024m
+    networks: [database, api]
+
+  worker:
+    build:
+      context: ./worker
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim-bookworm}
+    environment:
+      DB_HOST: mysql
+      DB_NAME: ${MYSQL_DATABASE:-csp_lab}
+      DB_USER: ${MYSQL_USER:-csp}
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+      SANDBOX_IMAGE: ${SANDBOX_IMAGE:-csp-lab-sandbox:local}
+      WORKER_POLL_SECONDS: ${WORKER_POLL_SECONDS:-0.5}
+      TZ: Asia/Shanghai
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    depends_on:
+      backend: {condition: service_healthy}
+    restart: unless-stopped
+    mem_limit: 256m
+    networks: [database]
+
+  sandbox-image:
+    image: ${SANDBOX_IMAGE:-csp-lab-sandbox:local}
+    build:
+      context: ./sandbox
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim-bookworm}
+    profiles: [build]
+    network_mode: none
+
+  e2e:
+    build:
+      context: .
+      dockerfile: tests/Dockerfile
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim-bookworm}
+    profiles: [test]
+    environment:
+      BASE_URL: http://backend:8080
+      API_KEY: ${API_KEY}
+      ADMIN_INITIAL_PASSWORD: ${ADMIN_INITIAL_PASSWORD}
+      DOCKER_HOST: unix:///var/run/docker.sock
+      COMPOSE_PROJECT_NAME: ${COMPOSE_PROJECT_NAME:-csp-lab}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./test-results:/results
+    networks: [database]
+
+  pack-builder:
+    build:
+      context: .
+      dockerfile: problem-packs/Dockerfile
+      args:
+        PYTHON_IMAGE: ${PYTHON_IMAGE:-python:3.12-slim-bookworm}
+    profiles: [data]
+    environment:
+      SANDBOX_IMAGE: ${SANDBOX_IMAGE:-csp-lab-sandbox:local}
+      API_KEY: ${API_KEY}
+      BASE_URL: http://backend:8080
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./problem-packs/generated:/output
+    networks: [database]
+
+volumes:
+  mysql-data:
+
+networks:
+  database:
+    internal: true
+  api:

@@ -1,0 +1,168 @@
+{
+  "batch": "201412",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "201412-1",
+      "mutant": "cap-count-at-two",
+      "reason": "第三次及后续访问不能停在2；也保留初次/第二次作为部分分见证",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "e52f981941e1427c90d4adcf6893e925774c36a320085704c675f7bb64693347",
+      "sourceSha256": "10798a50378f67cb08ea13cfd4b5d2c45d7909aba22363d7eafd4a475350fa0a"
+    },
+    {
+      "problem": "201412-1",
+      "mutant": "global-record-number",
+      "reason": "每个编号单独计数，不能输出全局行号",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "eb89376776d7587133609459069ee357dc42447512374aa56829366dab516fcb",
+      "sourceSha256": "cf824cde341b97e39150977d09c04a993aed022caa12cdeb3eb96bf1ba67bdca"
+    },
+    {
+      "problem": "201412-2",
+      "mutant": "opposite-diagonal-direction",
+      "reason": "反对角线方向须与题意相符",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "1984d7ffd6214195b78a6d7210503ede6cddf94131e05d4a9706b56884b8ad29",
+      "sourceSha256": "bbf02e0a5984fc31019e66cd0066ebdcdd60430cc8a105f7c13d65ced2eca6f1"
+    },
+    {
+      "problem": "201412-2",
+      "mutant": "omit-last-cell",
+      "reason": "右下角元素也必须输出",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "d87d55a5561481b9cbca35f97b722714cc841525078d633ce54dd09818f8cbf7",
+      "sourceSha256": "acc6ff22153ff05db42e3721d3e84aa96b79712caa56f130cea51a9bca0a1f19"
+    },
+    {
+      "problem": "201412-3",
+      "mutant": "choose-lowest-tie-price",
+      "reason": "成交量相同取最高价格",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "2f258c87e2df4a23629b444095fe1b70b6e070c441e34f19ab5439f04e433392",
+      "sourceSha256": "634dd9a6b316dbd0462bdad383ff89604f7a6121fcf0b8242cccc80b2c9c4fbe"
+    },
+    {
+      "problem": "201412-3",
+      "mutant": "ignore-cancellation",
+      "reason": "取消记录不能继续参与撮合",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "e5dbf40594e0d585129579ec4d4663c4137b95d6563cb60ff20c6d69d5588218",
+      "sourceSha256": "23a501423fcd6d96de9647a367c6bba71e5fbb13f24a21ab52cebaba442b0fcc"
+    },
+    {
+      "problem": "201412-3",
+      "mutant": "int32-volume",
+      "reason": "5000笔每笔10^8股可超过32位",
+      "rejectedAtTestPoint": 8,
+      "status": "WA",
+      "inputSha256": "2ce2ee9e5bbe51eee5beec8e06f6eacdd72871eba48d26f2045651d8e051c54b",
+      "sourceSha256": "81fde3b0ea3edf9839f783f613ff1f0fb79b14274c9422a8945880a6722a6fc0"
+    },
+    {
+      "problem": "201412-4",
+      "mutant": "maximum-spanning-tree",
+      "reason": "应最小化建设费",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "ab8b0b7ec95f3716a0c56559f94e34e32f0563a9efefb85e697bc217f49d532c",
+      "sourceSha256": "5be937460a176ff108a516618c434c02745de5f9c7e5f10e57cdca75674e7478"
+    },
+    {
+      "problem": "201412-4",
+      "mutant": "count-cycle-edges",
+      "reason": "闭环边不能加入最小生成树",
+      "rejectedAtTestPoint": 5,
+      "status": "WA",
+      "inputSha256": "f6e18bf8975c31548e7f0cd1c83ed85cd33321c3789ab5aed261c32f176ed93e",
+      "sourceSha256": "31d7fbae9735cc9891e23f6772b9fdc508b8ba8903f9feab8dfb93d4c39e2c34"
+    },
+    {
+      "problem": "201412-5",
+      "mutant": "missing-week-wrap",
+      "reason": "周日库存必须能进入下一周周一",
+      "rejectedAtTestPoint": 2,
+      "status": "RE",
+      "inputSha256": "c5358683895d1a4816abb2f4cfd337a0a22f07b35a3de749ae365d2707807386",
+      "sourceSha256": "2489cb7a0a0cc388c03e4bc2a27d34e62131fe7dcfee6496ff6907e7ed3372f2"
+    },
+    {
+      "problem": "201412-5",
+      "mutant": "unlimited-warehouse",
+      "reason": "廉价仓库也受容量限制",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "dd02a43ad2cb2259035d306ea04d2168c5ea543ab9acbd6f0a3005e0b9aa1302",
+      "sourceSha256": "f86254c25f8776058ede96b3c38b5eff2ae1d06c58259d6d66b12a8cd8aeee21"
+    },
+    {
+      "problem": "201412-5",
+      "mutant": "free-overnight",
+      "reason": "过夜必须支付单位存储费",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "c5358683895d1a4816abb2f4cfd337a0a22f07b35a3de749ae365d2707807386",
+      "sourceSha256": "448256f44e51c6d33d44db407f1a2edb03c9d32a3436be6b0aa042e8472ac598"
+    },
+    {
+      "problem": "201412-1",
+      "mutant": "postincrement-visit-count",
+      "reason": "初次访问计为1，不能从0输出",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "ad0fadf63cc7cd779ce475e345bf4063565b63a3c2efef1eebc89790aaa6acba",
+      "sourceSha256": "adaf866a9e590c0fa58ee694fa1183413a21206e92f536a72d4092fe234c63e0"
+    },
+    {
+      "problem": "201412-2",
+      "mutant": "transpose-output",
+      "reason": "矩阵行列不能交换",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "1984d7ffd6214195b78a6d7210503ede6cddf94131e05d4a9706b56884b8ad29",
+      "sourceSha256": "fa139b58ac63e48b8b0bc4fcc1c4d49b727a7362f1b9e8192145b7763b95b520"
+    },
+    {
+      "problem": "201412-3",
+      "mutant": "exclude-buy-equality",
+      "reason": "买价等于开盘价也可成交",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "2f258c87e2df4a23629b444095fe1b70b6e070c441e34f19ab5439f04e433392",
+      "sourceSha256": "5e09aba60e1b96f27273e6d345f6c1dfec12ef79b1cbc695b2a2fd00ef87be25"
+    },
+    {
+      "problem": "201412-4",
+      "mutant": "skip-cheapest-edge",
+      "reason": "最便宜的边不能因下标错位被漏掉",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "13559676a8e44ddda6513d4e05dc1fcdeeb8ac8435a72c114deebd95cdb464e5",
+      "sourceSha256": "4e544bc10aa61a26bb148e8b9c1b82a635b295c5e51cdb0b344663a9fa80a3bf"
+    },
+    {
+      "problem": "201412-5",
+      "mutant": "reverse-edge-positive-cost",
+      "reason": "残量反向边须允许撤销原费用",
+      "rejectedAtTestPoint": 7,
+      "status": "WA",
+      "inputSha256": "8f2cb98fb07b35e4c3ada6946d6591f53c0a3d7103ec6c821d2e6c4870be2d05",
+      "sourceSha256": "ebdaf2330b847e8ac9e282d4523204b96c9797c04adcf3da46e65ef92b716cb1"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

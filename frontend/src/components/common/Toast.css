@@ -1,0 +1,94 @@
+.toast-container {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 99999;
+  pointer-events: none;
+}
+
+.toast-item {
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 12px var(--shadow-md);
+  color: var(--text-primary);
+  font-size: 0.875rem;
+  min-width: 200px;
+  max-width: 380px;
+  animation: toast-in 0.2s ease-out;
+  transition:
+    opacity 0.2s,
+    transform 0.2s;
+}
+
+.toast-item:hover {
+  opacity: 0.9;
+}
+
+.toast-icon {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+
+.toast-success {
+  border-left: 1px solid var(--border);
+}
+.toast-success .toast-icon {
+  background: var(--success-bg);
+  color: var(--success);
+}
+
+.toast-error {
+  border-left: 1px solid var(--border);
+}
+.toast-error .toast-icon {
+  background: var(--error-bg);
+  color: var(--error);
+}
+
+.toast-warning {
+  border-left: 1px solid var(--border);
+}
+.toast-warning .toast-icon {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.toast-info {
+  border-left: 1px solid var(--border);
+}
+.toast-info .toast-icon {
+  background: var(--accent-light);
+  color: var(--accent);
+}
+
+.toast-msg {
+  flex: 1;
+  word-break: break-word;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

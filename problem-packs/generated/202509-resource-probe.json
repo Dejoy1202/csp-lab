@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "n": 500000,
+      "budget": 1,
+      "expected": 0,
+      "timeMs": 609,
+      "memoryKb": 26904
+    },
+    {
+      "n": 500000,
+      "budget": 2787,
+      "expected": 0,
+      "timeMs": 607,
+      "memoryKb": 26952
+    },
+    {
+      "n": 500000,
+      "budget": 2788,
+      "expected": 1,
+      "timeMs": 641,
+      "memoryKb": 26816
+    },
+    {
+      "n": 500000,
+      "budget": 499903969288388,
+      "expected": 499999,
+      "timeMs": 609,
+      "memoryKb": 27020
+    },
+    {
+      "n": 500000,
+      "budget": 499903969288389,
+      "expected": 500000,
+      "timeMs": 39,
+      "memoryKb": 12748
+    }
+  ]
+}

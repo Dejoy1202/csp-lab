@@ -1,0 +1,50 @@
+[
+  {
+    "position": 2,
+    "label": "小规模数字变换",
+    "expectedStatus": "WA",
+    "expectedScore": 80,
+    "edits": [
+      [
+        "array<int,512>inverse{};",
+        "if(n>100||m>20){cout<<0;return 0;}array<int,512>inverse{};"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "label": "只支持翻转",
+    "expectedStatus": "WA",
+    "expectedScore": 50,
+    "edits": [
+      [
+        "if(v[0]==1){",
+        "if(v[0]==1){cout<<0;return 0;"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "label": "只支持n≤10",
+    "expectedStatus": "WA",
+    "expectedScore": 30,
+    "edits": [
+      [
+        "int op,n;cin>>op>>n;",
+        "int op,n;cin>>op>>n;if(n>10){cout<<0;return 0;}"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "label": "只支持n≤10的数据包",
+    "expectedStatus": "WA",
+    "expectedScore": 20,
+    "edits": [
+      [
+        "int n;long long w;cin>>n>>w;",
+        "int n;long long w;cin>>n>>w;if(n>10){cout<<0;return 0;}"
+      ]
+    ]
+  }
+]

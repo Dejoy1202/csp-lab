@@ -1,0 +1,95 @@
+{
+  "batch": "202603",
+  "status": "PASS",
+  "ordinaryAccount": true,
+  "liveDocker": true,
+  "examId": 55,
+  "durationSeconds": 14400,
+  "totalScore": 500,
+  "sampleScore": 0,
+  "construction": null,
+  "extraWitnesses": [
+    {
+      "label": "scientific-notation",
+      "problem": "202603-2",
+      "submissionId": 224,
+      "status": "AC",
+      "score": 100
+    },
+    {
+      "label": "error-below-one-thousandth",
+      "problem": "202603-2",
+      "submissionId": 225,
+      "status": "AC",
+      "score": 100
+    },
+    {
+      "label": "error-above-one-thousandth",
+      "problem": "202603-2",
+      "submissionId": 226,
+      "status": "WA",
+      "score": 0
+    },
+    {
+      "label": "nonfinite-rejected",
+      "problem": "202603-2",
+      "submissionId": 227,
+      "status": "WA",
+      "score": 0
+    },
+    {
+      "label": "small-scales-only",
+      "problem": "202603-4",
+      "submissionId": 228,
+      "status": "WA",
+      "score": 50
+    },
+    {
+      "label": "small-scales-only",
+      "problem": "202603-5",
+      "submissionId": 229,
+      "status": "WA",
+      "score": 30
+    }
+  ],
+  "partialScore": 85,
+  "partialSubmissionId": 223,
+  "highestScorePreserved": true,
+  "evidence": [
+    {
+      "problem": "202603-1",
+      "submissionId": 217,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202603-2",
+      "submissionId": 218,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202603-3",
+      "submissionId": 219,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202603-4",
+      "submissionId": 220,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202603-5",
+      "submissionId": 221,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+[
+  {
+    "position": 1,
+    "name": "ignore-zero-pair",
+    "reason": "0和1也是合法相邻数对",
+    "edits": [
+      [
+        "a[i]-a[i-1]==1",
+        "a[i-1]>0 && a[i]-a[i-1]==1"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "forget-sort",
+    "reason": "输入顺序不保证有序",
+    "edits": [
+      [
+        "sort(a.begin(),a.end());",
+        ""
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "double-count-overlap",
+    "reason": "重叠区域只能计一次",
+    "edits": [
+      [
+        "bool grid[100][100]={}",
+        "int grid[100][100]={}"
+      ],
+      [
+        "grid[x][y]=true",
+        "++grid[x][y]"
+      ],
+      [
+        "for(bool painted:row)",
+        "for(int painted:row)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "count-boundary-grid-points",
+    "reason": "连续面积与端点数量不同，零面积矩形贡献0",
+    "edits": [
+      [
+        "grid[100][100]",
+        "grid[101][101]"
+      ],
+      [
+        "x<c",
+        "x<=c"
+      ],
+      [
+        "y<d",
+        "y<=d"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "always-case-sensitive",
+    "reason": "标志0时忽略字母大小写",
+    "edits": [
+      [
+        "cin>>pattern>>option>>n;",
+        "cin>>pattern>>option>>n;option=1;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "output-normalized-instead-original",
+    "reason": "输出必须保留原始字符串及顺序",
+    "edits": [
+      [
+        "cout<<text",
+        "cout<<search"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "cost-int32-overflow",
+    "reason": "一百万条需求的总费用可超过32位范围",
+    "edits": [
+      [
+        "long long answer=0",
+        "unsigned int answer=0"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "overwrite-repeated-customers",
+    "reason": "同一位置的多条需求都应累计",
+    "edits": [
+      [
+        "    for(auto c:clients)answer+=1LL*c.quantity*distance[(c.x-1)*n+c.y-1];",
+        "    vector<int> quantity(n*n);\n    for(auto c:clients)quantity[(c.x-1)*n+c.y-1]=c.quantity;\n    for(int p=0;p<n*n;++p)if(quantity[p])answer+=1LL*quantity[p]*distance[p];"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "truncate-board-height-int32",
+    "reason": "n最大10的15次方，不能用32位",
+    "edits": [
+      [
+        "unsigned long long n",
+        "unsigned int n"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "omit-one-tile-orientation",
+    "reason": "L型三格骨牌的四个朝向均可使用",
+    "edits": [
+      [
+        "missing<4",
+        "missing<3"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "skip-first-adjacent-pair",
+    "reason": "排序后第一个相邻数对也须检查",
+    "edits": [
+      [
+        "for(int i=1;i<n;++i)",
+        "for(int i=2;i<n;++i)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "miss-coordinate-99-cell",
+    "reason": "坐标100之前的最后一列也有面积",
+    "edits": [
+      [
+        "x<c",
+        "x<c&&x<99"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "prefix-instead-substring",
+    "reason": "匹配不要求从字符串开头开始",
+    "edits": [
+      [
+        "search.find(pattern)!=string::npos",
+        "search.find(pattern)==0"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "ignore-blocked-cells",
+    "reason": "障碍格不能穿越",
+    "edits": [
+      [
+        "distance[(x-1)*n+y-1]=-2;",
+        "distance[(x-1)*n+y-1]=-1;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "wrong-modulus",
+    "reason": "方案数取模必须使用题目指定模数",
+    "edits": [
+      [
+        "MOD=1000000007",
+        "MOD=1000000009"
+      ]
+    ]
+  }
+]

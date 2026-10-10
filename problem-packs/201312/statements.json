@@ -1,0 +1,140 @@
+[
+  {
+    "title": "出现次数最多的数",
+    "tags": [
+      "计数",
+      "模拟"
+    ],
+    "statement": "给定一个正整数序列，找出出现频率最高的数。如果多个数并列，选择数值最小者。",
+    "inputDescription": "第一行给出序列长度 $n$；第二行给出 $n$ 个正整数 $s_1,s_2,\\ldots,s_n$。",
+    "outputDescription": "输出频率最高且数值最小的整数。",
+    "constraintsDescription": "$1 \\le n \\le 1000$，$1 \\le s_i \\le 10000$。",
+    "samples": [
+      {
+        "input": "7\n4 8 4 8 1 8 4\n",
+        "output": "4\n"
+      }
+    ],
+    "code": "201312-1",
+    "sourceYear": 2013,
+    "sourceBatch": "201312",
+    "sourcePosition": 1,
+    "difficulty": "EASY",
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "sourceUrl": "https://www.scse.uestc.edu.cn/__local/7/36/CB/C67A8B2B1DD9BC9DD1DDA159E1A_714B40DB_43076.pdf?e=.pdf",
+    "scoringNotes": "本站模拟评分：10 个独立测试点，每点 10 分。使用自行构造的数据，覆盖边界、退化输入与随机分布；未使用官方隐藏数据。"
+  },
+  {
+    "title": "ISBN 号码",
+    "tags": [
+      "字符串",
+      "模拟"
+    ],
+    "statement": "输入形如 `d-ddd-ddddd-c` 的 ISBN。前九个位置是数字，最后的校验字符可以是数字或大写 `X`。将前九个数字依次记作 $a_1,\\ldots,a_9$，计算\n\n$$r=\\left(\\sum_{i=1}^{9}i a_i\\right)\\bmod 11.$$\n\n当 $r=10$ 时，正确校验字符为 `X`；其他情况下为对应数字。判断输入校验字符是否正确，并在错误时修正它。三个连字符的位置保持不变。",
+    "inputDescription": "一行合法格式的 ISBN 字符串，共 13 个字符。",
+    "outputDescription": "校验字符正确时输出 `Right`；否则输出替换最后一个字符后的完整 ISBN。",
+    "constraintsDescription": "前三段分别包含 1、3、5 位数字；最后一段为一位数字或 `X`。",
+    "samples": [
+      {
+        "input": "1-234-56789-0\n",
+        "output": "1-234-56789-X\n"
+      },
+      {
+        "input": "1-234-56789-X\n",
+        "output": "Right\n"
+      }
+    ],
+    "code": "201312-2",
+    "sourceYear": 2013,
+    "sourceBatch": "201312",
+    "sourcePosition": 2,
+    "difficulty": "EASY",
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "sourceUrl": "https://www.scse.uestc.edu.cn/__local/7/36/CB/C67A8B2B1DD9BC9DD1DDA159E1A_714B40DB_43076.pdf?e=.pdf",
+    "scoringNotes": "本站模拟评分：10 个独立测试点，每点 10 分。使用自行构造的数据，覆盖边界、退化输入与随机分布；未使用官方隐藏数据。"
+  },
+  {
+    "title": "最大的矩形",
+    "tags": [
+      "单调栈",
+      "枚举"
+    ],
+    "statement": "有 $n$ 根宽度为 1 的柱子相邻放置，第 $i$ 根高度为 $h_i$。求完全位于柱形轮廓内部、边平行于坐标轴的矩形所能取得的最大面积。",
+    "inputDescription": "第一行是 $n$；第二行是 $n$ 个高度 $h_1,\\ldots,h_n$。",
+    "outputDescription": "输出最大矩形的面积。",
+    "constraintsDescription": "使用原始范围：$1 \\le n \\le 1000$，$1 \\le h_i \\le 10000$。",
+    "samples": [
+      {
+        "input": "4\n2 4 3 5\n",
+        "output": "9\n"
+      }
+    ],
+    "code": "201312-3",
+    "sourceYear": 2013,
+    "sourceBatch": "201312",
+    "sourcePosition": 3,
+    "difficulty": "MEDIUM",
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "sourceUrl": "https://www.scse.uestc.edu.cn/__local/7/36/CB/C67A8B2B1DD9BC9DD1DDA159E1A_714B40DB_43076.pdf?e=.pdf",
+    "scoringNotes": "本站模拟评分：10 个独立测试点，每点 10 分。使用自行构造的数据，覆盖边界、退化输入与随机分布；未使用官方隐藏数据。"
+  },
+  {
+    "title": "有趣的数",
+    "tags": [
+      "动态规划",
+      "组合数学"
+    ],
+    "statement": "统计满足以下条件的 $n$ 位十进制整数：\n\n- 数字仅取自 $\\{0,1,2,3\\}$，并且四种数字均至少出现一次。\n- 每一个 0 都在每一个 1 左边；每一个 2 都在每一个 3 左边。\n- 第一位不为 0。\n\n只需输出数量对 $10^9+7$ 取模的结果。",
+    "inputDescription": "输入仅含一个整数 $n$。本题保持原始单组输入格式。",
+    "outputDescription": "输出满足条件的整数数量对 $1000000007$ 取模的结果。",
+    "constraintsDescription": "$4 \\le n \\le 1000$。",
+    "samples": [
+      {
+        "input": "5\n",
+        "output": "20\n"
+      }
+    ],
+    "code": "201312-4",
+    "sourceYear": 2013,
+    "sourceBatch": "201312",
+    "sourcePosition": 4,
+    "difficulty": "MEDIUM",
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "sourceUrl": "https://www.scse.uestc.edu.cn/__local/7/36/CB/C67A8B2B1DD9BC9DD1DDA159E1A_714B40DB_43076.pdf?e=.pdf",
+    "scoringNotes": "本站模拟评分：10 个独立测试点，每点 10 分。使用自行构造的数据，覆盖边界、退化输入与随机分布；未使用官方隐藏数据。"
+  },
+  {
+    "title": "I'm stuck!",
+    "tags": [
+      "有向图",
+      "搜索"
+    ],
+    "statement": "给定 $R \\times C$ 的字符地图。`S` 是起点，`T` 是目标，且各有一个。不能走出地图或进入 `#`。每次移动到一个相邻格，允许的方向由当前格决定：\n\n| 当前格 | 可以离开的方向 |\n| --- | --- |\n| `+`、`S`、`T` | 上、下、左、右 |\n| `-` | 左、右 |\n| `\\|` | 上、下 |\n| `.` | 下 |\n\n到达 `T` 后也允许继续移动。若从 `S` 不能到达 `T`，输出指定提示；否则统计从 `S` 可到达、但从该格无法再到达 `T` 的格子数量。",
+    "inputDescription": "第一行输入 $R,C$；接下来 $R$ 行，每行 $C$ 个字符，只包含 `#`、`+`、`-`、`|`、`.`、`S`、`T`。",
+    "outputDescription": "目标不可达时输出 `I'm stuck!`；否则输出满足条件的格子数量。",
+    "constraintsDescription": "$1 \\le R,C \\le 50$，$RC \\ge 2$；地图恰有一个起点和一个目标。",
+    "samples": [
+      {
+        "input": "2 3\nS+T\n.#.\n",
+        "output": "2\n"
+      },
+      {
+        "input": "1 3\nS.T\n",
+        "output": "I'm stuck!\n"
+      }
+    ],
+    "code": "201312-5",
+    "sourceYear": 2013,
+    "sourceBatch": "201312",
+    "sourcePosition": 5,
+    "difficulty": "HARD",
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "sourceUrl": "https://www.scse.uestc.edu.cn/__local/7/36/CB/C67A8B2B1DD9BC9DD1DDA159E1A_714B40DB_43076.pdf?e=.pdf",
+    "scoringNotes": "本站模拟评分：10 个独立测试点，每点 10 分。使用自行构造的数据，覆盖边界、退化输入与随机分布；未使用官方隐藏数据。"
+  }
+]

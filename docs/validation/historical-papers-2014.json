@@ -1,0 +1,22 @@
+{
+  "201403": {
+    "status": "PASS",
+    "problems": 5,
+    "formalPoints": 100,
+    "differentialChecks": 200,
+    "selectedWrongProgramsRejected": 10,
+    "examScore": 500,
+    "partialScore": 20,
+    "examId": 45
+  },
+  "201409": {
+    "status": "PASS",
+    "problems": 5,
+    "formalPoints": 100,
+    "differentialChecks": 200,
+    "selectedWrongProgramsRejected": 10,
+    "examScore": 500,
+    "partialScore": 85,
+    "examId": 44
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "batch": "202603",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "202603-1",
+      "mutant": "small-values-only",
+      "reason": "有效位不能只考虑256以内",
+      "rejectedAtTestPoint": 15,
+      "status": "WA",
+      "inputSha256": "87d3ba1330a55aa0cb9cbb6163beb6a4778524462a4b51bb2fdd8456af779c56",
+      "sourceSha256": "aea3c557f98e95a45edd43550f4aa6a210178967d0e48049854efb8768aff8fc"
+    },
+    {
+      "problem": "202603-1",
+      "mutant": "fixed-thirty-two-bits",
+      "reason": "不计算存储补零",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "a6e2b7a040683432de03a18fd8a1939a2fdf82585b364bfc874bdd4095c4cae1",
+      "sourceSha256": "37b08a8e74c6079eac5a526e00951a116ed16dfc2187ca7eabcea26cb6a2f23d"
+    },
+    {
+      "problem": "202603-2",
+      "mutant": "all-fractional",
+      "reason": "普通任务不可拆分",
+      "rejectedAtTestPoint": 20,
+      "status": "WA",
+      "inputSha256": "5559cf8e59e879292442be0d921393af263be7297d8b7982e51ba491b1bf0840",
+      "sourceSha256": "212071286582b0a97daa34e5643b40f80ab85aa7dcc6e22da5fbc229a340b2c2"
+    },
+    {
+      "problem": "202603-2",
+      "mutant": "unbounded-regular",
+      "reason": "普通任务只能选一次",
+      "rejectedAtTestPoint": 18,
+      "status": "WA",
+      "inputSha256": "52c896d030a4f9b14a8860f72adaf808c799a5294747635a72020f9c4b7df742",
+      "sourceSha256": "5e4075379d9832b09b2f467af666f41a4ce46eee38a57935e4da0b52515fa743"
+    },
+    {
+      "problem": "202603-2",
+      "mutant": "integer-fractional-gain",
+      "reason": "分数收益不能用整除",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "a96957a1ed068cf3b0b61516d26ea54782aa4a810cb12603fada66fd5581be3b",
+      "sourceSha256": "6f9a654c3d01bd1bfddecb1a1ba1128dadefe08be6d6341398b5fc90b3818929"
+    },
+    {
+      "problem": "202603-3",
+      "mutant": "first-fit",
+      "reason": "必须选最短合适空洞，不是最早空洞",
+      "rejectedAtTestPoint": 11,
+      "status": "WA",
+      "inputSha256": "0a556eda858497443b3ecfee6e1c82b4ebdebf8132a2ac94b5f1d548e59bb75e",
+      "sourceSha256": "609bdb56da02a79ce336a562ebedd072ade9dd6d1698de5be287d688a7af1a0a"
+    },
+    {
+      "problem": "202603-3",
+      "mutant": "no-left-coalescing",
+      "reason": "释放后必须合并相邻空洞",
+      "rejectedAtTestPoint": 11,
+      "status": "WA",
+      "inputSha256": "0a556eda858497443b3ecfee6e1c82b4ebdebf8132a2ac94b5f1d548e59bb75e",
+      "sourceSha256": "8027504ea188448874b5a1eaa126a910011c97209ada067a178d45e5e0b6072c"
+    },
+    {
+      "problem": "202603-3",
+      "mutant": "missing-wrap",
+      "reason": "消息地址需要循环",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "5976b09af0bad087266b935563bc26cb0fa359c2731ffb4a8be78b58a52ac07d",
+      "sourceSha256": "fcf480bb1df1e9c2815f4d6b672e70d1b9c8cc31dee73e17488fcb72fc68ba6d"
+    },
+    {
+      "problem": "202603-3",
+      "mutant": "thirty-two-bit-send-sum",
+      "reason": "消息地址总和可超过32位",
+      "rejectedAtTestPoint": 17,
+      "status": "WA",
+      "inputSha256": "8814e855f0ab7fa1aa91c57d0eb8ef081600a589d396ef073a33acf819474d9f",
+      "sourceSha256": "68517e3403eae71c71f0a1766824b3c39aad67c5308c7b24fc3cf22cec455865"
+    },
+    {
+      "problem": "202603-4",
+      "mutant": "divide-after-modulo",
+      "reason": "奇数模数下除2需使用逆元",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "d4de23181ddb2ec1d573c15e09a4b5201f2d2d8027a0e1e0902536471e0a98cd",
+      "sourceSha256": "83a0ab5aa6e7728e10b627483f754a9f9c057528c0368403b91a078026743fbc"
+    },
+    {
+      "problem": "202603-4",
+      "mutant": "missing-cross-term",
+      "reason": "高位更新必须包含低位与原高位交叉项",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "f4d92459a479eb38956d57c4dc439034f9cbce40ed2d3c1aaa25b1b247ec0ee6",
+      "sourceSha256": "079ced4c5df4316b1f6f1a029ff114a95c2378c5593b78b2dd90ed222f1e480a"
+    },
+    {
+      "problem": "202603-4",
+      "mutant": "do-not-push",
+      "reason": "部分区间查询前必须下传懒标记",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "f4d92459a479eb38956d57c4dc439034f9cbce40ed2d3c1aaa25b1b247ec0ee6",
+      "sourceSha256": "2f68849dcb249082ff5b76a2c7fe1aac6f5975683e3f94522abd9e3c376f4662"
+    },
+    {
+      "problem": "202603-5",
+      "mutant": "no-online-decoding",
+      "reason": "在线事件必须根据上次答案解密",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "b0adefdd6b10c7b9c4ecd9846b436a3f1906d670a902b43f3cf01947b6f6487c",
+      "sourceSha256": "b2fcd15daea864d8bbc2233a6a4b72320dcf0b0d235b07af010477fcbf5f1670"
+    },
+    {
+      "problem": "202603-5",
+      "mutant": "ignore-stations",
+      "reason": "维修站切分路径并重置备胎",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "68e1defbda58904713e2231a09f09666e4c7274b805465718712358cc8fa6b2f",
+      "sourceSha256": "d43340bb403bdefe7a5208bb03c0d16dfd4d0417077992a04b977bf581ea4542"
+    },
+    {
+      "problem": "202603-5",
+      "mutant": "two-spare-tires",
+      "reason": "两次爆胎中间没有维修站就无法到达",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "68e1defbda58904713e2231a09f09666e4c7274b805465718712358cc8fa6b2f",
+      "sourceSha256": "0ff2c30e3386346aade6f9377beb06718863f44285beab8637b87030dff77e1d"
+    },
+    {
+      "problem": "202603-5",
+      "mutant": "deduplicate-plans",
+      "reason": "重复计划应分别统计",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "68e1defbda58904713e2231a09f09666e4c7274b805465718712358cc8fa6b2f",
+      "sourceSha256": "a2aeed6702fd1406681fe285360b267e446fe762022c9d14ed6f1d79fc91ba68"
+    },
+    {
+      "problem": "202603-1",
+      "mutant": "omit-leading-effective-bit",
+      "reason": "有效位数包括最高位1",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "a6e2b7a040683432de03a18fd8a1939a2fdf82585b364bfc874bdd4095c4cae1",
+      "sourceSha256": "59f431b7e02edb9fdb8c7da458de3cfb439ca0fd8a9f210022f027130d7d1fcc"
+    },
+    {
+      "problem": "202603-2",
+      "mutant": "fractional-gain-ascending",
+      "reason": "分数任务按单位收益降序选择",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "0904674d81b2b5c2d2bb3ae439e1300b6a63a686fbbcd072be707df0ed247d4d",
+      "sourceSha256": "c9bac7567282e878a6232bc97b3a06ba04dfe3a28e836cc02c16ffb4b36df1c4"
+    },
+    {
+      "problem": "202603-3",
+      "mutant": "skip-exact-fit-hole",
+      "reason": "恰好同长度的空洞也能分配",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "d784ed63dc8deaec6b0b36b825dbb79d05b46c039c9b739d16a988bfc7346de4",
+      "sourceSha256": "a5e0f6cc6bd42bb377ff21237b65016f8aab4f1e03e80709b477a602b0ff370a"
+    },
+    {
+      "problem": "202603-4",
+      "mutant": "thirty-two-bit-answer",
+      "reason": "输出数阵值可超过32位整数",
+      "rejectedAtTestPoint": 6,
+      "status": "WA",
+      "inputSha256": "050bebf8b1afac769a35b04f40de6a2b32f9a3fbb1ccb2be0e5d52c5e4776fb1",
+      "sourceSha256": "27edd1186d0633d589cc59054626850ca69d6434ab08309817773ebfbe92c835"
+    },
+    {
+      "problem": "202603-5",
+      "mutant": "ordered-component-pair-key",
+      "reason": "无向计划端点换序仍是同一关联",
+      "rejectedAtTestPoint": 1,
+      "status": "RE",
+      "inputSha256": "68e1defbda58904713e2231a09f09666e4c7274b805465718712358cc8fa6b2f",
+      "sourceSha256": "eddac01f86aba469e3177cb13e0224a4c2e9459d71dad4341e228f2ac95fac9e"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

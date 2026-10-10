@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "formalPoints": 20,
+  "smallChecks": 48,
+  "samples": 1,
+  "mutants": [
+    {
+      "problem": "202609-1",
+      "mutant": "tie-chooses-upper",
+      "reason": "精确中点必须选横坐标较小项",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "202bff0243132aac323163561a7bfa0794ff57db98360789386db06583d6f609",
+      "sourceSha256": "1ff0b2077aca7a3eab449464ff0b90794fc8ec5ed9b2d35adfd8e4bf6b9f5ceb"
+    },
+    {
+      "problem": "202609-1",
+      "mutant": "sum-standard-deviations",
+      "reason": "独立环节合并方差应累加标准差的平方",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "202bff0243132aac323163561a7bfa0794ff57db98360789386db06583d6f609",
+      "sourceSha256": "c4618c404bbfbd11b8eca3b9bd1afdda75a11fb5c0d1c81c89b292274d636435"
+    },
+    {
+      "problem": "202609-2",
+      "mutant": "exclude-exact-capacity",
+      "reason": "可靠性恰好等于q仍然合法",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "e054989dcf192184c94b95106c795e654403e4e11f97cda0d26da85c577029e4",
+      "sourceSha256": "cad633e2e0f7f47356bf1e88ab34f7b671683011326e45724820b642b2b904d3"
+    },
+    {
+      "problem": "202609-2",
+      "mutant": "unbounded-instead-zero-one",
+      "reason": "每个环节只能选择一次",
+      "rejectedAtTestPoint": 6,
+      "status": "WA",
+      "inputSha256": "4d1fe2f9cfbb06f8d8ef612673f78ec9a385ea0d7ca6d4bd7f9be8b1627f180d",
+      "sourceSha256": "07191226a46174683c6eaeebb99fbca6099846b465f8136d896ea4504ee065a8"
+    },
+    {
+      "problem": "202609-3",
+      "mutant": "ignore-preferred-cpu",
+      "reason": "偏好CPU速度翻倍且余1单位向上取整",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "ddd013b11987f96c50e9aea76b39f79289d18bc86f97723a2b7ac714c27c9707",
+      "sourceSha256": "d2609c7a3ba731ac6e260156fcce9642862068131fb8193226b50e06a50246d0"
+    },
+    {
+      "problem": "202609-3",
+      "mutant": "return-after-rotation",
+      "reason": "同时刻必须先归还到旧队列，再循环移位",
+      "rejectedAtTestPoint": 11,
+      "status": "WA",
+      "inputSha256": "a3bade66dab54db6de786ae336e871f43694e06e387ad2c7884dfd7519e116b0",
+      "sourceSha256": "b0ff39b4280b97674aa2efdc1d7aeec61fcaaa0fb9c7541158569926801dd20d"
+    },
+    {
+      "problem": "202609-4",
+      "mutant": "ignore-floor-ratio",
+      "reason": "op=1包含非整除的倍数区间",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "e1a38315831d9eed3b9be15d389052175cf3fc7f2e809732c97c785b91ad6856",
+      "sourceSha256": "b047fcb6288fb4af7292cf07496d12aaa48171325983c535450459f14380cda2"
+    },
+    {
+      "problem": "202609-4",
+      "mutant": "correct-count-empty-plan",
+      "reason": "仅组数正确只能获得40%的分数，不能满分",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "e1a38315831d9eed3b9be15d389052175cf3fc7f2e809732c97c785b91ad6856",
+      "sourceSha256": "1f1b1d709755b244ead8b8d6c4479584290bcb3d8696955af02676f4c8ccce8d"
+    },
+    {
+      "problem": "202609-5",
+      "mutant": "omit-self-pairs",
+      "reason": "点对允许两个端点为同一节点",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "3d31ee72408f4a2d1152c2821b7e0ce132cd76018cec37b2c2b9f63594e10237",
+      "sourceSha256": "be884313388c276a9cf4c9bd26e8e40ccd7d5ccfd7354758436cb2a73bda4d74"
+    },
+    {
+      "problem": "202609-5",
+      "mutant": "int32-total-pairs",
+      "reason": "十万节点合格点对数量可能超过32位",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "4abdd6b9e1acf23f32a19eb591868a9b1a404bc23832c1c6007ea414fbf3c078",
+      "sourceSha256": "6e8987bb1f52bb1a51cc26ebc0d4539a511bee2f030cea69d0651c32c95ab389"
+    },
+    {
+      "problem": "202609-5",
+      "mutant": "ignore-distance-complement",
+      "reason": "两段路径长度余数必须互补",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "3d31ee72408f4a2d1152c2821b7e0ce132cd76018cec37b2c2b9f63594e10237",
+      "sourceSha256": "f06e453b8f34f739b9a188f7fb323ffa0051c2682fe364b456346bf41a3e8b30"
+    },
+    {
+      "problem": "202609-1",
+      "mutant": "double-exact-tie",
+      "reason": "浮点消减误差会让数学上的精确中点选右",
+      "rejectedAtTestPoint": 6,
+      "status": "WA",
+      "inputSha256": "3dc952a782d8c4899e03a948c5f6905b0bc280d1e1e533a749a5e62558d03b3f",
+      "sourceSha256": "889fca4384799a2046faac89c50a43ac51f2b8297d1c3f94c1e43f4d30c035ef"
+    },
+    {
+      "problem": "202609-1",
+      "mutant": "epsilon-too-large",
+      "reason": "真正较近的右侧不能被过大容差当作平局",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "3dab0e62fd2be2fb9d427b4762ce1b78fe3ecef8241310144965f182f04d4302",
+      "sourceSha256": "89737dc515d97b674b81d4061258a33fa3bba13d1e9278e418f4d3ff710b5bbd"
+    }
+  ],
+  "databasePublished": true,
+  "historicalSubmissionsModified": false,
+  "authorizedActiveExamFinished": true,
+  "databaseVersion": 3,
+  "databaseTestsVerified": 20,
+  "liveApiRegression": [
+    {
+      "test": "double-midpoint",
+      "submissionId": 120,
+      "status": "WA",
+      "score": 90,
+      "testPoints": 20
+    },
+    {
+      "test": "integer-reference",
+      "submissionId": 121,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    }
+  ]
+}

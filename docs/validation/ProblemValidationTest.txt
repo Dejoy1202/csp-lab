@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: dev.csplab.service.ProblemValidationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.220 s -- in dev.csplab.service.ProblemValidationTest

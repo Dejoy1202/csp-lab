@@ -1,0 +1,176 @@
+[
+  {
+    "statement": "统计给定正整数中，二进制有效位的0和1数量相同的数有多少个。有效位从最高的1开始，不计前导零；输入中重复出现的数分别计数。",
+    "inputDescription": "第一行是 $n$，第二行是 $n$ 个正整数。",
+    "outputDescription": "输出符合条件的数的个数。",
+    "constraintsDescription": "$1\\le n\\le100$，$1\\le a_i\\le10^9$；50%的点 $a_i\\le256$。",
+    "samples": [
+      {
+        "input": "6\n1 2 3 10 12 16\n",
+        "output": "3\n"
+      }
+    ],
+    "title": "平衡数",
+    "difficulty": "EASY",
+    "tags": [
+      "位运算"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "code": "202603-1",
+    "sourceYear": 2026,
+    "sourceBatch": "202603",
+    "sourcePosition": 1,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202603A",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "20个独立点，每点5分，按公开数据性质组织；本站自建数据和模拟评分。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "有 $n$ 项独立任务，总耗时为各任务耗时之和。任务 $i$ 原耗时 $t_i$，满额分配 $a_i$ 杯咖啡可节省 $b_i$ 时间。类型 $o_i=0$ 的任务允许分配任意实数 $x_i\\in[0,a_i]$，节省 $x_i b_i/a_i$；类型 $o_i=1$ 的任务只允许分配0或 $a_i$ 杯。总咖啡量不能超过 $m$，求最小总耗时。",
+    "inputDescription": "第一行 $n,m$。随后每行一个任务，依次为 $o_i,t_i,a_i,b_i$。",
+    "outputDescription": "输出最小总耗时，允许绝对误差严格小于 $10^{-3}$，可使用普通小数或科学计数法。",
+    "constraintsDescription": "$1\\le n\\le200$，$1\\le m\\le1000$，$1\\le a_i\\le100$，$1\\le b_i<t_i\\le10^4$。80%的点全为类型0且 $a_i\\le20$。",
+    "samples": [
+      {
+        "input": "3 5\n0 10 4 6\n1 12 3 8\n0 7 2 3\n",
+        "output": "18.000000000000000\n",
+        "checkerType": "FLOAT_ABS_1E_3"
+      }
+    ],
+    "title": "机器人项目管理",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "背包",
+      "贪心",
+      "浮点精度"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "code": "202603-2",
+    "sourceYear": 2026,
+    "sourceBatch": "202603",
+    "sourcePosition": 2,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202603B",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "20个独立点，每点5分，按公开数据性质组织；本站自建数据和模拟评分。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "模拟 $n$ 个进程的消息队列，内存地址从0起且足够大，初始全部空闲。每个进程的接口按建立顺序编号。\n\n- new p L：建立长度为 $L$ 的新队列。在所有极大连续空闲区间中选择能容纳队列且长度最短的区间，长度相同选择起点最小者；从其左端占用 $L$ 个地址。无限尾段仅在没有合适有限空洞时使用。队列从未发送过消息。输出占用起点。\n- send p：同时给进程的每个现存队列发送一个对象。首次发送写入队列起点，此后写入上次地址加1，越过队列末端时回到起点。可覆盖原对象。输出本次各队列写入地址之和。\n- delete p i：删除第 $i$ 个接口及对应队列，清除对象并释放整段地址，相邻空闲区间合并；该进程后续接口编号减1。不输出。\n\n消息发送不会释放队列；释放后的空间可以重新分配。",
+    "inputDescription": "第一行 $n,q$；随后 $q$ 行为上述三种操作之一。",
+    "outputDescription": "每次new或send各输出一行整数，delete没有输出。地址与地址和可能超过32位。",
+    "constraintsDescription": "$1\\le n\\le100$，$1\\le q\\le8000$，$1\\le L\\le5\\times10^5$。发送时进程至少有一个接口，删除编号存在。40%的点无delete；前80%的点 $q\\le800$ 且 $L\\le10$。",
+    "samples": [
+      {
+        "input": "2 10\nnew 1 2\nnew 2 3\nsend 1\nsend 1\nsend 1\ndelete 1 1\nnew 2 1\nsend 2\ndelete 2 1\nnew 1 4\n",
+        "output": "0\n2\n0\n1\n0\n0\n2\n1\n"
+      }
+    ],
+    "title": "进程通信",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "模拟",
+      "内存分配",
+      "有序集合"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "code": "202603-3",
+    "sourceYear": 2026,
+    "sourceBatch": "202603",
+    "sourcePosition": 3,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202603C",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "20个独立点，每点5分，按公开数据性质组织；本站自建数据和模拟评分。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "定义 $a\\oplus_k b$ 为 $k$ 进制逐位相加并对 $k$ 取模，不向高位进位。若数位为 $a_j,b_j$，结果第 $j$ 位为 $(a_j+b_j)\\bmod k$。令 $f(0)=0$，$f(x)=x\\oplus_k f(x-1)$。给定奇数 $k$ 和序列 $a$，处理两类操作：\n\n- 1 l r v：把区间中的每个数替换为 $a_i\\oplus_k v$。\n- 2 l r：输出 $f(a_l)\\oplus_k\\cdots\\oplus_k f(a_r)$。\n\n运算是基于 $k$ 的不进位加法，不能替换成二进制按位异或。",
+    "inputDescription": "第一行 $n,m,k$；第二行 $n$ 个初始值；随后 $m$ 行操作。",
+    "outputDescription": "每个类型2操作输出一行非负整数。",
+    "constraintsDescription": "$1\\le n\\le5\\times10^5$，$1\\le m\\le10^4$，奇数 $11\\le k\\le10^9$；$1\\le l\\le r\\le n$。所有时刻的 $a_i$ 和更新参数 $v$ 均在 $[0,10^{12}]$。答案与中间乘积需要64位处理。",
+    "samples": [
+      {
+        "input": "4 5 11\n0 10 11 12\n2 1 4\n1 1 4 10\n2 1 4\n1 2 3 12\n2 2 3\n",
+        "output": "34\n12\n22\n"
+      }
+    ],
+    "title": "异或",
+    "difficulty": "HARD",
+    "tags": [
+      "数位",
+      "线段树",
+      "懒标记"
+    ],
+    "timeLimitMs": 6000,
+    "memoryLimitMb": 1024,
+    "code": "202603-4",
+    "sourceYear": 2026,
+    "sourceBatch": "202603",
+    "sourcePosition": 4,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202603D",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "四档捆绑子任务20/30/20/30分：小规模低值、小规模、k的倍数、完整范围。整组通过才得分；本站自建数据及模拟评分。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "有一棵城市树，初始每条道路都未翻修。给出若干有维修站的城市及固定旅游计划 $(s_i,t_i)$，沿树上唯一路径行驶。每个计划都独立从全新轮胎和一个可用备胎开始；每经过一条未翻修道路需要消耗一个备胎，若到达下一城市前已经需要第二次更换，则无法继续。到达维修站后全部轮胎和备胎恢复完好。翻修后的道路不损坏轮胎。\n\n依次处理事件：1 u v 翻修一条尚未翻修的现有道路；2 询问可完整到达终点的计划数量。重复的计划分别计数。维修站位于终点也必须先成功到达才能修复。\n\n输入用 $X\\in\\{0,1\\}$ 强制在线编码。令lastans初始为0，每次类型2后更新为该次答案。类型1读入 $u',v'$ 后，用二进制异或解码 $u=u'\\oplus(X\\cdot lastans)$、$v=v'\\oplus(X\\cdot lastans)$；其他输入不编码。",
+    "inputDescription": "依次输入：$n,X$；$n-1$ 条边；维修站数量 $k$；$k$ 个不同城市；计划数量 $m$；$m$ 对起终点；事件数量 $q$；$q$ 个事件。",
+    "outputDescription": "每次类型2输出当前可行计划数量。",
+    "constraintsDescription": "$2\\le n\\le10^5$，$1\\le m\\le10^5$，$1\\le q\\le2\\times10^5$，$1\\le k\\le\\min(n,20)$，$X\\in\\{0,1\\}$，$s_i\\ne t_i$。解码后道路存在且此前未翻修。",
+    "samples": [
+      {
+        "input": "5 1\n1 2\n2 3\n3 4\n3 5\n1\n3\n4\n1 4\n2 5\n1 2\n4 5\n7\n2\n1 2 1\n2\n1 6 7\n2\n1 7 0\n2\n",
+        "output": "3\n4\n4\n4\n"
+      }
+    ],
+    "title": "旅游计划 - Easy Ver.",
+    "difficulty": "HARD",
+    "tags": [
+      "树",
+      "并查集",
+      "在线算法"
+    ],
+    "timeLimitMs": 5000,
+    "memoryLimitMb": 1024,
+    "code": "202603-5",
+    "sourceYear": 2026,
+    "sourceBatch": "202603",
+    "sourcePosition": 5,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202603E",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "四档捆绑子任务10/20/30/40分：n,m≤10；n,m,q≤100；完整规模X=0；完整规模可在线。整组通过才得分；本站模拟评分。",
+    "outputLimitKb": 4096,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  }
+]

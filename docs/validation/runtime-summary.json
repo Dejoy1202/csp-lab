@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-09",
+  "health": "UP",
+  "csp202403Ready": true,
+  "cspProblems": 5,
+  "originalProblems": 12,
+  "originalsSolved": 12,
+  "examDurationSeconds": 14400,
+  "maxExamScore": 500,
+  "bestFinishedExamScore": 500,
+  "javaUnitTests": 8,
+  "scoringUnitTests": 2,
+  "liveIntegrationTests": 19
+}

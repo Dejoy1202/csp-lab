@@ -1,0 +1,33 @@
+{
+  "preparedAt": "2026-10-10T13:31:46.041171+00:00",
+  "sourceFilesCopied": 421,
+  "copiedBytes": 237901494,
+  "knownConfiguredSecretsIncluded": false,
+  "excluded": [
+    "password configuration",
+    "local runtime",
+    "dependencies",
+    "build outputs",
+    "database backups",
+    "browser profiles",
+    "temporary results"
+  ],
+  "formalProblemPacks": 50,
+  "largestFileBytes": 46936288,
+  "filesAboveBrowser25MiB": [
+    "problem-packs/generated/202509-4.json.gz",
+    "problem-packs/generated/202605-4.json.gz"
+  ],
+  "finalVerificationAt": "2026-10-10T13:34:30.159369+00:00",
+  "filesReadyForGit": 424,
+  "unchangedSourceFilesHashMatched": 419,
+  "publicationChanges": [
+    "README.md",
+    ".gitignore",
+    ".gitattributes",
+    "GITHUB_UPLOAD.md"
+  ],
+  "formalProblemPacksHashMatched": 50,
+  "finalKnownSecretScan": "PASS",
+  "gitIgnoreRulesChecked": true
+}

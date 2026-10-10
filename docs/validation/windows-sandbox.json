@@ -1,0 +1,88 @@
+{
+  "success": true,
+  "checks": [
+    {
+      "check": "process-limit",
+      "status": "OK",
+      "timeMs": 16,
+      "memoryKb": 2028
+    },
+    {
+      "check": "compile-error",
+      "status": "CE"
+    },
+    {
+      "check": "separate-compiler-workspaces",
+      "status": "DENIED"
+    },
+    {
+      "check": "compiler-file-isolation",
+      "status": "DENIED"
+    },
+    {
+      "check": "compiler-disk-limit",
+      "status": "CE/OLE",
+      "limitMb": 64
+    },
+    {
+      "check": "correct-output",
+      "status": "OK",
+      "timeMs": 31,
+      "memoryKb": 1984
+    },
+    {
+      "check": "file-and-environment-isolation",
+      "status": "OK",
+      "timeMs": 16,
+      "memoryKb": 2092
+    },
+    {
+      "check": "caught-allocation-failure",
+      "status": "MLE",
+      "timeMs": 16,
+      "memoryKb": 65752
+    },
+    {
+      "check": "memory-limit",
+      "status": "MLE",
+      "timeMs": 31,
+      "memoryKb": 65820
+    },
+    {
+      "check": "network-isolation",
+      "status": "OK",
+      "timeMs": 235,
+      "memoryKb": 2048
+    },
+    {
+      "check": "output-limit",
+      "status": "OLE",
+      "timeMs": 31,
+      "memoryKb": 1804
+    },
+    {
+      "check": "readonly-profile",
+      "status": "OK",
+      "timeMs": 16,
+      "memoryKb": 1980
+    },
+    {
+      "check": "access-violation",
+      "status": "RE",
+      "timeMs": 16,
+      "memoryKb": 1788
+    },
+    {
+      "check": "readonly-workspace",
+      "status": "OK",
+      "timeMs": 16,
+      "memoryKb": 1972
+    },
+    {
+      "check": "infinite-loop",
+      "status": "TLE",
+      "timeMs": 203,
+      "memoryKb": 1788
+    }
+  ]
+}

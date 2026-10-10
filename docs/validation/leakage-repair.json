@@ -1,0 +1,127 @@
+{
+  "status": "VERIFIED",
+  "problems": [
+    {
+      "problem": "202403-3",
+      "formalPoints": 8,
+      "uniqueInputs": 8,
+      "smallChecks": 31,
+      "newIndependentInputs": 1
+    },
+    {
+      "problem": "202609-4",
+      "formalPoints": 44,
+      "uniqueInputs": 22,
+      "smallChecks": 42,
+      "newIndependentInputs": 2
+    },
+    {
+      "problem": "202609-5",
+      "formalPoints": 25,
+      "uniqueInputs": 25,
+      "smallChecks": 43,
+      "newIndependentInputs": 5
+    }
+  ],
+  "historicalSubmissionsModified": false,
+  "databasePublished": true,
+  "published": [
+    {
+      "problem": "202403-3",
+      "id": 168,
+      "version": 4
+    },
+    {
+      "problem": "202609-4",
+      "id": 219,
+      "version": 3
+    },
+    {
+      "problem": "202609-5",
+      "id": 220,
+      "version": 3
+    }
+  ],
+  "databaseVerification": [
+    {
+      "problem": "202403-3",
+      "version": 4,
+      "testPoints": 8,
+      "status": "MATCH"
+    },
+    {
+      "problem": "202609-4",
+      "version": 3,
+      "testPoints": 44,
+      "status": "MATCH"
+    },
+    {
+      "problem": "202609-5",
+      "version": 3,
+      "testPoints": 25,
+      "status": "MATCH"
+    }
+  ],
+  "liveApiRegression": [
+    {
+      "problem": "202403-3",
+      "test": "no-pivot-row-swap",
+      "submissionId": 122,
+      "status": "WA",
+      "score": 60,
+      "testPoints": 8,
+      "problemVersion": 4,
+      "examId": 14
+    },
+    {
+      "problem": "202403-3",
+      "test": "reference",
+      "submissionId": 123,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8,
+      "problemVersion": 4,
+      "examId": 14
+    },
+    {
+      "problem": "202609-4",
+      "test": "singleton-empty-graph-no-output",
+      "submissionId": 124,
+      "status": "WA",
+      "score": 90,
+      "testPoints": 44,
+      "problemVersion": 3,
+      "examId": 15
+    },
+    {
+      "problem": "202609-4",
+      "test": "reference",
+      "submissionId": 125,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 44,
+      "problemVersion": 3,
+      "examId": 15
+    },
+    {
+      "problem": "202609-5",
+      "test": "zero-updates-no-initial-answer",
+      "submissionId": 126,
+      "status": "WA",
+      "score": 95,
+      "testPoints": 25,
+      "problemVersion": 3,
+      "examId": 15
+    },
+    {
+      "problem": "202609-5",
+      "test": "reference",
+      "submissionId": 127,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 25,
+      "problemVersion": 3,
+      "examId": 15
+    }
+  ]
+}

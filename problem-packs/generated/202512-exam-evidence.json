@@ -1,0 +1,81 @@
+{
+  "batch": "202512",
+  "status": "PASS",
+  "ordinaryAccount": true,
+  "liveDocker": true,
+  "examId": 58,
+  "durationSeconds": 14400,
+  "totalScore": 500,
+  "sampleScore": 0,
+  "construction": null,
+  "extraWitnesses": [
+    {
+      "label": "小规模数字变换",
+      "problem": "202512-2",
+      "submissionId": 250,
+      "status": "WA",
+      "score": 80
+    },
+    {
+      "label": "只支持翻转",
+      "problem": "202512-3",
+      "submissionId": 251,
+      "status": "WA",
+      "score": 50
+    },
+    {
+      "label": "只支持n≤10",
+      "problem": "202512-4",
+      "submissionId": 252,
+      "status": "WA",
+      "score": 30
+    },
+    {
+      "label": "只支持n≤10的数据包",
+      "problem": "202512-5",
+      "submissionId": 254,
+      "status": "WA",
+      "score": 20
+    }
+  ],
+  "partialScore": 55,
+  "partialSubmissionId": 249,
+  "highestScorePreserved": true,
+  "evidence": [
+    {
+      "problem": "202512-1",
+      "submissionId": 242,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202512-2",
+      "submissionId": 243,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202512-3",
+      "submissionId": 244,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202512-4",
+      "submissionId": 245,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202512-5",
+      "submissionId": 246,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    }
+  ]
+}

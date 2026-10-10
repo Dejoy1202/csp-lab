@@ -1,0 +1,88 @@
+.app-header {
+  height: 58px;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  padding: 0 28px;
+  gap: 42px;
+}
+.app-brand {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: var(--text-primary);
+  white-space: nowrap;
+  font-size: 18px;
+}
+.brand-mark {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 23px;
+  color: var(--text-primary);
+}
+.brand-mark span {
+  color: var(--accent);
+}
+.app-header nav {
+  display: flex;
+  height: 100%;
+  gap: 28px;
+  align-items: center;
+}
+.app-header nav a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid transparent;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+.app-header nav a.active {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+.header-tools {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.header-tools button {
+  padding: 7px 4px;
+  border-radius: 4px;
+}
+.header-tools button:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+.account-name {
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.app-content {
+  min-height: calc(100dvh - 58px);
+}
+@media (max-width: 640px) {
+  .app-header {
+    padding: 0 14px;
+    gap: 18px;
+  }
+  .app-header nav {
+    gap: 16px;
+  }
+  .app-brand strong,
+  .account-name {
+    display: none;
+  }
+  .header-tools {
+    gap: 8px;
+  }
+  .app-header nav a {
+    font-size: 13px;
+  }
+}

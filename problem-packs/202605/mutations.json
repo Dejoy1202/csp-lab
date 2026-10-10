@@ -1,0 +1,233 @@
+[
+  {
+    "position": 1,
+    "name": "always-round-half-up",
+    "reason": "小数5且整数部分为偶数时应保持偶数",
+    "edits": [
+      [
+        "b>5||(b==5&&a%2)",
+        "b>=5"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "always-round-half-down",
+    "reason": "奇数整数部分在半值时应进位",
+    "edits": [
+      [
+        "b>5||(b==5&&a%2)",
+        "b>5"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "floor-spoilage",
+    "reason": "损耗必须向上取整",
+    "edits": [
+      [
+        "left-=( (__int128)left*k+99)/100",
+        "left-=( (__int128)left*k)/100"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "forbid-empty-last-day",
+    "reason": "最后一天恰好吃完仍然合法",
+    "edits": [
+      [
+        "if(left<0)",
+        "if(left<=0)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "truncate-initial-stock",
+    "reason": "初始数量可超过32位",
+    "edits": [
+      [
+        "cin>>n>>k>>m;",
+        "cin>>n>>k>>m;n=(int)n;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "smallest-forced-owner",
+    "reason": "同时强制抢夺由最大编号C类持有资源",
+    "edits": [
+      [
+        "owner[resource]=forced.back()",
+        "owner[resource]=forced.front()"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "steal-one-segment-early",
+    "reason": "C类在失败w次后的下一段强制申请",
+    "edits": [
+      [
+        "now>=a.since+a.patience)steals",
+        "now>=a.since+a.patience-1)steals"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "credit-lost-resources",
+    "reason": "收益按实际持有数量，不能算已放弃或被抢走资源",
+    "edits": [
+      [
+        "for(int x:owner)p[i].income+=(x==i);",
+        "p[i].income+=p[i].cursor+1;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "never-release-A-resources",
+    "reason": "A类放弃要在段末真正释放",
+    "edits": [
+      [
+        "drop[i]=true;a.released=true;future=true;",
+        "drop[i]=false;a.released=true;future=true;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "B-starts-one-segment-late",
+    "reason": "B类第w次失败当段就运行",
+    "edits": [
+      [
+        "now>=a.since+a.patience-1){a.left=",
+        "now>=a.since+a.patience){a.left="
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "xor-all-positions",
+    "reason": "必胜条件只取子区间的奇数位置",
+    "edits": [
+      [
+        "prefix[i-2<0?0:i-2]",
+        "prefix[i-1]"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "exclude-right-endpoint",
+    "reason": "结束在R上的区间也算成功",
+    "edits": [
+      [
+        "<=r+1",
+        "<r+1"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "cannot-skip-losing-prefix",
+    "reason": "可用非必胜单点跨过不合适的起点",
+    "edits": [
+      [
+        "end[i]=min(end[i],end[i+1])",
+        "end[i]=end[i]"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "start-only-at-node-one",
+    "reason": "最优第一次中心不一定是点1",
+    "edits": [
+      [
+        "auto answer=search.solve()",
+        "auto answer=fixedRoot(0)"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "sort-all-labels",
+    "reason": "全部排序不一定能通过合法聚拢实现",
+    "edits": [
+      [
+        "auto answer=search.solve()",
+        "vector<int> answer(n);iota(answer.begin(),answer.end(),0)"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "append-instead-of-prepend",
+    "reason": "比当前串首更小的字符要插在前面",
+    "edits": [
+      [
+        "answer.push_front(*j)",
+        "answer.push_back(*j)"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "ordinary-rounding-also-bankers",
+    "reason": "普通四舍五入与银行家舍入在偶整数半值不同",
+    "edits": [
+      [
+        "ordinary[i]=a+(b>=5)",
+        "ordinary[i]=a+(b>5||(b==5&&a%2))"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "eat-before-spoilage",
+    "reason": "当天先损耗再吃，顺序不能调换",
+    "edits": [
+      [
+        "left-=( (__int128)left*k+99)/100;left-=count;",
+        "left-=count;left-=( (__int128)left*k+99)/100;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "ordinary-request-priority-reversed",
+    "reason": "普通同时申请按较小进程编号优先",
+    "edits": [
+      [
+        "int i=requests[resource].front()",
+        "int i=requests[resource].back()"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "reuse-interval-last-position",
+    "reason": "相邻选择区间不能重叠最后一位",
+    "edits": [
+      [
+        "jump[0][i]=end[i]+1",
+        "jump[0][i]=end[i]"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "adjacency-not-sorted",
+    "reason": "候选中心搜索所用邻居顺序须按编号递增",
+    "edits": [
+      [
+        "sort(row.begin(),row.end())",
+        "reverse(row.begin(),row.end())"
+      ]
+    ]
+  }
+]

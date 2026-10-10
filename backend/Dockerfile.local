@@ -1,0 +1,3 @@
+# Offline rebuild using the previously built runtime; host must run mvn verify first.
+FROM csp-lab-backend:latest
+COPY target/csp-lab-backend-0.1.0.jar /app/app.jar

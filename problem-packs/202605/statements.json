@@ -1,0 +1,174 @@
+[
+  {
+    "statement": "输入 $n$ 个非负数，每个数恰好保留一位小数，记作 $a.b$。分别输出两种取整结果：普通四舍五入在 $b\\ge5$ 时得到 $a+1$，否则得到 $a$；向偶数舍入在 $b=5$ 时选择相邻的偶数，其他情况与四舍五入相同。",
+    "inputDescription": "第一行 $n$；其后 $n$ 行各有一个形如 $a.b$ 的数，末尾小数位不能省略。",
+    "outputDescription": "两行各 $n$ 个整数：第一行是四舍五入结果，第二行是向偶数舍入结果。",
+    "constraintsDescription": "$1\\le n\\le100$，$0\\le a\\le10^5$，$0\\le b\\le9$。50%的测试不含小数位5。",
+    "samples": [
+      {
+        "input": "6\n2.5\n3.5\n0.4\n99999.9\n100000.5\n12.0\n",
+        "output": "3 4 0 100000 100001 12\n2 4 0 100000 100000 12\n"
+      }
+    ],
+    "code": "202605-1",
+    "title": "银行家舍入",
+    "sourceYear": 2026,
+    "sourceBatch": "202605",
+    "sourcePosition": 1,
+    "difficulty": "EASY",
+    "tags": [
+      "数学",
+      "舍入"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202605A",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "本站自建20个独立点，每点5分；按原数据性质组织。不是官方隐藏数据或认证成绩。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "第0天有 $n$ 个苹果。每天开始时若还剩 $t$ 个，先丢掉 $\\lceil tk/100\\rceil$ 个，再由每个机器人各吃一个，机器人数量每天相同。求最多可供多少个机器人连续吃满 $m$ 天：第 $m$ 天吃完后可以恰好剩零，任何一天都不能出现苹果不足。",
+    "inputDescription": "一行 $n,k,m$：初始数量、每日损耗百分比和天数。",
+    "outputDescription": "一个整数，表示最多机器人数量。",
+    "constraintsDescription": "$1\\le n\\le10^{18}$，$1\\le k\\le5$，$1\\le m\\le2000$；保证答案在 $[1,10^9]$ 内。80%的点 $n\\le10^4$。",
+    "samples": [
+      {
+        "input": "10 5 2\n",
+        "output": "4\n"
+      }
+    ],
+    "code": "202605-2",
+    "title": "机器人宿管指南",
+    "sourceYear": 2026,
+    "sourceBatch": "202605",
+    "sourcePosition": 2,
+    "difficulty": "EASY",
+    "tags": [
+      "二分答案",
+      "整数运算"
+    ],
+    "timeLimitMs": 500,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202605B",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "本站自建20个独立点，每点5分；按原数据性质组织。不是官方隐藏数据或认证成绩。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "模拟 $n$ 个进程与 $m$ 种资源。每段按“申请 → 收益 → 释放”的顺序执行，所有资源初始空闲。进程 $i$ 在第 $st_i$ 段开始，依次申请列表中不同的资源 $a_{i,j}$；申请成功后运行 $t_{i,j}$ 段，包含申请成功这一段，下一段再申请下一个资源。资源保留到整个进程结束，或被放弃、被抢走。运行状态每段收益为申请阶段结束后的实际持有资源数；等待状态没有收益，申请失败后下一段重试。\n\n同一段首，空闲资源的普通申请中编号最小的进程成功；已被占用的资源拒绝全部普通申请。X类没有额外行为；A/B/C类有忍耐限度 $w_i$。设一个任务第一次申请的段为 $s$：\n\n- A类：连续 $w_i$ 次失败后，在第 $s+w_i-1$ 段末释放所持全部资源，继续等待当前资源，不重新申请之前放弃的资源。后续任务的等待重新计数。\n- B类：第 $w_i$ 次失败后放弃本次资源，在这一段开始运行当前任务 $t_{i,j}$ 段，收益仍按实际持有资源数计算。\n- C类：前 $w_i$ 次都失败，在第 $s+w_i$ 段首强制申请。被抢走资源的旧持有者保持原运行或等待状态。若同一资源同时有多个强制申请，编号最大的C类持有资源，其他强制申请者也开始运行当前任务但不持有本次资源；对此资源的其他申请全部失败。\n\n全部任务结束的段末释放仍实际持有的资源，进程停止。原模型运行到 $10^{100}$ 段后强制结束；最后陷入永久等待的进程没有后续收益，其持续段数输出 $-1$。输出每个进程的总收益和持续段数。",
+    "inputDescription": "第一行 $n,m$。其后每进程一行：X类为 X st k a1 t1 ... ak tk；A/B/C类为 类型 st w k a1 t1 ... ak tk。同一进程的资源编号互不相同。",
+    "outputDescription": "输出 $n$ 行：总收益和持续段数。第 $e_i$ 段正常结束则持续 $e_i-st_i+1$ 段，永久等待输出 $-1$。",
+    "constraintsDescription": "$1\\le n\\le10$，$1\\le m\\le40$，$1\\le st_i,w_i,t_{i,j}\\le20$，$1\\le k_i\\le40$，$1\\le a_{i,j}\\le m$。40%点全为X类，另外40%点无C类。",
+    "samples": [
+      {
+        "input": "2 1\nX 1 1 1 3\nC 1 1 1 1 2\n",
+        "output": "1 3\n2 3\n"
+      }
+    ],
+    "code": "202605-3",
+    "title": "死锁优化",
+    "sourceYear": 2026,
+    "sourceBatch": "202605",
+    "sourcePosition": 3,
+    "difficulty": "MEDIUM",
+    "tags": [
+      "模拟",
+      "资源调度"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202605C",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "本站自建20个独立点，每点5分；按原数据性质组织。不是官方隐藏数据或认证成绩。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "给定 $b_1,\\ldots,b_n$。区间 $[l,r]$ 必胜当且仅当从左端点起隔位取数的异或为0，即 $b_l\\oplus b_{l+2}\\oplus\\cdots=0$，最后位置不超过 $r$。每次询问 $[L,R]$，将其完整分成若干连续、不重叠、无空隙的区间，使必胜区间数量最多。询问相互独立，不修改序列。此条件对应原题的后手必胜：区间仓库重新从1编号，奇数编号仓库的石子数异或为0。",
+    "inputDescription": "第一行 $n,q$，第二行 $n$ 个整数；后面 $q$ 行各有 $L,R$。",
+    "outputDescription": "每次询问输出一行最大必胜区间数。",
+    "constraintsDescription": "$1\\le n,q\\le10^6$，$0\\le b_i<2^{31}$，$1\\le L\\le R\\le n$。规模档为 $n,q\\le100,3000,10^5,10^6$。",
+    "samples": [
+      {
+        "input": "7 4\n1 0 1 2 2 0 0\n1 7\n1 3\n4 5\n6 7\n",
+        "output": "3\n1\n0\n2\n"
+      }
+    ],
+    "code": "202605-4",
+    "title": "石子游戏",
+    "sourceYear": 2026,
+    "sourceBatch": "202605",
+    "sourcePosition": 4,
+    "difficulty": "HARD",
+    "tags": [
+      "异或",
+      "贪心",
+      "倍增"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitMb": 256,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202605D",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "本站模拟捆绑子任务：四档规模30/30/20/20分，每档全部通过才得分。不是官方隐藏数据或认证成绩。",
+    "outputLimitKb": 16384,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "statement": "有一棵 $n$ 个点的树，点 $i$ 初始保存单元素序列 $[i]$。聚拢操作选择中心 $u$，将 $u$ 和所有相邻点上的非空序列作为完整块，任选块排列后拼接，把结果保存到 $u$，其他参与点清空。每个块的内部顺序不能改变。\n\n首次聚拢没有额外限制；后续每次必须接触至少一个长度不小于2的序列。可执行任意次合法操作，包括移动已有长序列。最终所有整数应在同一个序列中，求字典序最小的可达最终序列。比较按整数大小，以第一个不同位置较小者为更小的序列。",
+    "inputDescription": "第一行 $n$，后面 $n-1$ 行各有树边端点 $u,v$。",
+    "outputDescription": "一行 $n$ 个整数，为最小最终序列。",
+    "constraintsDescription": "$2\\le n\\le10^5$，$1\\le u,v\\le n$，输入为简单树。规模档为 $n\\le10,500,3000,10^5$。",
+    "samples": [
+      {
+        "input": "4\n1 3\n3 4\n4 2\n",
+        "output": "1 2 3 4\n"
+      }
+    ],
+    "code": "202605-5",
+    "title": "绝世好串",
+    "sourceYear": 2026,
+    "sourceBatch": "202605",
+    "sourcePosition": 5,
+    "difficulty": "HARD",
+    "tags": [
+      "树",
+      "字典序",
+      "数据结构"
+    ],
+    "timeLimitMs": 3000,
+    "memoryLimitMb": 1024,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202605E",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded rules and original examples; CSP title/rules attributed",
+    "scoringNotes": "本站模拟捆绑子任务：四档规模20/20/20/40分，每档全部通过才得分。不是官方隐藏数据或认证成绩。",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  }
+]

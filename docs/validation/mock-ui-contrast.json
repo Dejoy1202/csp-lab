@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09T05:53:24.986Z",
+  "minimum": 4.5,
+  "results": {
+    "primaryButton": 5.98,
+    "lightWarning": 5.23,
+    "lightError": 5.01,
+    "lightCompileError": 6.35,
+    "darkCompileError": 6.64,
+    "darkLogout": 7.82
+  },
+  "method": "WCAG relative luminance of implemented foreground/background values"
+}

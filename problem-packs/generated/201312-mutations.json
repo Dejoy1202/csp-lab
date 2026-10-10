@@ -1,0 +1,105 @@
+{
+  "batch": "201312",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "201312-1",
+      "mutant": "tie-chooses-largest",
+      "reason": "频率相同必须选最小数",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "fd7f6d5de3c6515b5a149752bfaded9ee4895b1b3729dd42132904ce7fa60bbc",
+      "sourceSha256": "e2deff6e2268294913f8607c92c19fb01cdbca7ac460ad8582486ccaff2d6411"
+    },
+    {
+      "problem": "201312-2",
+      "mutant": "omit-isbn-X",
+      "reason": "余数10必须表示为X",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "b859d102624d9bcc4babdc67ed352efb1290081715f3904ba11c17e47e51d01e",
+      "sourceSha256": "a0cf834af63c09ceadba171a0790ee9bcd713688c4fe8c0b10b213d70afb2f40"
+    },
+    {
+      "problem": "201312-3",
+      "mutant": "rectangle-width-off-by-one",
+      "reason": "柱状图区间宽度不能多算一列",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "ad0fadf63cc7cd779ce475e345bf4063565b63a3c2efef1eebc89790aaa6acba",
+      "sourceSha256": "de07ca7e15410b507b24d6847bdd96f1d58a7311cfc8e51d2bdd8d448206282c"
+    },
+    {
+      "problem": "201312-4",
+      "mutant": "allow-leading-zero",
+      "reason": "首位不能为零",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "7de1555df0c2700329e815b93b32c571c3ea54dc967b89e81ab73b9972b72d1d",
+      "sourceSha256": "cc3549239c87a63ad47fb0175f34687a539f6efe5f67d5229bad9b138a4bed00"
+    },
+    {
+      "problem": "201312-5",
+      "mutant": "target-forward-reachability",
+      "reason": "判断能到达终点需要反向图",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "539dc38034bcae159d0bb9833be3807377975bfdfd2c30321462efc9e7e34c14",
+      "sourceSha256": "e5ef9e38a0122edd42678b492f44cf430d523c328ff2962a5d730eb51995c65f"
+    },
+    {
+      "problem": "201312-1",
+      "mutant": "frequency-initial-one",
+      "reason": "全体频率为1时仍须选出数字",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "ad0fadf63cc7cd779ce475e345bf4063565b63a3c2efef1eebc89790aaa6acba",
+      "sourceSha256": "f8e9ecd324befa3c187d439d829d1f59159da1f907dea3e537b88139d93c41c0"
+    },
+    {
+      "problem": "201312-2",
+      "mutant": "valid-X-not-Right",
+      "reason": "合法X校验位必须输出Right",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "b859d102624d9bcc4babdc67ed352efb1290081715f3904ba11c17e47e51d01e",
+      "sourceSha256": "e05e8ee398805cd5009904924d680c3c943ddfcf942802e71122eba80a714cc9"
+    },
+    {
+      "problem": "201312-3",
+      "mutant": "missing-stack-flush",
+      "reason": "最后仍在栈中的柱子也须结算",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "ad0fadf63cc7cd779ce475e345bf4063565b63a3c2efef1eebc89790aaa6acba",
+      "sourceSha256": "734a74b52e5e4c92cecda292e911d4f420cbd269ea91f43f098cf78fcd8ed52b"
+    },
+    {
+      "problem": "201312-4",
+      "mutant": "missing-digit-allowed",
+      "reason": "四种数字必须全部出现",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "7de1555df0c2700329e815b93b32c571c3ea54dc967b89e81ab73b9972b72d1d",
+      "sourceSha256": "0a11c587db58f36d11d90847f493854235daaf0a14fc4a6a29aa02ad729e0731"
+    },
+    {
+      "problem": "201312-5",
+      "mutant": "dot-moves-up",
+      "reason": "点号格只允许向下",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "539dc38034bcae159d0bb9833be3807377975bfdfd2c30321462efc9e7e34c14",
+      "sourceSha256": "4fc86e5be7e737769a4b01c3316eb7e4b555370d79e3f3975c71f6cb6e5acc84"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

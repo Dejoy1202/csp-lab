@@ -1,0 +1,233 @@
+[
+  {
+    "position": 1,
+    "name": "size-is-equality",
+    "reason": "Equal set cardinality does not imply equal elements",
+    "edits": [
+      [
+        "s[i]==t[i]",
+        "s[i].size()==t[i].size()"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "no-collision-check",
+    "reason": "Treat every XOR equality as reliable",
+    "edits": [
+      [
+        "((s[i]==t[i])==(hs[i]==ht[i]))",
+        "true"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "sum-not-xor",
+    "reason": "Use sum instead of XOR",
+    "edits": [
+      [
+        "h^=a[x]",
+        "h+=a[x]"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "identity-instead-of-inverse",
+    "reason": "Output ciphertext",
+    "edits": [
+      [
+        "cout<<inverse[x];",
+        "cout<<x;"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "reverse-key-order",
+    "reason": "Forward rounds use keys in the wrong order",
+    "edits": [
+      [
+        "array<int,512>inverse{};",
+        "reverse(k.begin(),k.end());array<int,512>inverse{};"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "xor-instead-of-square",
+    "reason": "Confuse mathematical power and C++ XOR",
+    "edits": [
+      [
+        "x*x+k*k",
+        "(x^2)+(k^2)"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "wrong-whole-rotation",
+    "reason": "Undo global rotation in wrong direction",
+    "edits": [
+      [
+        "turn=(turn+v[5])%4",
+        "turn=(turn+4-v[5])%4"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "decode-forward-order",
+    "reason": "Undo operations in their original order",
+    "edits": [
+      [
+        "for(int i=t-1;i>=0;i--)",
+        "for(int i=0;i<t;i++)"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "swapped-flip-directions",
+    "reason": "Swap vertical and horizontal flips",
+    "edits": [
+      [
+        "v[5]==1?u+d-x:x,v[5]==-1?l+r-y:y",
+        "v[5]==-1?u+d-x:x,v[5]==1?l+r-y:y"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "ignore-perfect-filter",
+    "reason": "Return all arrays for both op values",
+    "edits": [
+      [
+        "if(op==1)answer=",
+        "if(false)answer="
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "wrong-inclusion-exclusion",
+    "reason": "Origin intersection must have coefficient 5",
+    "edits": [
+      [
+        "5LL*sum[5]",
+        "4LL*sum[5]"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "strict-size-bound",
+    "reason": "Exclude arrays with B=n",
+    "edits": [
+      [
+        "for(int b=2;b<=n;b++)",
+        "for(int b=2;b<n;b++)"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "all-conflict",
+    "reason": "Count every element as a required color",
+    "edits": [
+      [
+        "return t[root].best;",
+        "return t[root].count;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "lose-multiplicity",
+    "reason": "Do not count duplicate inserted elements",
+    "edits": [
+      [
+        "t[u].count++;t[u].version++;",
+        "t[u].count=1;t[u].version++;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "merge-as-sum",
+    "reason": "A merged cost can drop below sum of separate costs",
+    "edits": [
+      [
+        "answer-=solver.cost(roots[x]);",
+        "answer-=0;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "low-threshold-off-by-one",
+    "reason": "Threshold relation is strict XOR<W",
+    "edits": [
+      [
+        "int(w-(1LL<<top))",
+        "int(w-(1LL<<top))+1"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "collision-requires-same-size",
+    "reason": "异大小集合也可能产生相同异或值",
+    "edits": [
+      [
+        "hs[i]==ht[i]",
+        "hs[i]==ht[i]&&s[i].size()==t[i].size()"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "missing-plaintext-511",
+    "reason": "9位明文的上界511也须求逆",
+    "edits": [
+      [
+        "start<512",
+        "start<511"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "assume-square-original",
+    "reason": "解密后的原矩阵可以非正方形",
+    "edits": [
+      [
+        "m=max(m,c+1)",
+        "m=max(m,r+1)"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "prime-power-as-prime",
+    "reason": "质数幂需处理指数大于1的局部贡献",
+    "edits": [
+      [
+        "if(e==1)",
+        "if(e>=1)"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "stale-trie-cache",
+    "reason": "插入或合并后必须刷新相关缓存",
+    "edits": [
+      [
+        "old.va==t[a].version&&old.vb==t[b].version",
+        "true"
+      ]
+    ]
+  }
+]

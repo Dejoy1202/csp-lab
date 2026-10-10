@@ -1,0 +1,189 @@
+[
+  {
+    "position": 1,
+    "name": "cap-count-at-two",
+    "reason": "第三次及后续访问不能停在2；也保留初次/第二次作为部分分见证",
+    "edits": [
+      [
+        "cout<<++count[x]",
+        "cout<<min(2,++count[x])"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "global-record-number",
+    "reason": "每个编号单独计数，不能输出全局行号",
+    "edits": [
+      [
+        "cout<<++count[x]",
+        "cout<<i+1"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "opposite-diagonal-direction",
+    "reason": "反对角线方向须与题意相符",
+    "edits": [
+      [
+        "(sum&1)==0",
+        "(sum&1)!=0"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "omit-last-cell",
+    "reason": "右下角元素也必须输出",
+    "edits": [
+      [
+        "sum<=2*n-2",
+        "sum<2*n-2"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "choose-lowest-tie-price",
+    "reason": "成交量相同取最高价格",
+    "edits": [
+      [
+        "volume>=best",
+        "volume>best"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "ignore-cancellation",
+    "reason": "取消记录不能继续参与撮合",
+    "edits": [
+      [
+        "orders[line].active=false",
+        "orders[line].active=true"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "int32-volume",
+    "reason": "5000笔每笔10^8股可超过32位",
+    "edits": [
+      [
+        "long long buyers=0,sellers=0",
+        "int buyers=0,sellers=0"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "maximum-spanning-tree",
+    "reason": "应最小化建设费",
+    "edits": [
+      [
+        "return a.w<b.w",
+        "return a.w>b.w"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "count-cycle-edges",
+    "reason": "闭环边不能加入最小生成树",
+    "edits": [
+      [
+        "if(a==b)continue",
+        "if(false)continue"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "missing-week-wrap",
+    "reason": "周日库存必须能进入下一周周一",
+    "edits": [
+      [
+        "add(node(i,d),node(i,(d+1)%7),v,w)",
+        "if(d<6)add(node(i,d),node(i,d+1),v,w)"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "unlimited-warehouse",
+    "reason": "廉价仓库也受容量限制",
+    "edits": [
+      [
+        "node(i,(d+1)%7),v,w",
+        "node(i,(d+1)%7),1000000,w"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "free-overnight",
+    "reason": "过夜必须支付单位存储费",
+    "edits": [
+      [
+        "node(i,(d+1)%7),v,w",
+        "node(i,(d+1)%7),v,0"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "postincrement-visit-count",
+    "reason": "初次访问计为1，不能从0输出",
+    "edits": [
+      [
+        "cout<<++count[x]",
+        "cout<<count[x]++"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "transpose-output",
+    "reason": "矩阵行列不能交换",
+    "edits": [
+      [
+        "cout<<a[row][sum-row]",
+        "cout<<a[sum-row][row]"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "exclude-buy-equality",
+    "reason": "买价等于开盘价也可成交",
+    "edits": [
+      [
+        "long long volume=min(buyers,sellers);",
+        "long long volume=min(buyers-amount.first,sellers);"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "skip-cheapest-edge",
+    "reason": "最便宜的边不能因下标错位被漏掉",
+    "edits": [
+      [
+        "for(auto x:e)",
+        "for(auto x:vector<Edge>(e.begin()+1,e.end()))"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "reverse-edge-positive-cost",
+    "reason": "残量反向边须允许撤销原费用",
+    "edits": [
+      [
+        "g[b].push_back({a,(int)g[a].size()-1,0,-cost});",
+        "g[b].push_back({a,(int)g[a].size()-1,0,cost});"
+      ]
+    ]
+  }
+]

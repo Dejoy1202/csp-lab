@@ -1,0 +1,38 @@
+server:
+  port: 8080
+  max-http-request-header-size: 16KB
+  servlet:
+    session:
+      timeout: 8h
+      cookie:
+        http-only: true
+        same-site: lax
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/csp_lab?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8}
+    username: ${DB_USER:csp}
+    password: ${DB_PASSWORD:}
+    hikari:
+      maximum-pool-size: 8
+      connection-init-sql: SET time_zone = '+08:00'
+  jackson:
+    time-zone: Asia/Shanghai
+  servlet:
+    multipart:
+      max-file-size: 64MB
+      max-request-size: 65MB
+  flyway:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+  endpoint:
+    health:
+      show-details: never
+csp:
+  api-key: ${API_KEY:}
+  cors-origins: ${CORS_ORIGINS:http://localhost:5173,http://127.0.0.1:5173}
+  admin-username: ${ADMIN_USERNAME:cspadmin}
+  admin-initial-password: ${ADMIN_INITIAL_PASSWORD:}

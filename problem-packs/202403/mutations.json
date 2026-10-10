@@ -1,0 +1,112 @@
+[
+  {
+    "position": 1,
+    "name": "count-word-per-occurrence",
+    "reason": "每篇文章内重复出现只能计一篇",
+    "edits": [
+      [
+        "if(last[w]!=i)",
+        "if(true)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "case-sensitive-sets",
+    "reason": "单词集合必须忽略大小写",
+    "edits": [
+      [
+        "if(c>='A'&&c<='Z')",
+        "if(false)"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "accept-full-rank",
+    "reason": "满列秩不存在非零解",
+    "edits": [
+      [
+        "rank<m?'Y':'N'",
+        "rank<=m?'Y':'N'"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "burst-at-six",
+    "reason": "水量达到五时就要爆裂",
+    "edits": [
+      [
+        "if(++p->second==5)",
+        "if(++p->second==6)"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "root-depth-zero",
+    "reason": "根节点深度为一",
+    "edits": [
+      [
+        "depth[1]=1;",
+        "depth[1]=0;"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "first-article-already-seen",
+    "reason": "第0篇文章中首次出现也必须计入篇数",
+    "edits": [
+      [
+        "last(m+1,-1)",
+        "last(m+1,0)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "union-counts-duplicate-input",
+    "reason": "并集按不同单词而非输入条数统计",
+    "edits": [
+      [
+        "a.size()+b.size()-common",
+        "n+m-common"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "no-pivot-row-swap",
+    "reason": "主元为零时必须换行",
+    "edits": [
+      [
+        "swap(a[pivot],a[rank]);",
+        ""
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "no-right-chain-reaction",
+    "reason": "爆裂会向右侧最近存活点传播",
+    "edits": [
+      [
+        "if(right!=active.end()) add(right);",
+        ""
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "euler-right-end-off-by-one",
+    "reason": "子树深度变化须包括最后一个节点",
+    "edits": [
+      [
+        "bit.add(tout[child]+1,1)",
+        "bit.add(tout[child],1)"
+      ]
+    ]
+  }
+]

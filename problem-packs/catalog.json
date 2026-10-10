@@ -1,0 +1,1728 @@
+{
+  "updatedAt": "2026-10-09",
+  "metadataSources": [
+    "https://pcs2.roj.ac.cn/problem-sets/university-ccf-csp",
+    "https://oj.shumeng.tech/training/68330d72efce6d5ac2765a62",
+    "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+    "https://github.com/richenyunqi/CCF-CSP-and-PAT-solution",
+    "https://www.leheavengame.com/article/65ed53ee55b5632bb06121a9"
+  ],
+  "papers": [
+    {
+      "batch": "201312",
+      "examNumber": 0,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201312-1",
+          "position": 1,
+          "title": "出现次数最多的数",
+          "metadataVerified": true
+        },
+        {
+          "code": "201312-2",
+          "position": 2,
+          "title": "ISBN 号码",
+          "metadataVerified": true
+        },
+        {
+          "code": "201312-3",
+          "position": 3,
+          "title": "最大的矩形",
+          "metadataVerified": true
+        },
+        {
+          "code": "201312-4",
+          "position": 4,
+          "title": "有趣的数",
+          "metadataVerified": true
+        },
+        {
+          "code": "201312-5",
+          "position": 5,
+          "title": "I’m stuck!",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201403",
+      "examNumber": 1,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201403-1",
+          "position": 1,
+          "title": "相反数",
+          "metadataVerified": true
+        },
+        {
+          "code": "201403-2",
+          "position": 2,
+          "title": "窗口",
+          "metadataVerified": true
+        },
+        {
+          "code": "201403-3",
+          "position": 3,
+          "title": "命令行选项",
+          "metadataVerified": true
+        },
+        {
+          "code": "201403-4",
+          "position": 4,
+          "title": "无线网络",
+          "metadataVerified": true
+        },
+        {
+          "code": "201403-5",
+          "position": 5,
+          "title": "任务调度",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201409",
+      "examNumber": 2,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201409-1",
+          "position": 1,
+          "title": "相邻数对",
+          "metadataVerified": true
+        },
+        {
+          "code": "201409-2",
+          "position": 2,
+          "title": "画图",
+          "metadataVerified": true
+        },
+        {
+          "code": "201409-3",
+          "position": 3,
+          "title": "字符串匹配",
+          "metadataVerified": true
+        },
+        {
+          "code": "201409-4",
+          "position": 4,
+          "title": "最优配餐",
+          "metadataVerified": true
+        },
+        {
+          "code": "201409-5",
+          "position": 5,
+          "title": "拼图",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201412",
+      "examNumber": 3,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201412-1",
+          "position": 1,
+          "title": "门禁系统",
+          "metadataVerified": true
+        },
+        {
+          "code": "201412-2",
+          "position": 2,
+          "title": "Z 字形扫描",
+          "metadataVerified": true
+        },
+        {
+          "code": "201412-3",
+          "position": 3,
+          "title": "集合竞价",
+          "metadataVerified": true
+        },
+        {
+          "code": "201412-4",
+          "position": 4,
+          "title": "最优灌溉",
+          "metadataVerified": true
+        },
+        {
+          "code": "201412-5",
+          "position": 5,
+          "title": "货物调度",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201503",
+      "examNumber": 4,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201503-1",
+          "position": 1,
+          "title": "图像旋转",
+          "metadataVerified": true
+        },
+        {
+          "code": "201503-2",
+          "position": 2,
+          "title": "数字排序",
+          "metadataVerified": true
+        },
+        {
+          "code": "201503-3",
+          "position": 3,
+          "title": "节日",
+          "metadataVerified": true
+        },
+        {
+          "code": "201503-4",
+          "position": 4,
+          "title": "网络延时",
+          "metadataVerified": true
+        },
+        {
+          "code": "201503-5",
+          "position": 5,
+          "title": "最小花费",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201509",
+      "examNumber": 5,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201509-1",
+          "position": 1,
+          "title": "数列分段",
+          "metadataVerified": true
+        },
+        {
+          "code": "201509-2",
+          "position": 2,
+          "title": "日期计算",
+          "metadataVerified": true
+        },
+        {
+          "code": "201509-3",
+          "position": 3,
+          "title": "模板生成系统",
+          "metadataVerified": true
+        },
+        {
+          "code": "201509-4",
+          "position": 4,
+          "title": "高速公路",
+          "metadataVerified": true
+        },
+        {
+          "code": "201509-5",
+          "position": 5,
+          "title": "最佳文章",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201512",
+      "examNumber": 6,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201512-1",
+          "position": 1,
+          "title": "数位之和",
+          "metadataVerified": true
+        },
+        {
+          "code": "201512-2",
+          "position": 2,
+          "title": "消除类游戏",
+          "metadataVerified": true
+        },
+        {
+          "code": "201512-3",
+          "position": 3,
+          "title": "画图",
+          "metadataVerified": true
+        },
+        {
+          "code": "201512-4",
+          "position": 4,
+          "title": "送货",
+          "metadataVerified": true
+        },
+        {
+          "code": "201512-5",
+          "position": 5,
+          "title": "矩阵",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201604",
+      "examNumber": 7,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201604-1",
+          "position": 1,
+          "title": "折点计数",
+          "metadataVerified": true
+        },
+        {
+          "code": "201604-2",
+          "position": 2,
+          "title": "俄罗斯方块",
+          "metadataVerified": true
+        },
+        {
+          "code": "201604-3",
+          "position": 3,
+          "title": "路径解析",
+          "metadataVerified": true
+        },
+        {
+          "code": "201604-4",
+          "position": 4,
+          "title": "游戏",
+          "metadataVerified": true
+        },
+        {
+          "code": "201604-5",
+          "position": 5,
+          "title": "网络连接",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201609",
+      "examNumber": 8,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201609-1",
+          "position": 1,
+          "title": "最大波动",
+          "metadataVerified": true
+        },
+        {
+          "code": "201609-2",
+          "position": 2,
+          "title": "火车购票",
+          "metadataVerified": true
+        },
+        {
+          "code": "201609-3",
+          "position": 3,
+          "title": "炉石传说",
+          "metadataVerified": true
+        },
+        {
+          "code": "201609-4",
+          "position": 4,
+          "title": "交通规划",
+          "metadataVerified": true
+        },
+        {
+          "code": "201609-5",
+          "position": 5,
+          "title": "祭坛",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201612",
+      "examNumber": 9,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201612-1",
+          "position": 1,
+          "title": "中间数",
+          "metadataVerified": true
+        },
+        {
+          "code": "201612-2",
+          "position": 2,
+          "title": "工资计算",
+          "metadataVerified": true
+        },
+        {
+          "code": "201612-3",
+          "position": 3,
+          "title": "权限查询",
+          "metadataVerified": true
+        },
+        {
+          "code": "201612-4",
+          "position": 4,
+          "title": "压缩编码",
+          "metadataVerified": true
+        },
+        {
+          "code": "201612-5",
+          "position": 5,
+          "title": "卡牌游戏",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201703",
+      "examNumber": 10,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201703-1",
+          "position": 1,
+          "title": "分蛋糕",
+          "metadataVerified": true
+        },
+        {
+          "code": "201703-2",
+          "position": 2,
+          "title": "学生排队",
+          "metadataVerified": true
+        },
+        {
+          "code": "201703-3",
+          "position": 3,
+          "title": "Markdown",
+          "metadataVerified": true
+        },
+        {
+          "code": "201703-4",
+          "position": 4,
+          "title": "地铁修建",
+          "metadataVerified": true
+        },
+        {
+          "code": "201703-5",
+          "position": 5,
+          "title": "引水入城",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201709",
+      "examNumber": 11,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201709-1",
+          "position": 1,
+          "title": "打酱油",
+          "metadataVerified": true
+        },
+        {
+          "code": "201709-2",
+          "position": 2,
+          "title": "公共钥匙盒",
+          "metadataVerified": true
+        },
+        {
+          "code": "201709-3",
+          "position": 3,
+          "title": "JSON 查询",
+          "metadataVerified": true
+        },
+        {
+          "code": "201709-4",
+          "position": 4,
+          "title": "通信网络",
+          "metadataVerified": true
+        },
+        {
+          "code": "201709-5",
+          "position": 5,
+          "title": "除法",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201712",
+      "examNumber": 12,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201712-1",
+          "position": 1,
+          "title": "最小差值",
+          "metadataVerified": true
+        },
+        {
+          "code": "201712-2",
+          "position": 2,
+          "title": "游戏",
+          "metadataVerified": true
+        },
+        {
+          "code": "201712-3",
+          "position": 3,
+          "title": "Crontab",
+          "metadataVerified": true
+        },
+        {
+          "code": "201712-4",
+          "position": 4,
+          "title": "行车路线",
+          "metadataVerified": true
+        },
+        {
+          "code": "201712-5",
+          "position": 5,
+          "title": "商路",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201803",
+      "examNumber": 13,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201803-1",
+          "position": 1,
+          "title": "跳一跳",
+          "metadataVerified": true
+        },
+        {
+          "code": "201803-2",
+          "position": 2,
+          "title": "碰撞的小球",
+          "metadataVerified": true
+        },
+        {
+          "code": "201803-3",
+          "position": 3,
+          "title": "URL 映射",
+          "metadataVerified": true
+        },
+        {
+          "code": "201803-4",
+          "position": 4,
+          "title": "棋局评估",
+          "metadataVerified": true
+        },
+        {
+          "code": "201803-5",
+          "position": 5,
+          "title": "二次求和",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201809",
+      "examNumber": 14,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201809-1",
+          "position": 1,
+          "title": "卖菜",
+          "metadataVerified": true
+        },
+        {
+          "code": "201809-2",
+          "position": 2,
+          "title": "买菜",
+          "metadataVerified": true
+        },
+        {
+          "code": "201809-3",
+          "position": 3,
+          "title": "元素选择器",
+          "metadataVerified": true
+        },
+        {
+          "code": "201809-4",
+          "position": 4,
+          "title": "再卖菜",
+          "metadataVerified": true
+        },
+        {
+          "code": "201809-5",
+          "position": 5,
+          "title": "线性递推式",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201812",
+      "examNumber": 15,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201812-1",
+          "position": 1,
+          "title": "小明上学",
+          "metadataVerified": true
+        },
+        {
+          "code": "201812-2",
+          "position": 2,
+          "title": "小明放学",
+          "metadataVerified": true
+        },
+        {
+          "code": "201812-3",
+          "position": 3,
+          "title": "CIDR 合并",
+          "metadataVerified": true
+        },
+        {
+          "code": "201812-4",
+          "position": 4,
+          "title": "数据中心",
+          "metadataVerified": true
+        },
+        {
+          "code": "201812-5",
+          "position": 5,
+          "title": "管道清洁",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201903",
+      "examNumber": 16,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201903-1",
+          "position": 1,
+          "title": "小中大",
+          "metadataVerified": true
+        },
+        {
+          "code": "201903-2",
+          "position": 2,
+          "title": "二十四点",
+          "metadataVerified": true
+        },
+        {
+          "code": "201903-3",
+          "position": 3,
+          "title": "损坏的 RAID5",
+          "metadataVerified": true
+        },
+        {
+          "code": "201903-4",
+          "position": 4,
+          "title": "消息传递接口",
+          "metadataVerified": true
+        },
+        {
+          "code": "201903-5",
+          "position": 5,
+          "title": "317 号子任务",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201909",
+      "examNumber": 17,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201909-1",
+          "position": 1,
+          "title": "小明种苹果",
+          "metadataVerified": true
+        },
+        {
+          "code": "201909-2",
+          "position": 2,
+          "title": "小明种苹果（续）",
+          "metadataVerified": true
+        },
+        {
+          "code": "201909-3",
+          "position": 3,
+          "title": "字符画",
+          "metadataVerified": true
+        },
+        {
+          "code": "201909-4",
+          "position": 4,
+          "title": "推荐系统",
+          "metadataVerified": true
+        },
+        {
+          "code": "201909-5",
+          "position": 5,
+          "title": "城市规划",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "201912",
+      "examNumber": 18,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "201912-1",
+          "position": 1,
+          "title": "报数",
+          "metadataVerified": true
+        },
+        {
+          "code": "201912-2",
+          "position": 2,
+          "title": "回收站选址",
+          "metadataVerified": true
+        },
+        {
+          "code": "201912-3",
+          "position": 3,
+          "title": "化学方程式",
+          "metadataVerified": true
+        },
+        {
+          "code": "201912-4",
+          "position": 4,
+          "title": "区块链",
+          "metadataVerified": true
+        },
+        {
+          "code": "201912-5",
+          "position": 5,
+          "title": "魔数",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "202006",
+      "examNumber": 19,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202006-1",
+          "position": 1,
+          "title": "线性分类器",
+          "metadataVerified": true
+        },
+        {
+          "code": "202006-2",
+          "position": 2,
+          "title": "稀疏向量",
+          "metadataVerified": true
+        },
+        {
+          "code": "202006-3",
+          "position": 3,
+          "title": "Markdown 渲染器",
+          "metadataVerified": true
+        },
+        {
+          "code": "202006-4",
+          "position": 4,
+          "title": "1246",
+          "metadataVerified": true
+        },
+        {
+          "code": "202006-5",
+          "position": 5,
+          "title": "乔乔和牛牛逛超市",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "batch": "202009",
+      "examNumber": 20,
+      "examDate": null,
+      "verifiedMetadata": false,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202009-1",
+          "position": 1,
+          "title": "称检测点查询",
+          "metadataVerified": true
+        },
+        {
+          "code": "202009-2",
+          "position": 2,
+          "title": "风险人群筛查",
+          "metadataVerified": true
+        },
+        {
+          "code": "202009-3",
+          "position": 3,
+          "title": "点亮数字人生",
+          "metadataVerified": true
+        },
+        {
+          "code": "202009-4",
+          "position": 4,
+          "title": "星际旅行",
+          "metadataVerified": true
+        },
+        {
+          "code": "202009-5",
+          "position": 5,
+          "title": "密信与计数",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 21,
+      "examDate": "2020-12-13",
+      "batch": "202012",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202012-1",
+          "position": 1,
+          "title": "期末预测之安全指数",
+          "metadataVerified": true
+        },
+        {
+          "code": "202012-2",
+          "position": 2,
+          "title": "期末预测之最佳阈值",
+          "metadataVerified": true
+        },
+        {
+          "code": "202012-3",
+          "position": 3,
+          "title": "带配额的文件系统",
+          "metadataVerified": true
+        },
+        {
+          "code": "202012-4",
+          "position": 4,
+          "title": "食材运输",
+          "metadataVerified": true
+        },
+        {
+          "code": "202012-5",
+          "position": 5,
+          "title": "星际旅行",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 22,
+      "examDate": "2021-04-11",
+      "batch": "202104",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202104-1",
+          "position": 1,
+          "title": "灰度直方图",
+          "metadataVerified": true
+        },
+        {
+          "code": "202104-2",
+          "position": 2,
+          "title": "邻域均值",
+          "metadataVerified": true
+        },
+        {
+          "code": "202104-3",
+          "position": 3,
+          "title": "DHCP 服务器",
+          "metadataVerified": true
+        },
+        {
+          "code": "202104-4",
+          "position": 4,
+          "title": "校门外的树",
+          "metadataVerified": true
+        },
+        {
+          "code": "202104-5",
+          "position": 5,
+          "title": "疫苗运输",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 23,
+      "examDate": "2021-09-19",
+      "batch": "202109",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202109-1",
+          "position": 1,
+          "title": "数组推导",
+          "metadataVerified": true
+        },
+        {
+          "code": "202109-2",
+          "position": 2,
+          "title": "非零段划分",
+          "metadataVerified": true
+        },
+        {
+          "code": "202109-3",
+          "position": 3,
+          "title": "脉冲神经网络",
+          "metadataVerified": true
+        },
+        {
+          "code": "202109-4",
+          "position": 4,
+          "title": "收集卡牌",
+          "metadataVerified": true
+        },
+        {
+          "code": "202109-5",
+          "position": 5,
+          "title": "箱根山岳险天下",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 24,
+      "examDate": "2021-12-05",
+      "batch": "202112",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202112-1",
+          "position": 1,
+          "title": "序列查询",
+          "metadataVerified": true
+        },
+        {
+          "code": "202112-2",
+          "position": 2,
+          "title": "序列查询新解",
+          "metadataVerified": true
+        },
+        {
+          "code": "202112-3",
+          "position": 3,
+          "title": "登机牌条码",
+          "metadataVerified": true
+        },
+        {
+          "code": "202112-4",
+          "position": 4,
+          "title": "磁盘文件操作",
+          "metadataVerified": true
+        },
+        {
+          "code": "202112-5",
+          "position": 5,
+          "title": "极差路径",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 25,
+      "examDate": "2022-03-20",
+      "batch": "202203",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202203-1",
+          "position": 1,
+          "title": "未初始化警告",
+          "metadataVerified": true
+        },
+        {
+          "code": "202203-2",
+          "position": 2,
+          "title": "出行计划",
+          "metadataVerified": true
+        },
+        {
+          "code": "202203-3",
+          "position": 3,
+          "title": "计算资源调度器",
+          "metadataVerified": true
+        },
+        {
+          "code": "202203-4",
+          "position": 4,
+          "title": "通信系统管理",
+          "metadataVerified": true
+        },
+        {
+          "code": "202203-5",
+          "position": 5,
+          "title": "博弈论与石子合并",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 26,
+      "examDate": "2022-06-12",
+      "batch": "202206",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202206-1",
+          "position": 1,
+          "title": "归一化处理",
+          "metadataVerified": true
+        },
+        {
+          "code": "202206-2",
+          "position": 2,
+          "title": "寻宝！大冒险！",
+          "metadataVerified": true
+        },
+        {
+          "code": "202206-3",
+          "position": 3,
+          "title": "角色授权",
+          "metadataVerified": true
+        },
+        {
+          "code": "202206-4",
+          "position": 4,
+          "title": "光线追踪",
+          "metadataVerified": true
+        },
+        {
+          "code": "202206-5",
+          "position": 5,
+          "title": "PS 无限版",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 27,
+      "examDate": "2022-09-18",
+      "batch": "202209",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202209-1",
+          "position": 1,
+          "title": "如此编码",
+          "metadataVerified": true
+        },
+        {
+          "code": "202209-2",
+          "position": 2,
+          "title": "何以包邮？",
+          "metadataVerified": true
+        },
+        {
+          "code": "202209-3",
+          "position": 3,
+          "title": "防疫大数据",
+          "metadataVerified": true
+        },
+        {
+          "code": "202209-4",
+          "position": 4,
+          "title": "吉祥物投票",
+          "metadataVerified": true
+        },
+        {
+          "code": "202209-5",
+          "position": 5,
+          "title": "高维亚空间超频物质变压缩技术",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 28,
+      "examDate": "2022-12-18",
+      "batch": "202212",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202212-1",
+          "position": 1,
+          "title": "现值计算",
+          "metadataVerified": true
+        },
+        {
+          "code": "202212-2",
+          "position": 2,
+          "title": "训练计划",
+          "metadataVerified": true
+        },
+        {
+          "code": "202212-3",
+          "position": 3,
+          "title": "JPEG 解码",
+          "metadataVerified": true
+        },
+        {
+          "code": "202212-4",
+          "position": 4,
+          "title": "聚集方差",
+          "metadataVerified": true
+        },
+        {
+          "code": "202212-5",
+          "position": 5,
+          "title": "星际网络",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 29,
+      "examDate": "2023-03-19",
+      "batch": "202303",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202303-1",
+          "position": 1,
+          "title": "田地丈量",
+          "metadataVerified": true
+        },
+        {
+          "code": "202303-2",
+          "position": 2,
+          "title": "垦田计划",
+          "metadataVerified": true
+        },
+        {
+          "code": "202303-3",
+          "position": 3,
+          "title": "LDAP",
+          "metadataVerified": true
+        },
+        {
+          "code": "202303-4",
+          "position": 4,
+          "title": "星际网络II",
+          "metadataVerified": true
+        },
+        {
+          "code": "202303-5",
+          "position": 5,
+          "title": "施肥",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 30,
+      "examDate": "2023-05-28",
+      "batch": "202305",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202305-1",
+          "position": 1,
+          "title": "重复局面",
+          "metadataVerified": true
+        },
+        {
+          "code": "202305-2",
+          "position": 2,
+          "title": "矩阵运算",
+          "metadataVerified": true
+        },
+        {
+          "code": "202305-3",
+          "position": 3,
+          "title": "解压缩",
+          "metadataVerified": true
+        },
+        {
+          "code": "202305-4",
+          "position": 4,
+          "title": "电力网络",
+          "metadataVerified": true
+        },
+        {
+          "code": "202305-5",
+          "position": 5,
+          "title": "闪耀巡航",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 31,
+      "examDate": "2023-09-17",
+      "batch": "202309",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202309-1",
+          "position": 1,
+          "title": "坐标变换（其一）",
+          "metadataVerified": true
+        },
+        {
+          "code": "202309-2",
+          "position": 2,
+          "title": "坐标变换（其二）",
+          "metadataVerified": true
+        },
+        {
+          "code": "202309-3",
+          "position": 3,
+          "title": "梯度求解",
+          "metadataVerified": true
+        },
+        {
+          "code": "202309-4",
+          "position": 4,
+          "title": "阴阳龙",
+          "metadataVerified": true
+        },
+        {
+          "code": "202309-5",
+          "position": 5,
+          "title": "阻击",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 32,
+      "examDate": "2023-12-10",
+      "batch": "202312",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202312-1",
+          "position": 1,
+          "title": "仓库规划",
+          "metadataVerified": true
+        },
+        {
+          "code": "202312-2",
+          "position": 2,
+          "title": "因子化简",
+          "metadataVerified": true
+        },
+        {
+          "code": "202312-3",
+          "position": 3,
+          "title": "树上搜索",
+          "metadataVerified": true
+        },
+        {
+          "code": "202312-4",
+          "position": 4,
+          "title": "宝藏",
+          "metadataVerified": true
+        },
+        {
+          "code": "202312-5",
+          "position": 5,
+          "title": "彩色路径",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 33,
+      "examDate": "2024-03-31",
+      "batch": "202403",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202403-1",
+          "position": 1,
+          "title": "词频统计",
+          "metadataVerified": true
+        },
+        {
+          "code": "202403-2",
+          "position": 2,
+          "title": "相似度计算",
+          "metadataVerified": true
+        },
+        {
+          "code": "202403-3",
+          "position": 3,
+          "title": "化学方程式配平",
+          "metadataVerified": true
+        },
+        {
+          "code": "202403-4",
+          "position": 4,
+          "title": "十滴水",
+          "metadataVerified": true
+        },
+        {
+          "code": "202403-5",
+          "position": 5,
+          "title": "文件夹合并",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 34,
+      "examDate": "2024-06-02",
+      "batch": "202406",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202406-1",
+          "position": 1,
+          "title": "矩阵重塑（其一）",
+          "metadataVerified": true
+        },
+        {
+          "code": "202406-2",
+          "position": 2,
+          "title": "矩阵重塑（其二）",
+          "metadataVerified": true
+        },
+        {
+          "code": "202406-3",
+          "position": 3,
+          "title": "文本分词",
+          "metadataVerified": true
+        },
+        {
+          "code": "202406-4",
+          "position": 4,
+          "title": "货物调度",
+          "metadataVerified": true
+        },
+        {
+          "code": "202406-5",
+          "position": 5,
+          "title": "哥德尔机",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 35,
+      "examDate": "2024-09-22",
+      "batch": "202409",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202409-1",
+          "position": 1,
+          "title": "密码",
+          "metadataVerified": true
+        },
+        {
+          "code": "202409-2",
+          "position": 2,
+          "title": "字符串变换",
+          "metadataVerified": true
+        },
+        {
+          "code": "202409-3",
+          "position": 3,
+          "title": "补丁应用",
+          "metadataVerified": true
+        },
+        {
+          "code": "202409-4",
+          "position": 4,
+          "title": "通讯延迟",
+          "metadataVerified": true
+        },
+        {
+          "code": "202409-5",
+          "position": 5,
+          "title": "木板切割",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 36,
+      "examDate": "2024-12-08",
+      "batch": "202412",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202412-1",
+          "position": 1,
+          "title": "移动",
+          "metadataVerified": true
+        },
+        {
+          "code": "202412-2",
+          "position": 2,
+          "title": "梦境巡查",
+          "metadataVerified": true
+        },
+        {
+          "code": "202412-3",
+          "position": 3,
+          "title": "缓存模拟",
+          "metadataVerified": true
+        },
+        {
+          "code": "202412-4",
+          "position": 4,
+          "title": "跳房子",
+          "metadataVerified": true
+        },
+        {
+          "code": "202412-5",
+          "position": 5,
+          "title": "梦魔",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 37,
+      "examDate": "2025-03-30",
+      "batch": "202503",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202503-1",
+          "position": 1,
+          "title": "数值积分",
+          "metadataVerified": true
+        },
+        {
+          "code": "202503-2",
+          "position": 2,
+          "title": "机器人饲养指南",
+          "metadataVerified": true
+        },
+        {
+          "code": "202503-3",
+          "position": 3,
+          "title": "模板展开",
+          "metadataVerified": true
+        },
+        {
+          "code": "202503-4",
+          "position": 4,
+          "title": "集体锻炼",
+          "metadataVerified": true
+        },
+        {
+          "code": "202503-5",
+          "position": 5,
+          "title": "收费标准评估",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 38,
+      "examDate": "2025-06-08",
+      "batch": "202506",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202506-1",
+          "position": 1,
+          "title": "正态分布",
+          "metadataVerified": true
+        },
+        {
+          "code": "202506-2",
+          "position": 2,
+          "title": "机器人复健指南",
+          "metadataVerified": true
+        },
+        {
+          "code": "202506-3",
+          "position": 3,
+          "title": "消息解码",
+          "metadataVerified": true
+        },
+        {
+          "code": "202506-4",
+          "position": 4,
+          "title": "月票发行",
+          "metadataVerified": true
+        },
+        {
+          "code": "202506-5",
+          "position": 5,
+          "title": "博物馆",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 39,
+      "examDate": "2025-09-21",
+      "batch": "202509",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202509-1",
+          "position": 1,
+          "title": "蒙特卡洛",
+          "metadataVerified": true
+        },
+        {
+          "code": "202509-2",
+          "position": 2,
+          "title": "水印检查",
+          "metadataVerified": true
+        },
+        {
+          "code": "202509-3",
+          "position": 3,
+          "title": "HTTP 头信息",
+          "metadataVerified": true
+        },
+        {
+          "code": "202509-4",
+          "position": 4,
+          "title": "造题计划（上）",
+          "metadataVerified": true
+        },
+        {
+          "code": "202509-5",
+          "position": 5,
+          "title": "造题计划（下）",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 40,
+      "examDate": "2025-12-07",
+      "batch": "202512",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202512-1",
+          "position": 1,
+          "title": "集合",
+          "metadataVerified": true
+        },
+        {
+          "code": "202512-2",
+          "position": 2,
+          "title": "数字变换",
+          "metadataVerified": true
+        },
+        {
+          "code": "202512-3",
+          "position": 3,
+          "title": "图片解码",
+          "metadataVerified": true
+        },
+        {
+          "code": "202512-4",
+          "position": 4,
+          "title": "C 形阵",
+          "metadataVerified": true
+        },
+        {
+          "code": "202512-5",
+          "position": 5,
+          "title": "数据抢修",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 41,
+      "examDate": "2026-03-29",
+      "batch": "202603",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202603-1",
+          "position": 1,
+          "title": "平衡数",
+          "metadataVerified": true
+        },
+        {
+          "code": "202603-2",
+          "position": 2,
+          "title": "机器人项目管理",
+          "metadataVerified": true
+        },
+        {
+          "code": "202603-3",
+          "position": 3,
+          "title": "进程通信",
+          "metadataVerified": true
+        },
+        {
+          "code": "202603-4",
+          "position": 4,
+          "title": "异或",
+          "metadataVerified": true
+        },
+        {
+          "code": "202603-5",
+          "position": 5,
+          "title": "旅游计划 - Easy Ver.",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 42,
+      "examDate": "2026-05-31",
+      "batch": "202605",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202605-1",
+          "position": 1,
+          "title": "银行家舍入",
+          "metadataVerified": true
+        },
+        {
+          "code": "202605-2",
+          "position": 2,
+          "title": "机器人宿管指南",
+          "metadataVerified": true
+        },
+        {
+          "code": "202605-3",
+          "position": 3,
+          "title": "死锁优化",
+          "metadataVerified": true
+        },
+        {
+          "code": "202605-4",
+          "position": 4,
+          "title": "石子游戏",
+          "metadataVerified": true
+        },
+        {
+          "code": "202605-5",
+          "position": 5,
+          "title": "绝世好串",
+          "metadataVerified": true
+        }
+      ]
+    },
+    {
+      "examNumber": 43,
+      "examDate": "2026-09-13",
+      "batch": "202609",
+      "verifiedMetadata": true,
+      "sourceUrl": "https://csp.ccf.org.cn/csp/show.action?code=exam_score_seach",
+      "problems": [
+        {
+          "code": "202609-1",
+          "position": 1,
+          "title": "流程规划（其一）",
+          "metadataVerified": true
+        },
+        {
+          "code": "202609-2",
+          "position": 2,
+          "title": "流程规划（其二）",
+          "metadataVerified": true
+        },
+        {
+          "code": "202609-3",
+          "position": 3,
+          "title": "轮转调度",
+          "metadataVerified": true
+        },
+        {
+          "code": "202609-4",
+          "position": 4,
+          "title": "数字分组",
+          "metadataVerified": true
+        },
+        {
+          "code": "202609-5",
+          "position": 5,
+          "title": "奇",
+          "metadataVerified": true
+        }
+      ]
+    }
+  ]
+}

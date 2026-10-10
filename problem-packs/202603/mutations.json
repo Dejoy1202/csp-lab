@@ -1,0 +1,233 @@
+[
+  {
+    "position": 1,
+    "name": "small-values-only",
+    "reason": "有效位不能只考虑256以内",
+    "edits": [
+      [
+        "if(2*ones==bits)",
+        "if(x<=256 && 2*ones==bits)"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "fixed-thirty-two-bits",
+    "reason": "不计算存储补零",
+    "edits": [
+      [
+        "if(2*ones==bits)",
+        "if(2*ones==32)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "all-fractional",
+    "reason": "普通任务不可拆分",
+    "edits": [
+      [
+        "(type==1?regular:flexible)",
+        "(false?regular:flexible)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "unbounded-regular",
+    "reason": "普通任务只能选一次",
+    "edits": [
+      [
+        "for(int j=m;j>=task.cost;--j)",
+        "for(int j=task.cost;j<=m;++j)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "integer-fractional-gain",
+    "reason": "分数收益不能用整除",
+    "edits": [
+      [
+        "value+=(long double)used*task.gain/task.cost;",
+        "value+=used*task.gain/task.cost;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "first-fit",
+    "reason": "必须选最短合适空洞，不是最早空洞",
+    "edits": [
+      [
+        "auto it=bySize.lower_bound({length,-1});",
+        "auto it=bySize.end();for(auto candidate=bySize.begin();candidate!=bySize.end();++candidate)if(candidate->first>=length&&(it==bySize.end()||candidate->second<it->second))it=candidate;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "no-left-coalescing",
+    "reason": "释放后必须合并相邻空洞",
+    "edits": [
+      [
+        "if(left->first+left->second==l)",
+        "if(false)"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "missing-wrap",
+    "reason": "消息地址需要循环",
+    "edits": [
+      [
+        "queue.next=(queue.next+1)%queue.length;",
+        "queue.next=queue.next+1;"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "thirty-two-bit-send-sum",
+    "reason": "消息地址总和可超过32位",
+    "edits": [
+      [
+        "long long answer=0;",
+        "int answer=0;"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "divide-after-modulo",
+    "reason": "奇数模数下除2需使用逆元",
+    "edits": [
+      [
+        "((U(a[0])+a[1])%k)*((k+1)/2)",
+        "((U(a[0])+a[1])%k)/2"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "missing-cross-term",
+    "reason": "高位更新必须包含低位与原高位交叉项",
+    "edits": [
+      [
+        "a[2*j+1]+low*previous+higher*old",
+        "a[2*j+1]+higher*old"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "do-not-push",
+    "reason": "部分区间查询前必须下传懒标记",
+    "edits": [
+      [
+        "if(!pending)return;",
+        "return;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "no-online-decoding",
+    "reason": "在线事件必须根据上次答案解密",
+    "edits": [
+      [
+        "u^=X*last;v^=X*last;",
+        "u^=0;v^=0;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "ignore-stations",
+    "reason": "维修站切分路径并重置备胎",
+    "edits": [
+      [
+        "auto stops=tree.stops(s,t,stations);",
+        "auto stops=tree.stops(s,t,vector<int>{});"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "two-spare-tires",
+    "reason": "两次爆胎中间没有维修站就无法到达",
+    "edits": [
+      [
+        "if(tree.distance(u,v)<=1)continue;",
+        "if(tree.distance(u,v)<=2)continue;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "deduplicate-plans",
+    "reason": "重复计划应分别统计",
+    "edits": [
+      [
+        "it->second.push_back(trip);",
+        "if(inserted)it->second.push_back(trip);"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "omit-leading-effective-bit",
+    "reason": "有效位数包括最高位1",
+    "edits": [
+      [
+        "bits=32-__builtin_clz(x)",
+        "bits=31-__builtin_clz(x)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "fractional-gain-ascending",
+    "reason": "分数任务按单位收益降序选择",
+    "edits": [
+      [
+        "1LL*a.gain*b.cost>1LL*b.gain*a.cost",
+        "1LL*a.gain*b.cost<1LL*b.gain*a.cost"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "skip-exact-fit-hole",
+    "reason": "恰好同长度的空洞也能分配",
+    "edits": [
+      [
+        "lower_bound({length,-1})",
+        "lower_bound({length+1,-1})"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "thirty-two-bit-answer",
+    "reason": "输出数阵值可超过32位整数",
+    "edits": [
+      [
+        "U answer=0,power=1;",
+        "uint32_t answer=0;U power=1;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "ordered-component-pair-key",
+    "reason": "无向计划端点换序仍是同一关联",
+    "edits": [
+      [
+        "if(a>b)swap(a,b);",
+        ""
+      ]
+    ]
+  }
+]

@@ -1,0 +1,745 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-10T13:24:00.281631+00:00",
+  "problems": 50,
+  "formalPoints": 944,
+  "inputContractsChecked": 998,
+  "freshOracleChecks": 735,
+  "selectedWrongPrograms": 171,
+  "mutantsReexecuted": false,
+  "mutantBatchesReexecuted": [
+    "201312",
+    "201403",
+    "201409",
+    "201412",
+    "202509",
+    "202512",
+    "202603",
+    "202605"
+  ],
+  "issues": [],
+  "evidence": [
+    {
+      "problem": "201312-1",
+      "formalPoints": 10,
+      "inputContractsChecked": 11,
+      "freshOracleChecks": 11,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "tie-chooses-largest",
+        "frequency-initial-one"
+      ]
+    },
+    {
+      "problem": "201312-2",
+      "formalPoints": 10,
+      "inputContractsChecked": 12,
+      "freshOracleChecks": 12,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "omit-isbn-X",
+        "valid-X-not-Right"
+      ]
+    },
+    {
+      "problem": "201312-3",
+      "formalPoints": 10,
+      "inputContractsChecked": 11,
+      "freshOracleChecks": 11,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "rectangle-width-off-by-one",
+        "missing-stack-flush"
+      ]
+    },
+    {
+      "problem": "201312-4",
+      "formalPoints": 10,
+      "inputContractsChecked": 11,
+      "freshOracleChecks": 11,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "allow-leading-zero",
+        "missing-digit-allowed"
+      ]
+    },
+    {
+      "problem": "201312-5",
+      "formalPoints": 10,
+      "inputContractsChecked": 12,
+      "freshOracleChecks": 12,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "target-forward-reachability",
+        "dot-moves-up"
+      ]
+    },
+    {
+      "problem": "201403-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "double-count-opposite-pairs",
+        "ignore-endpoint-1000",
+        "positive-one-omitted"
+      ]
+    },
+    {
+      "problem": "201403-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "exclude-window-boundary",
+        "forget-front-reordering",
+        "bottom-window-first"
+      ]
+    },
+    {
+      "problem": "201403-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "reject-hyphen-argument",
+        "erase-last-valid-duplicate",
+        "continue-after-invalid-token"
+      ]
+    },
+    {
+      "problem": "201403-4",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "ignore-new-router-budget",
+        "squared-distance-int32-overflow",
+        "radio-radius-strict"
+      ]
+    },
+    {
+      "problem": "201403-5",
+      "formalPoints": 20,
+      "inputContractsChecked": 22,
+      "freshOracleChecks": 22,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "ignore-dual-cpu-gpu-mode",
+        "wrong-gpu-mode-duration",
+        "omit-single-cpu-mode"
+      ]
+    },
+    {
+      "problem": "201409-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "ignore-zero-pair",
+        "forget-sort",
+        "skip-first-adjacent-pair"
+      ]
+    },
+    {
+      "problem": "201409-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "double-count-overlap",
+        "count-boundary-grid-points",
+        "miss-coordinate-99-cell"
+      ]
+    },
+    {
+      "problem": "201409-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 20,
+      "largeAnswersNotRegenerated": 1,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "always-case-sensitive",
+        "output-normalized-instead-original",
+        "prefix-instead-substring"
+      ]
+    },
+    {
+      "problem": "201409-4",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 11,
+      "largeAnswersNotRegenerated": 10,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "cost-int32-overflow",
+        "overwrite-repeated-customers",
+        "ignore-blocked-cells"
+      ]
+    },
+    {
+      "problem": "201409-5",
+      "formalPoints": 20,
+      "inputContractsChecked": 22,
+      "freshOracleChecks": 22,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "truncate-board-height-int32",
+        "omit-one-tile-orientation",
+        "wrong-modulus"
+      ]
+    },
+    {
+      "problem": "201412-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "cap-count-at-two",
+        "global-record-number",
+        "postincrement-visit-count"
+      ]
+    },
+    {
+      "problem": "201412-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 11,
+      "largeAnswersNotRegenerated": 10,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "opposite-diagonal-direction",
+        "omit-last-cell",
+        "transpose-output"
+      ]
+    },
+    {
+      "problem": "201412-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 11,
+      "largeAnswersNotRegenerated": 10,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "choose-lowest-tie-price",
+        "ignore-cancellation",
+        "int32-volume",
+        "exclude-buy-equality"
+      ]
+    },
+    {
+      "problem": "201412-4",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 13,
+      "largeAnswersNotRegenerated": 8,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "maximum-spanning-tree",
+        "count-cycle-edges",
+        "skip-cheapest-edge"
+      ]
+    },
+    {
+      "problem": "201412-5",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 15,
+      "largeAnswersNotRegenerated": 6,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "missing-week-wrap",
+        "unlimited-warehouse",
+        "free-overnight",
+        "reverse-edge-positive-cost"
+      ]
+    },
+    {
+      "problem": "202403-1",
+      "formalPoints": 10,
+      "inputContractsChecked": 11,
+      "freshOracleChecks": 2,
+      "largeAnswersNotRegenerated": 9,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "count-word-per-occurrence",
+        "first-article-already-seen"
+      ]
+    },
+    {
+      "problem": "202403-2",
+      "formalPoints": 10,
+      "inputContractsChecked": 11,
+      "freshOracleChecks": 10,
+      "largeAnswersNotRegenerated": 1,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "case-sensitive-sets",
+        "union-counts-duplicate-input"
+      ]
+    },
+    {
+      "problem": "202403-3",
+      "formalPoints": 8,
+      "inputContractsChecked": 9,
+      "freshOracleChecks": 7,
+      "largeAnswersNotRegenerated": 2,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "accept-full-rank",
+        "no-pivot-row-swap"
+      ]
+    },
+    {
+      "problem": "202403-4",
+      "formalPoints": 19,
+      "inputContractsChecked": 20,
+      "freshOracleChecks": 14,
+      "largeAnswersNotRegenerated": 6,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "burst-at-six",
+        "no-right-chain-reaction"
+      ]
+    },
+    {
+      "problem": "202403-5",
+      "formalPoints": 18,
+      "inputContractsChecked": 19,
+      "freshOracleChecks": 10,
+      "largeAnswersNotRegenerated": 9,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "root-depth-zero",
+        "euler-right-end-off-by-one"
+      ]
+    },
+    {
+      "problem": "202509-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 18,
+      "largeAnswersNotRegenerated": 3,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "exclude-circle-boundary",
+        "integer-division",
+        "drop-decimal-coordinates",
+        "two-decimal-estimate"
+      ]
+    },
+    {
+      "problem": "202509-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 17,
+      "largeAnswersNotRegenerated": 4,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "strict-white-threshold",
+        "black-equality",
+        "fixed-eight-bit",
+        "last-watermark-row-omitted"
+      ]
+    },
+    {
+      "problem": "202509-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 5,
+      "largeAnswersNotRegenerated": 16,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "omit-h-escape",
+        "decode-padding-as-data",
+        "wrong-dynamic-index",
+        "index-type-three",
+        "lsb-first-compressed-bits"
+      ]
+    },
+    {
+      "problem": "202509-4",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 3,
+      "largeAnswersNotRegenerated": 18,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "ignore-final-complement",
+        "forbid-zero-mex",
+        "exclude-path-endpoint",
+        "singleton-path-is-whole-tree"
+      ]
+    },
+    {
+      "problem": "202509-5",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 5,
+      "largeAnswersNotRegenerated": 16,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "lose-flat-cost-partial-count",
+        "disallow-same-day-work",
+        "all-tasks-or-none",
+        "marginal-cost-cap-too-small"
+      ]
+    },
+    {
+      "problem": "202512-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 19,
+      "largeAnswersNotRegenerated": 2,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "size-is-equality",
+        "no-collision-check",
+        "sum-not-xor",
+        "collision-requires-same-size"
+      ]
+    },
+    {
+      "problem": "202512-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 18,
+      "largeAnswersNotRegenerated": 3,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "identity-instead-of-inverse",
+        "reverse-key-order",
+        "xor-instead-of-square",
+        "missing-plaintext-511"
+      ]
+    },
+    {
+      "problem": "202512-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 14,
+      "largeAnswersNotRegenerated": 7,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "wrong-whole-rotation",
+        "decode-forward-order",
+        "swapped-flip-directions",
+        "assume-square-original"
+      ]
+    },
+    {
+      "problem": "202512-4",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "ignore-perfect-filter",
+        "wrong-inclusion-exclusion",
+        "strict-size-bound",
+        "prime-power-as-prime"
+      ]
+    },
+    {
+      "problem": "202512-5",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 8,
+      "largeAnswersNotRegenerated": 13,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "all-conflict",
+        "lose-multiplicity",
+        "merge-as-sum",
+        "low-threshold-off-by-one",
+        "stale-trie-cache"
+      ]
+    },
+    {
+      "problem": "202603-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "small-values-only",
+        "fixed-thirty-two-bits",
+        "omit-leading-effective-bit"
+      ]
+    },
+    {
+      "problem": "202603-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "all-fractional",
+        "unbounded-regular",
+        "integer-fractional-gain",
+        "fractional-gain-ascending"
+      ]
+    },
+    {
+      "problem": "202603-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 18,
+      "largeAnswersNotRegenerated": 3,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "first-fit",
+        "no-left-coalescing",
+        "missing-wrap",
+        "thirty-two-bit-send-sum",
+        "skip-exact-fit-hole"
+      ]
+    },
+    {
+      "problem": "202603-4",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 9,
+      "largeAnswersNotRegenerated": 12,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "divide-after-modulo",
+        "missing-cross-term",
+        "do-not-push",
+        "thirty-two-bit-answer"
+      ]
+    },
+    {
+      "problem": "202603-5",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 7,
+      "largeAnswersNotRegenerated": 14,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": true,
+      "selectedWrongPrograms": [
+        "no-online-decoding",
+        "ignore-stations",
+        "two-spare-tires",
+        "deduplicate-plans",
+        "ordered-component-pair-key"
+      ]
+    },
+    {
+      "problem": "202605-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "always-round-half-up",
+        "always-round-half-down",
+        "ordinary-rounding-also-bankers"
+      ]
+    },
+    {
+      "problem": "202605-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "floor-spoilage",
+        "forbid-empty-last-day",
+        "truncate-initial-stock",
+        "eat-before-spoilage"
+      ]
+    },
+    {
+      "problem": "202605-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "smallest-forced-owner",
+        "steal-one-segment-early",
+        "credit-lost-resources",
+        "never-release-A-resources",
+        "B-starts-one-segment-late",
+        "ordinary-request-priority-reversed"
+      ]
+    },
+    {
+      "problem": "202605-4",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 9,
+      "largeAnswersNotRegenerated": 12,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "xor-all-positions",
+        "exclude-right-endpoint",
+        "cannot-skip-losing-prefix",
+        "reuse-interval-last-position"
+      ]
+    },
+    {
+      "problem": "202605-5",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 10,
+      "largeAnswersNotRegenerated": 11,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "start-only-at-node-one",
+        "sort-all-labels",
+        "append-instead-of-prepend",
+        "adjacency-not-sorted"
+      ]
+    },
+    {
+      "problem": "202609-1",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "tie-chooses-upper",
+        "sum-standard-deviations",
+        "double-exact-tie",
+        "epsilon-too-large",
+        "int32-total-variance"
+      ]
+    },
+    {
+      "problem": "202609-2",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 21,
+      "largeAnswersNotRegenerated": 0,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "exclude-exact-capacity",
+        "unbounded-instead-zero-one",
+        "int32-feasibility-product"
+      ]
+    },
+    {
+      "problem": "202609-3",
+      "formalPoints": 20,
+      "inputContractsChecked": 21,
+      "freshOracleChecks": 14,
+      "largeAnswersNotRegenerated": 7,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "ignore-preferred-cpu",
+        "return-after-rotation",
+        "absolute-finish-time"
+      ]
+    },
+    {
+      "problem": "202609-4",
+      "formalPoints": 44,
+      "inputContractsChecked": 45,
+      "freshOracleChecks": 17,
+      "largeAnswersNotRegenerated": 28,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "ignore-floor-ratio",
+        "correct-count-empty-plan",
+        "assume-values-sorted",
+        "singleton-empty-graph-no-output"
+      ]
+    },
+    {
+      "problem": "202609-5",
+      "formalPoints": 25,
+      "inputContractsChecked": 26,
+      "freshOracleChecks": 4,
+      "largeAnswersNotRegenerated": 22,
+      "issues": [],
+      "recordedAnswersUsedForEncryptedInputValidation": false,
+      "selectedWrongPrograms": [
+        "omit-self-pairs",
+        "int32-total-pairs",
+        "ignore-distance-complement",
+        "omit-lca-color",
+        "zero-updates-no-initial-answer"
+      ]
+    }
+  ],
+  "limitation": "Finite selected errors only. Large outputs retain prior certificates and are not all freshly regenerated; encrypted large input legality uses recorded answers. No claim of official data equivalence or exhaustive correctness."
+}

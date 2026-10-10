@@ -1,0 +1,309 @@
+{
+  "status": "PASS",
+  "problems": 50,
+  "formalPoints": 934,
+  "checkedInStages": true,
+  "earlierRunFailureRetained": true,
+  "evidence": [
+    {
+      "problem": "201312-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 10
+    },
+    {
+      "problem": "201312-2",
+      "status": "PASS",
+      "samples": 2,
+      "formalPoints": 10
+    },
+    {
+      "problem": "201312-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 10
+    },
+    {
+      "problem": "201312-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 10
+    },
+    {
+      "problem": "201312-5",
+      "status": "PASS",
+      "samples": 2,
+      "formalPoints": 10
+    },
+    {
+      "problem": "201403-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201403-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201403-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201403-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201403-5",
+      "status": "PASS",
+      "samples": 2,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201409-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201409-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201409-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201409-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201409-5",
+      "status": "PASS",
+      "samples": 2,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201412-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201412-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201412-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201412-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "201412-5",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202403-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 10
+    },
+    {
+      "problem": "202403-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 10
+    },
+    {
+      "problem": "202403-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 7
+    },
+    {
+      "problem": "202403-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 19
+    },
+    {
+      "problem": "202403-5",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 18
+    },
+    {
+      "problem": "202509-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202509-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202509-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202509-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202509-5",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202512-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202512-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202512-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202512-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202512-5",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202603-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202603-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202603-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202603-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202603-5",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202605-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202605-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202605-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202605-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202605-5",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202609-1",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202609-2",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202609-3",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    },
+    {
+      "problem": "202609-4",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 40
+    },
+    {
+      "problem": "202609-5",
+      "status": "PASS",
+      "samples": 1,
+      "formalPoints": 20
+    }
+  ]
+}

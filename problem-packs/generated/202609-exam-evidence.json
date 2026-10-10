@@ -1,0 +1,56 @@
+{
+  "batch": "202609",
+  "status": "PASS",
+  "ordinaryAccount": true,
+  "liveDocker": true,
+  "examId": 46,
+  "durationSeconds": 14400,
+  "totalScore": 500,
+  "sampleScore": 0,
+  "construction": {
+    "countOnlyScore": 40,
+    "countOnlySubmissionId": 173,
+    "alternativePlanStatus": "AC",
+    "alternativeSubmissionId": 174
+  },
+  "partialScore": 95,
+  "partialSubmissionId": 172,
+  "highestScorePreserved": true,
+  "evidence": [
+    {
+      "problem": "202609-1",
+      "submissionId": 166,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202609-2",
+      "submissionId": 167,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202609-3",
+      "submissionId": 168,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202609-4",
+      "submissionId": 169,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 40
+    },
+    {
+      "problem": "202609-5",
+      "submissionId": 170,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    }
+  ]
+}

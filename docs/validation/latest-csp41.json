@@ -1,0 +1,235 @@
+{
+  "date": "2026-10-09",
+  "batch": "202603",
+  "examNumber": 41,
+  "status": "PASS",
+  "scoringType": "SITE_SIMULATION",
+  "officialHiddenData": false,
+  "ordinaryAccount": true,
+  "liveDocker": true,
+  "paper": {
+    "problems": 5,
+    "formalGradingPoints": 100,
+    "distinctFormalInputs": 100,
+    "smallDifferentialChecks": 200,
+    "originalSamples": 5,
+    "selectedMutants": 16,
+    "allSelectedMutantsRejected": true
+  },
+  "resources": [
+    {
+      "problem": "202603-1",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 2,
+      "referenceMaxMemoryKb": 12876
+    },
+    {
+      "problem": "202603-2",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 5,
+      "referenceMaxMemoryKb": 12788
+    },
+    {
+      "problem": "202603-3",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 4,
+      "referenceMaxMemoryKb": 12784
+    },
+    {
+      "problem": "202603-4",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 289,
+      "referenceMaxMemoryKb": 265008
+    },
+    {
+      "problem": "202603-5",
+      "formalPoints": 20,
+      "distinctInputs": 20,
+      "referenceMaxTimeMs": 711,
+      "referenceMaxMemoryKb": 75824
+    }
+  ],
+  "supplementalD": {
+    "status": "PASS",
+    "boundaryCases": 20,
+    "literalRecurrenceChecks": 12800,
+    "checks": [
+      "all-zero initial array followed by 10^12 update",
+      "new higher digits after initialization",
+      "odd composite bases",
+      "wrapping least digit",
+      "partial update crossing 700-element oracle blocks",
+      "k near 10^9"
+    ]
+  },
+  "supplementalE": {
+    "status": "PASS",
+    "exhaustiveLabelledTreeAndStationCases": 264,
+    "randomCases": 80,
+    "totalChecks": 344,
+    "allOrderedPairs": true,
+    "onlineEncryptedEvents": true,
+    "oracle": "Direct BFS paths and tire simulation, plus offline repair-time oracle"
+  },
+  "mockExam": {
+    "batch": "202603",
+    "status": "PASS",
+    "ordinaryAccount": true,
+    "liveDocker": true,
+    "examId": 55,
+    "durationSeconds": 14400,
+    "totalScore": 500,
+    "sampleScore": 0,
+    "construction": null,
+    "extraWitnesses": [
+      {
+        "label": "scientific-notation",
+        "problem": "202603-2",
+        "submissionId": 224,
+        "status": "AC",
+        "score": 100
+      },
+      {
+        "label": "error-below-one-thousandth",
+        "problem": "202603-2",
+        "submissionId": 225,
+        "status": "AC",
+        "score": 100
+      },
+      {
+        "label": "error-above-one-thousandth",
+        "problem": "202603-2",
+        "submissionId": 226,
+        "status": "WA",
+        "score": 0
+      },
+      {
+        "label": "nonfinite-rejected",
+        "problem": "202603-2",
+        "submissionId": 227,
+        "status": "WA",
+        "score": 0
+      },
+      {
+        "label": "small-scales-only",
+        "problem": "202603-4",
+        "submissionId": 228,
+        "status": "WA",
+        "score": 50
+      },
+      {
+        "label": "small-scales-only",
+        "problem": "202603-5",
+        "submissionId": 229,
+        "status": "WA",
+        "score": 30
+      }
+    ],
+    "partialScore": 85,
+    "partialSubmissionId": 223,
+    "highestScorePreserved": true,
+    "evidence": [
+      {
+        "problem": "202603-1",
+        "submissionId": 217,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202603-2",
+        "submissionId": 218,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202603-3",
+        "submissionId": 219,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202603-4",
+        "submissionId": 220,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202603-5",
+        "submissionId": 221,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      }
+    ]
+  },
+  "browser": {
+    "command": "npx playwright test --grep '202603试卷|44个批次' --reporter=line",
+    "passed": 2,
+    "failed": 0,
+    "durationSeconds": 7.7,
+    "checks": [
+      "44 batches,220 titles,8 ready papers",
+      "BUILDING exam creation rejected",
+      "Five statements with KaTeX and local Monaco",
+      "Actual online encrypted T5 sample run, zero points",
+      "Finish and review"
+    ]
+  },
+  "java": {
+    "command": "mvn -o verify",
+    "passed": 11,
+    "failed": 0
+  },
+  "builtinCheckers": {
+    "command": "python -m unittest -v test_checkers",
+    "passed": 9,
+    "failed": 0,
+    "strictAbsoluteTolerance": "0.001",
+    "nonfiniteAndMalformedRejected": true
+  },
+  "frontend": {
+    "productionBuild": "PASS",
+    "lintExitCode": 0,
+    "existingWarningsRemain": true
+  },
+  "database": {
+    "verifiedProblems": 5,
+    "formalTestCases": 100,
+    "storedAssets": 19,
+    "assetKinds": [
+      "REFERENCE",
+      "GENERATOR",
+      "VALIDATOR",
+      "REPORT"
+    ],
+    "containsGeneratorsAndBothIndependentCppOracles": true
+  },
+  "readyPapers": [
+    "201312",
+    "201403",
+    "201409",
+    "201412",
+    "202403",
+    "202603",
+    "202605",
+    "202609"
+  ],
+  "remainingBuildingPapers": 36,
+  "persistenceReport": "latest-csp41-persistence.json",
+  "importCorrection": "Initial import exposed name/label mismatch in subtask metadata; corrected to label, preserved validated inputs and outputs, and all five current packs imported through API",
+  "baselineTests": "Sandbox supervisor and Worker task handling are unchanged; previous 19-test integration results retained, not described as newly rerun",
+  "limitations": [
+    "Site-generated data and scores are not official hidden tests or certification results",
+    "Small exhaustive and differential checks do not prove every input or detect every incorrect program",
+    "Online E datasets are encoded from independently computed offline answers; helper oracle expects decoded events and deterministic generation provides decoding certificates",
+    "D reference and block oracle share the proved digit identity; 12800 literal recurrence checks separately test that identity"
+  ]
+}

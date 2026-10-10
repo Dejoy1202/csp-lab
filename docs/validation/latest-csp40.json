@@ -1,0 +1,199 @@
+{
+  "batch": "202512",
+  "examNumber": 40,
+  "date": "2026-10-10",
+  "status": "PASS",
+  "officialHiddenData": false,
+  "scoring": "SITE_SIMULATION",
+  "readyPapers": 9,
+  "readyProblems": 45,
+  "buildingPapers": 35,
+  "validation": {
+    "formalInputs": 100,
+    "distinctFormalInputs": 100,
+    "smallDifferentialChecks": 200,
+    "originalSamples": 5,
+    "selectedWrongPrograms": 16,
+    "supplemental": {
+      "image": {
+        "status": "PASS",
+        "cases": 124,
+        "method": "Forward physical matrices + literal inverse; all d/r choices, rectangular padding and edge coordinates"
+      },
+      "numberTheory": {
+        "status": "PASS",
+        "cases": 200,
+        "method": "Literal seven-value distinctness over all C,E divisors; no inclusion-exclusion oracle"
+      },
+      "packets": {
+        "status": "PASS",
+        "multisetColoringChecks": 7904,
+        "liveReferenceTraces": 80,
+        "method": "Stable-subset partition DP (multiplicity kept) + independent weighted matching; dynamic unrestricted 30-bit weights"
+      }
+    },
+    "jointLimits": {
+      "status": "PASS",
+      "n": 500000,
+      "q": 500000,
+      "initialElements": 500000,
+      "finalElements": 999999,
+      "W": 1,
+      "inputSha256": "1ab5f5fbf30e8e24fc5bdc0f2844c96b1ec22a6b5f9dd57af21e2fa792ded763",
+      "expectedSystemCost": 500000,
+      "referenceTimeMs": 1113,
+      "referenceMemoryKb": 685208,
+      "method": "For W=1, max equal-value multiplicity; each active packet has one or two distinct values"
+    },
+    "resources": [
+      {
+        "problem": "202512-1",
+        "maximumReferenceTimeMs": 5,
+        "maximumReferenceMemoryKb": 12864
+      },
+      {
+        "problem": "202512-2",
+        "maximumReferenceTimeMs": 29,
+        "maximumReferenceMemoryKb": 12864
+      },
+      {
+        "problem": "202512-3",
+        "maximumReferenceTimeMs": 18,
+        "maximumReferenceMemoryKb": 12812
+      },
+      {
+        "problem": "202512-4",
+        "maximumReferenceTimeMs": 522,
+        "maximumReferenceMemoryKb": 329692
+      },
+      {
+        "problem": "202512-5",
+        "maximumReferenceTimeMs": 430,
+        "maximumReferenceMemoryKb": 193500
+      }
+    ]
+  },
+  "ordinaryAccountMockExam": {
+    "batch": "202512",
+    "status": "PASS",
+    "ordinaryAccount": true,
+    "liveDocker": true,
+    "examId": 58,
+    "durationSeconds": 14400,
+    "totalScore": 500,
+    "sampleScore": 0,
+    "construction": null,
+    "extraWitnesses": [
+      {
+        "label": "小规模数字变换",
+        "problem": "202512-2",
+        "submissionId": 250,
+        "status": "WA",
+        "score": 80
+      },
+      {
+        "label": "只支持翻转",
+        "problem": "202512-3",
+        "submissionId": 251,
+        "status": "WA",
+        "score": 50
+      },
+      {
+        "label": "只支持n≤10",
+        "problem": "202512-4",
+        "submissionId": 252,
+        "status": "WA",
+        "score": 30
+      },
+      {
+        "label": "只支持n≤10的数据包",
+        "problem": "202512-5",
+        "submissionId": 254,
+        "status": "WA",
+        "score": 20
+      }
+    ],
+    "partialScore": 55,
+    "partialSubmissionId": 249,
+    "highestScorePreserved": true,
+    "evidence": [
+      {
+        "problem": "202512-1",
+        "submissionId": 242,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202512-2",
+        "submissionId": 243,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202512-3",
+        "submissionId": 244,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202512-4",
+        "submissionId": 245,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      },
+      {
+        "problem": "202512-5",
+        "submissionId": 246,
+        "status": "AC",
+        "score": 100,
+        "testPoints": 20
+      }
+    ]
+  },
+  "tests": {
+    "frontendBuild": "PASS",
+    "frontendLint": {
+      "exitCode": 0,
+      "existingWarningsRetained": true
+    },
+    "edgeBrowser": {
+      "status": "PASS",
+      "cases": 2,
+      "durationSeconds": 8.7,
+      "checks": [
+        "nine ready papers; unfinished batches blocked",
+        "five mathematical statements, local Monaco, real sample AC/0, finish/review"
+      ]
+    },
+    "priorSandboxSuite": {
+      "tests": 19,
+      "reexecutedThisTurn": false,
+      "reason": "No sandbox, worker task handling, Java or checker changes"
+    }
+  },
+  "assetsStoredInMySQL": 20,
+  "corrections": [
+    "Authored B sample corrected before import; builder rejected it",
+    "A minimum input/zero/max31bit/thousand-element sets added, whole final paper revalidated",
+    "Browser asynchronous sample assertion waits 90 seconds; original failure had QUEUED state behind whole-paper judging",
+    "Scoring text exponent typography normalized; point inputs, expected answers, limits and scores unchanged"
+  ],
+  "limitations": [
+    "Self-created finite test data are not official results or proof against every possible wrong program",
+    "Large image forward generator and inverse reference share rotation geometry; literal physical matrices verify small/moderate cases",
+    "D factorization oracle shares proved multiplicative/inclusion-exclusion math; literal tuple enumeration is separate",
+    "E full non-power-of-two distributions use sparse 30-bit domain with duplicates; arbitrary random 30-bit matching is checked at moderate scale, full trie footprint uses independent W=1 certificate"
+  ],
+  "persistence": {
+    "status": "PASS",
+    "all17TablesEqual": true,
+    "ordinaryPasswordLogin": true,
+    "examId": 58,
+    "totalScore": 500,
+    "volumeRemoved": false
+  }
+}

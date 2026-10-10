@@ -1,0 +1,18 @@
+{
+  "image": {
+    "status": "PASS",
+    "cases": 124,
+    "method": "Forward physical matrices + literal inverse; all d/r choices, rectangular padding and edge coordinates"
+  },
+  "numberTheory": {
+    "status": "PASS",
+    "cases": 200,
+    "method": "Literal seven-value distinctness over all C,E divisors; no inclusion-exclusion oracle"
+  },
+  "packets": {
+    "status": "PASS",
+    "multisetColoringChecks": 7904,
+    "liveReferenceTraces": 80,
+    "method": "Stable-subset partition DP (multiplicity kept) + independent weighted matching; dynamic unrestricted 30-bit weights"
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "batch": "202509",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "202509-1",
+      "mutant": "exclude-circle-boundary",
+      "reason": "圆周必须计入；严格小于丢失边界点",
+      "rejectedAtTestPoint": 7,
+      "status": "WA",
+      "inputSha256": "6ab102fda78e47fde4dd0bb8a77f05fc37060ace819637de23a388e713e1ad7f",
+      "sourceSha256": "2bf56f609c276b7f63cca8ef630125dbc3f2b48e4d53043324252c8c46a2cf23"
+    },
+    {
+      "problem": "202509-1",
+      "mutant": "integer-division",
+      "reason": "估计值不能使用整数除法",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "8f6d13c188f8bd5b6eefd290d87db2e76c1e81305be3887a75a6befaf1f2fc0b",
+      "sourceSha256": "f460e923d93e8fc66cafdf9507a23681c37d18bdd3276abbd2708378ff59c0bc"
+    },
+    {
+      "problem": "202509-1",
+      "mutant": "drop-decimal-coordinates",
+      "reason": "输入的两位小数不可截断",
+      "rejectedAtTestPoint": 15,
+      "status": "WA",
+      "inputSha256": "4e139e2e863244b3b0a08033305c538b6374df2c40fb7777802162a743627b71",
+      "sourceSha256": "ab9b25a3bef8308a2fd4c3cab8b1778e18cdade86b41a2160fc33acd8f1c6e19"
+    },
+    {
+      "problem": "202509-2",
+      "mutant": "strict-white-threshold",
+      "reason": "灰度等于k是白色",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "f862b1065bc49a1e3b46ff873bd712f9c14575c95605eb8864ae13ddd8cbfc5e",
+      "sourceSha256": "1f90d471d1f3364db5e231e8a591e52d68901b48ca29f948be00cd7c9b1e6e4b"
+    },
+    {
+      "problem": "202509-2",
+      "mutant": "black-equality",
+      "reason": "黑色位置必须严格小于k",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "f862b1065bc49a1e3b46ff873bd712f9c14575c95605eb8864ae13ddd8cbfc5e",
+      "sourceSha256": "7bf9d5e554c50cd439a29b7a2f18847eb015b3bafee0e79a47f7951494e31bee"
+    },
+    {
+      "problem": "202509-2",
+      "mutant": "fixed-eight-bit",
+      "reason": "L可以为65536",
+      "rejectedAtTestPoint": 18,
+      "status": "WA",
+      "inputSha256": "34487270b842a5f5fb2513a466a39279c9b735d9edb4b66799b5fa469c0a9d3a",
+      "sourceSha256": "ac47f7e3fa88e6b478ed0e0909c49a3253e1e22acd7dc80fcb763baeae3a3049"
+    },
+    {
+      "problem": "202509-3",
+      "mutant": "omit-h-escape",
+      "reason": "HH开头只删一个H",
+      "rejectedAtTestPoint": 5,
+      "status": "WA",
+      "inputSha256": "08c5df944661d2ee717bea8ea993d78a7a7ab8942a4c25302f53b6c26ec65435",
+      "sourceSha256": "28ee6a5ab929e9100210d862b5d0e89ed7fda2f7b1f76ce990f1d324df2074c3"
+    },
+    {
+      "problem": "202509-3",
+      "mutant": "decode-padding-as-data",
+      "reason": "最后一字节表示补零数且补零不得解码",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "afebaa9b1dabc2e3d208809159bb129c18c0ea35c410540af04742c3d422c961",
+      "sourceSha256": "f3bde49e2ead8198825cdd63089a9bf0825ce1dbdf9f5a545c71012f82647cae"
+    },
+    {
+      "problem": "202509-3",
+      "mutant": "wrong-dynamic-index",
+      "reason": "动态表在插入时顺序变化",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "afebaa9b1dabc2e3d208809159bb129c18c0ea35c410540af04742c3d422c961",
+      "sourceSha256": "93f56084410ed39df02dd520e063c42ad1d3e6f1283f559cc70dd544061b9aca"
+    },
+    {
+      "problem": "202509-3",
+      "mutant": "index-type-three",
+      "reason": "字面量不索引不得修改动态表",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "afebaa9b1dabc2e3d208809159bb129c18c0ea35c410540af04742c3d422c961",
+      "sourceSha256": "bfbe5ea5e1ec09eb556f5f60c29fdb0ccbbceeef1ab56727ed8f7d115f621cfe"
+    },
+    {
+      "problem": "202509-4",
+      "mutant": "ignore-final-complement",
+      "reason": "路径补集包含最后一个区间",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "2f8eb1805bee65beca1b83d81ed5ee6e1255416479bf2be7b65e0be4600f671d",
+      "sourceSha256": "47d96cf6cee4e378b1b53f5072cef21d4f42029fb00f7888d758733c80849d40"
+    },
+    {
+      "problem": "202509-4",
+      "mutant": "forbid-zero-mex",
+      "reason": "0是合法答案",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "2f8eb1805bee65beca1b83d81ed5ee6e1255416479bf2be7b65e0be4600f671d",
+      "sourceSha256": "cce1ed779be6e832bedab53c51abe987f366a097db1f200f888bbd3c3f0dbaa9"
+    },
+    {
+      "problem": "202509-4",
+      "mutant": "exclude-path-endpoint",
+      "reason": "路径包含端点",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "ff8c445ebb166b8c631be4c9aeb36c4b2a167af265e6253b2d5ede57732167b9",
+      "sourceSha256": "8de1868cfc1a5ceeb29f641ef4edc2bf1411e938922ea475f33f22813a9ce520"
+    },
+    {
+      "problem": "202509-5",
+      "mutant": "lose-flat-cost-partial-count",
+      "reason": "相同边际费用允许预算落在跳跃中间",
+      "rejectedAtTestPoint": 5,
+      "status": "WA",
+      "inputSha256": "01a8cbb3b4b5bc8716410a14589e3eaa8076231dd98e77de31afe092c7f5670e",
+      "sourceSha256": "8f5b574c10989ad5f62c5af3643b02581a36b339026f2f1404c2f35e1d601142"
+    },
+    {
+      "problem": "202509-5",
+      "mutant": "disallow-same-day-work",
+      "reason": "同一天上午制作的题可下午验证",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "c4b5d2cd3f07287d8d12ba8f8d8d03329581c7523a0a5e2dc2f96deb5b57bfa4",
+      "sourceSha256": "45ef45a1be7874de32ae3b7f9ccd7d3b73418f61722afae8cae202a7f2cc6dc8"
+    },
+    {
+      "problem": "202509-5",
+      "mutant": "all-tasks-or-none",
+      "reason": "未能全部完成时仍可完成部分",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "c4b5d2cd3f07287d8d12ba8f8d8d03329581c7523a0a5e2dc2f96deb5b57bfa4",
+      "sourceSha256": "74eb35dd474f60d15f82844293bed05a7a81160e62ead3b04adab29a860f6323"
+    },
+    {
+      "problem": "202509-1",
+      "mutant": "two-decimal-estimate",
+      "reason": "只保留两位小数可能超出允许误差",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "8f6d13c188f8bd5b6eefd290d87db2e76c1e81305be3887a75a6befaf1f2fc0b",
+      "sourceSha256": "d954d5897aa1825e9ab94dabef63e284fdb1df945fd8f8f96a56040f26ad425e"
+    },
+    {
+      "problem": "202509-2",
+      "mutant": "last-watermark-row-omitted",
+      "reason": "贴底的完整水印也须枚举",
+      "rejectedAtTestPoint": 6,
+      "status": "WA",
+      "inputSha256": "5ef1c6014f5d395eb2a6af4d6148b3e9e7944bfb99a0d28217a22962ce13f3d0",
+      "sourceSha256": "e86e20e09b6e5259b14795998fc7984d59c6c6258a0e8431371a4d479825ecb6"
+    },
+    {
+      "problem": "202509-3",
+      "mutant": "lsb-first-compressed-bits",
+      "reason": "压缩字节从高位向低位解码",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "afebaa9b1dabc2e3d208809159bb129c18c0ea35c410540af04742c3d422c961",
+      "sourceSha256": "bf7569b4f7157a0a043aaf70a0d220928e9b9b0b4eb6edafc88a3574e9f7932e"
+    },
+    {
+      "problem": "202509-4",
+      "mutant": "singleton-path-is-whole-tree",
+      "reason": "同端点路径仅包含该节点",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "2f8eb1805bee65beca1b83d81ed5ee6e1255416479bf2be7b65e0be4600f671d",
+      "sourceSha256": "98c846f4b26c259d16ea96361fd3afd45b0abaff26e801942142d20b96e06050"
+    },
+    {
+      "problem": "202509-5",
+      "mutant": "marginal-cost-cap-too-small",
+      "reason": "同日两项工作的边际成本可达20亿",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "7cfaf09ad7c6a3ab8e2f7ae33e3359288049b926d78446b8ea35f194f5c2ea5f",
+      "sourceSha256": "b3bd1394baf0c122dd33e736803a85cc89dba11052dda2593d3fd0b7463b9eca"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

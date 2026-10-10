@@ -1,0 +1,103 @@
+{
+  "date": "2026-10-09",
+  "liveBackend": true,
+  "liveDocker": true,
+  "browser": "Microsoft Edge (existing installation)",
+  "browserTests": {
+    "startTime": "2026-10-09T04:29:50.236Z",
+    "duration": 77782.11499999999,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "css": {
+    "checked": 16,
+    "changed": 0
+  },
+  "productionBuild": {
+    "passed": true,
+    "warning": "Main JavaScript bundle exceeds 500 kB; local Monaco is included."
+  },
+  "lint": {
+    "exitCode": 0,
+    "warnings": 22
+  },
+  "persistence": {
+    "status": "PASS",
+    "afterComposeDownUp": true,
+    "submissions": 70,
+    "sourceCodeAndTestResultsPreserved": true,
+    "notes": 10,
+    "notesPreserved": true,
+    "exams": 6,
+    "examScoresPreserved": true,
+    "problems": 63,
+    "problemStatementsAndScoringPreserved": true,
+    "drafts": 63,
+    "draftsPreserved": true
+  },
+  "judgeEvidence": [
+    {
+      "test": "AC",
+      "submissionId": 59,
+      "status": "AC",
+      "score": 100
+    },
+    {
+      "test": "WA",
+      "submissionId": 60,
+      "status": "WA",
+      "score": 0
+    },
+    {
+      "test": "CE",
+      "submissionId": 61,
+      "status": "CE",
+      "score": 0
+    },
+    {
+      "test": "TLE",
+      "submissionId": 62,
+      "status": "TLE",
+      "score": 0
+    },
+    {
+      "test": "MLE",
+      "submissionId": 63,
+      "status": "MLE",
+      "score": 0
+    },
+    {
+      "test": "RE",
+      "submissionId": 64,
+      "status": "RE",
+      "score": 0
+    },
+    {
+      "test": "OLE",
+      "submissionId": 65,
+      "status": "OLE",
+      "score": 0
+    },
+    {
+      "test": "PARTIAL",
+      "submissionId": 66,
+      "status": "WA",
+      "score": 50
+    },
+    {
+      "test": "GROUP_PARTIAL",
+      "submissionId": 68,
+      "status": "WA",
+      "score": 40
+    },
+    {
+      "test": "EXAM_T1",
+      "submissionId": 70,
+      "status": "AC",
+      "score": 100
+    }
+  ],
+  "scope": "API contracts, authentication persistence, drafts, submission history, notes, imports and exams; existing CSS unchanged"
+}

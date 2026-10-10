@@ -1,0 +1,223 @@
+[
+  {
+    "position": 1,
+    "name": "tie-chooses-upper",
+    "reason": "精确中点必须选横坐标较小项",
+    "edits": [
+      [
+        "left*left<=",
+        "left*left<"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "sum-standard-deviations",
+    "reason": "独立环节合并方差应累加标准差的平方",
+    "edits": [
+      [
+        "variance+=v*v",
+        "variance+=v"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "exclude-exact-capacity",
+    "reason": "可靠性恰好等于q仍然合法",
+    "edits": [
+      [
+        "Q*Q<=limit*limit",
+        "Q*Q<limit*limit"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "unbounded-instead-zero-one",
+    "reason": "每个环节只能选择一次",
+    "edits": [
+      [
+        "for(int v=sum;v>=value[i];--v)",
+        "for(int v=value[i];v<=sum;++v)"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "ignore-preferred-cpu",
+    "reason": "偏好CPU速度翻倍且余1单位向上取整",
+    "edits": [
+      [
+        "int speed=preferred[task][cpu]?2:1",
+        "int speed=1"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "return-after-rotation",
+    "reason": "同时刻必须先归还到旧队列，再循环移位",
+    "edits": [
+      [
+        "queues[(cpu+rotation)%m].push_back(task)",
+        "queues[(cpu+now/T)%m].push_back(task)"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "ignore-floor-ratio",
+    "reason": "op=1包含非整除的倍数区间",
+    "edits": [
+      [
+        "cin>>n>>k>>op;",
+        "cin>>n>>k>>op;op=0;"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "correct-count-empty-plan",
+    "reason": "仅组数正确只能获得40%的分数，不能满分",
+    "edits": [
+      [
+        "cout<<groups[i].size();for(long long x:groups[i])cout<<' '<<x;",
+        "cout<<0;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "omit-self-pairs",
+    "reason": "点对允许两个端点为同一节点",
+    "edits": [
+      [
+        "answer+=neighbors(u)+1",
+        "answer+=neighbors(u)"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "int32-total-pairs",
+    "reason": "十万节点合格点对数量可能超过32位",
+    "edits": [
+      [
+        "long long answer=0",
+        "int answer=0"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "ignore-distance-complement",
+    "reason": "两段路径长度余数必须互补",
+    "edits": [
+      [
+        "int residue=(k-r.residue)%k",
+        "int residue=0"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "double-exact-tie",
+    "reason": "浮点消减误差会让数学上的精确中点选右",
+    "sourceFile": "mutants/1-double-nearest.cpp",
+    "edits": []
+  },
+  {
+    "position": 1,
+    "name": "epsilon-too-large",
+    "reason": "真正较近的右侧不能被过大容差当作平局",
+    "sourceFile": "mutants/1-double-nearest.cpp",
+    "edits": [
+      [
+        "if(b<=a)",
+        "if(b<=a+1e-3)"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "int32-total-variance",
+    "reason": "100个环节平方和可能超过32位",
+    "edits": [
+      [
+        "long long mean=0,variance=0;",
+        "long long mean=0;int variance=0;"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "int32-feasibility-product",
+    "reason": "方差与阈值平方乘积需要64位",
+    "edits": [
+      [
+        "long long Q=",
+        "int Q="
+      ],
+      [
+        "1LL*dp[v]*Q*Q",
+        "dp[v]*Q*Q"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "absolute-finish-time",
+    "reason": "周转时间应减去首次实际运行时间",
+    "edits": [
+      [
+        "answer[task]=now-first[task]",
+        "answer[task]=now"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "assume-values-sorted",
+    "reason": "输入数字不保证有序",
+    "edits": [
+      [
+        "sort(a.begin(),a.end());",
+        ""
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "omit-lca-color",
+    "reason": "路径颜色必须计入公共中心恰好一次",
+    "edits": [
+      [
+        "uint64_t base=r.parity^(1ULL<<color[r.center]);",
+        "uint64_t base=r.parity;"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "singleton-empty-graph-no-output",
+    "reason": "只有一个数字仍须输出一组合法划分",
+    "edits": [
+      [
+        "cin>>n>>k>>op;",
+        "cin>>n>>k>>op;if(n==1)return 0;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "zero-updates-no-initial-answer",
+    "reason": "即使没有开关操作也须输出初始点对数",
+    "edits": [
+      [
+        "cin>>n>>m>>k>>q;",
+        "cin>>n>>m>>k>>q;if(q==0)return 0;"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "exhaustiveLabelledTreeAndStationCases": 264,
+  "randomCases": 80,
+  "totalChecks": 344,
+  "allOrderedPairs": true,
+  "onlineEncryptedEvents": true,
+  "oracle": "Direct BFS paths and tire simulation, plus offline repair-time oracle"
+}

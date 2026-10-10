@@ -1,0 +1,82 @@
+{
+  "batch": "202509",
+  "status": "PASS",
+  "ordinaryAccount": true,
+  "liveDocker": false,
+  "sandbox": "Windows AppContainer + Job Object",
+  "examId": 10,
+  "durationSeconds": 14400,
+  "totalScore": 500,
+  "sampleScore": 0,
+  "construction": null,
+  "extraWitnesses": [
+    {
+      "label": "将阈值错误限制在255以内",
+      "problem": "202509-2",
+      "submissionId": 104,
+      "status": "WA",
+      "score": 85
+    },
+    {
+      "label": "错误地给类型3建立索引",
+      "problem": "202509-3",
+      "submissionId": 105,
+      "status": "WA",
+      "score": 40
+    },
+    {
+      "label": "仅实现n,m≤1000子任务",
+      "problem": "202509-4",
+      "submissionId": 106,
+      "status": "WA",
+      "score": 20
+    },
+    {
+      "label": "仅实现n≤100子任务",
+      "problem": "202509-5",
+      "submissionId": 107,
+      "status": "WA",
+      "score": 20
+    }
+  ],
+  "partialScore": 60,
+  "partialSubmissionId": 103,
+  "highestScorePreserved": true,
+  "evidence": [
+    {
+      "problem": "202509-1",
+      "submissionId": 97,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202509-2",
+      "submissionId": 98,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202509-3",
+      "submissionId": 99,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202509-4",
+      "submissionId": 100,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    },
+    {
+      "problem": "202509-5",
+      "submissionId": 101,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 20
+    }
+  ]
+}

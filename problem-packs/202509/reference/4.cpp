@@ -1,0 +1,8 @@
+// CSP Lab: iterative heavy chains; sparse RMQ over the complement of the path.
+#include <bits/stdc++.h>
+using namespace std;
+int main(){ios::sync_with_stdio(false);cin.tie(nullptr);int n,m;cin>>n>>m;vector<int>a(n);for(int &v:a)cin>>v;vector<vector<int>>g(n);for(int i=1,u,v;i<n;++i){cin>>u>>v;--u;--v;g[u].push_back(v);g[v].push_back(u);}vector<int>parent(n,-1),depth(n),size(n,1),heavy(n,-1),order{0};for(size_t i=0;i<order.size();++i){int u=order[i];for(int v:g[u])if(v!=parent[u]){parent[v]=u;depth[v]=depth[u]+1;order.push_back(v);}}
+for(int i=n-1;i>0;--i){int u=order[i],p=parent[u];size[p]+=size[u];if(heavy[p]<0||size[u]>size[heavy[p]])heavy[p]=u;}
+vector<int>head(n),pos(n),base(n);int timer=0;for(int u:order)if(parent[u]<0||heavy[parent[u]]!=u)for(int v=u;v>=0;v=heavy[v]){head[v]=u;pos[v]=timer;base[timer++]=a[v];}
+vector<int>logs(n+1);for(int i=2;i<=n;++i)logs[i]=logs[i/2]+1;vector<vector<int>>rmq(logs[n]+1,vector<int>(n));rmq[0]=base;for(int k=1;k<=logs[n];++k)for(int i=0;i+(1<<k)<=n;++i)rmq[k][i]=min(rmq[k-1][i],rmq[k-1][i+(1<<(k-1))]);auto minimum=[&](int l,int r){if(l>r)return n;int k=logs[r-l+1];return min(rmq[k][l],rmq[k][r-(1<<k)+1]);};
+while(m--){int x,y;cin>>x>>y;--x;--y;vector<pair<int,int>>intervals;while(head[x]!=head[y]){if(depth[head[x]]<depth[head[y]])swap(x,y);intervals.emplace_back(pos[head[x]],pos[x]);x=parent[head[x]];}intervals.emplace_back(min(pos[x],pos[y]),max(pos[x],pos[y]));sort(intervals.begin(),intervals.end());int answer=n,next=0;for(auto [l,r]:intervals){answer=min(answer,minimum(next,l-1));next=r+1;}answer=min(answer,minimum(next,n-1));cout<<answer<<'\n';}}

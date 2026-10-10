@@ -1,0 +1,150 @@
+{
+  "batch": "201403",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "201403-1",
+      "mutant": "double-count-opposite-pairs",
+      "reason": "同一相反数对只能计数一次",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "c67dae9347670d761fc74a1059ca29de02ec3b10056dd86aaaf8c6299b84f1d0",
+      "sourceSha256": "39fc72f9e8de9786e57fca741c596945ad6f8f5d5ddf205b18dbd651012a3e97"
+    },
+    {
+      "problem": "201403-1",
+      "mutant": "ignore-endpoint-1000",
+      "reason": "绝对值上限1000仍然合法",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "c67dae9347670d761fc74a1059ca29de02ec3b10056dd86aaaf8c6299b84f1d0",
+      "sourceSha256": "42618a7718184e272a264085960a6ca5d1440ed5dc1e54fb5d0ccbc6a36c4121"
+    },
+    {
+      "problem": "201403-2",
+      "mutant": "exclude-window-boundary",
+      "reason": "窗口四条边及角点属于窗口",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "80b0e35bc4d3df1e8f106fa5e20b8c884bbd8f586b6f8eee64fcb18c6a5eb325",
+      "sourceSha256": "1e876bf36abc34fb2815c88b5d074f271ae5316720dd9c8b6aefc0838da22c41"
+    },
+    {
+      "problem": "201403-2",
+      "mutant": "forget-front-reordering",
+      "reason": "点击后遮挡顺序改变",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "b831e44840d1d6b7764966a32d8ec9e1d0ba06c7947e69472f9fea58500c2749",
+      "sourceSha256": "3953b86a58df2265f37989955b362feb4297d40bf05ee6c59348accc87151554"
+    },
+    {
+      "problem": "201403-3",
+      "mutant": "reject-hyphen-argument",
+      "reason": "带参数选项的参数可以以短横线开头",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "2d2d7ec2a69693764ce39848b5c3afee4a06675926075d8cc346db99c0458526",
+      "sourceSha256": "bffe6d36449ad4567b3cd4adf75bf78df2d3b002dba9d4a9332b4a9b4dd2f5e1"
+    },
+    {
+      "problem": "201403-3",
+      "mutant": "erase-last-valid-duplicate",
+      "reason": "末尾缺参数不能擦除之前已解析的合法值",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "2d81c93b1f665cdde521f6098075e0ebf9185027d9a05afbebf13b4e683184fe",
+      "sourceSha256": "fd96dc976df89410dcad9882076b9f4967de56977d784ad8db210b3edab4152b"
+    },
+    {
+      "problem": "201403-4",
+      "mutant": "ignore-new-router-budget",
+      "reason": "最短路线不能超过新增路由器数量限制",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "b8c197060cf6a1505beee19af07025369aa60fdea4c2298817b2ace09b596342",
+      "sourceSha256": "3dcc5fa643574c2279028e76fbd5b95296298282914e72bb99080dd24589ea66"
+    },
+    {
+      "problem": "201403-4",
+      "mutant": "squared-distance-int32-overflow",
+      "reason": "坐标差及距离平方需要64位整数",
+      "rejectedAtTestPoint": 8,
+      "status": "WA",
+      "inputSha256": "a0d2c02d6112e62711fe9a5fd191285bec1ef4ad86385c736fb6ab7993c267e3",
+      "sourceSha256": "aeae19dc8ba76eda230d6affa6e602f201657dbedbbf4a95b29030772cbd2651"
+    },
+    {
+      "problem": "201403-5",
+      "mutant": "ignore-dual-cpu-gpu-mode",
+      "reason": "四种执行模式耗时不保证单调",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "776a73c8d66a2cd97ce182b95aa19c67e76b17099d6b731ab14ca7c6b5a89093",
+      "sourceSha256": "f618b88a93ad270a139a369da8c14006334fd6264bdc81042beed53ecd0f4c9a"
+    },
+    {
+      "problem": "201403-5",
+      "mutant": "wrong-gpu-mode-duration",
+      "reason": "CPU+GPU模式使用c而不是a",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "64ea0a749b955992dcd36632f33fe68d18c4a6e2c6543ba49aa43f846d4d04ab",
+      "sourceSha256": "541a232146f5b347bd39925fb8555bc4af8531a66146696754cd81fd2a28cad7"
+    },
+    {
+      "problem": "201403-1",
+      "mutant": "positive-one-omitted",
+      "reason": "正1与负1也须配对",
+      "rejectedAtTestPoint": 7,
+      "status": "WA",
+      "inputSha256": "6ef88529ae80d052b7dcdb8b6a2db6db86d7c947813544ebab2f2b1a207a8403",
+      "sourceSha256": "b9ad4b3f835cad7b68f671ea4ea81343ef8e1d0a9391ed82db2762a3ea85445c"
+    },
+    {
+      "problem": "201403-2",
+      "mutant": "bottom-window-first",
+      "reason": "点击须优先最上层覆盖窗口",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "b831e44840d1d6b7764966a32d8ec9e1d0ba06c7947e69472f9fea58500c2749",
+      "sourceSha256": "61e5f0475c35b780fbb4d4b7493b158c43d0a1311b85737709263d0df252e3c0"
+    },
+    {
+      "problem": "201403-3",
+      "mutant": "continue-after-invalid-token",
+      "reason": "遇到非法选项或普通参数就停止解析",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "2d2d7ec2a69693764ce39848b5c3afee4a06675926075d8cc346db99c0458526",
+      "sourceSha256": "47a9dd66c6f4838063c1a9edd12eab7227bbbb45fff4ad1afc840ef0c57dee62"
+    },
+    {
+      "problem": "201403-4",
+      "mutant": "radio-radius-strict",
+      "reason": "恰好等于通信半径的两路由器可以连接",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "6de4daf57169966ededb1330809db792d748f12f0b23bcdadb9ab55c83c356ea",
+      "sourceSha256": "fdeddb8118988f941a07f496f2256a8d05dc681d03dcd1912bf989c08517c9ca"
+    },
+    {
+      "problem": "201403-5",
+      "mutant": "omit-single-cpu-mode",
+      "reason": "单CPU模式可能优于其它三种模式",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "cac1e51022a29126cdcb89fa92a8ac65ef0c30446876a795375d859a0bc52e28",
+      "sourceSha256": "3b8f069f6f3850e0cde246ccba4bc2d4bb7662af6d4dba9a21d6e55752dcecde"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

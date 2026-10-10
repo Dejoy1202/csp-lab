@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "n": 500000,
+  "q": 500000,
+  "initialElements": 500000,
+  "finalElements": 999999,
+  "W": 1,
+  "inputSha256": "1ab5f5fbf30e8e24fc5bdc0f2844c96b1ec22a6b5f9dd57af21e2fa792ded763",
+  "expectedSystemCost": 500000,
+  "referenceTimeMs": 1113,
+  "referenceMemoryKb": 685208,
+  "method": "For W=1, max equal-value multiplicity; each active packet has one or two distinct values"
+}

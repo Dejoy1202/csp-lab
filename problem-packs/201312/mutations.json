@@ -1,0 +1,112 @@
+[
+  {
+    "position": 1,
+    "name": "tie-chooses-largest",
+    "reason": "频率相同必须选最小数",
+    "edits": [
+      [
+        "if(k>best)",
+        "if(k>=best)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "omit-isbn-X",
+    "reason": "余数10必须表示为X",
+    "edits": [
+      [
+        "r==10?'X'",
+        "r==10?'0'"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "rectangle-width-off-by-one",
+    "reason": "柱状图区间宽度不能多算一列",
+    "edits": [
+      [
+        "v*(i-l)",
+        "v*(i-l+1)"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "allow-leading-zero",
+    "reason": "首位不能为零",
+    "edits": [
+      [
+        "if(i==0&&c==0)continue;",
+        "if(false)continue;"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "target-forward-reachability",
+    "reason": "判断能到达终点需要反向图",
+    "edits": [
+      [
+        "auto reachesTarget=visit(T,rev);",
+        "auto reachesTarget=visit(T,g);"
+      ]
+    ]
+  },
+  {
+    "position": 1,
+    "name": "frequency-initial-one",
+    "reason": "全体频率为1时仍须选出数字",
+    "edits": [
+      [
+        "int best=-1,ans=0",
+        "int best=1,ans=0"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "name": "valid-X-not-Right",
+    "reason": "合法X校验位必须输出Right",
+    "edits": [
+      [
+        "if(s[12]==c)",
+        "if(s[12]==c&&c!='X')"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "name": "missing-stack-flush",
+    "reason": "最后仍在栈中的柱子也须结算",
+    "edits": [
+      [
+        "i<=n",
+        "i<n"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "name": "missing-digit-allowed",
+    "reason": "四种数字必须全部出现",
+    "edits": [
+      [
+        "cout<<d[15]",
+        "cout<<(d[15]+d[7])%mod"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "name": "dot-moves-up",
+    "reason": "点号格只允许向下",
+    "edits": [
+      [
+        "z=='.'&&d!=1",
+        "z=='.'&&d!=0"
+      ]
+    ]
+  }
+]

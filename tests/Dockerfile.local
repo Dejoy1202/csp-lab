@@ -1,0 +1,2 @@
+FROM csp-lab-e2e:latest
+COPY tests/ /app/

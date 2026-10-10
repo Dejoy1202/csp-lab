@@ -1,0 +1,176 @@
+[
+  {
+    "code": "202609-1",
+    "title": "流程规划（其一）",
+    "sourceYear": 2026,
+    "sourceBatch": "202609",
+    "sourcePosition": 1,
+    "difficulty": "EASY",
+    "tags": [
+      "数学",
+      "精度"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202609A",
+    "statement": "给定独立环节的均值 $\\mu_i$ 和标准差 $\\sigma_i$，令 $\\mu=\\sum\\mu_i$、$\\sigma=\\sqrt{\\sum\\sigma_i^2}$，计算 $z=(m-\\mu)/\\sigma$。从输入的递增查表点 $x_i$ 中选离 $z$ 最近的一项；等距时选较小的 $x_i$。输出该项对应的输入函数值，保留三位小数。",
+    "inputDescription": "首行 $n,m,k$；随后四行依次为 $n$ 个均值、$n$ 个标准差、$k$ 个横坐标、$k$ 个函数值。",
+    "outputDescription": "一个查表函数值，格式与输入一致。",
+    "constraintsDescription": "$1\\le n,m\\le100$，$2\\le k\\le20$；$0<\\mu_i\\le100$、$0<\\sigma_i\\le10$；$0\\le x_1<\\cdots<x_k\\le1$，函数值严格递增且在 $[0.500,0.841]$ 内。所有实数三位小数，保证 $z$ 位于查表范围内。50%点 $n=1$。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored rules, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站模拟评分；自行构造20个正式点，每点5分，按已核对的规模档比例组织。不是官方隐藏数据或认证成绩。",
+    "samples": [
+      {
+        "input": "1 3 3\n2.000\n2.000\n0.000 0.500 1.000\n0.500 0.691 0.841\n",
+        "output": "0.691\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null,
+    "outputLimitKb": 1024
+  },
+  {
+    "code": "202609-2",
+    "title": "流程规划（其二）",
+    "sourceYear": 2026,
+    "sourceBatch": "202609",
+    "sourcePosition": 2,
+    "difficulty": "MEDIUM",
+    "tags": [
+      "动态规划",
+      "背包",
+      "精度"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202609B",
+    "statement": "从 $n$ 个环节中选择集合 $S$，收益为 $\\sum_{i\\in S}\\mu_i$，波动为 $\\sigma_S=\\sqrt{\\sum_{i\\in S}\\sigma_i^2}$。非空集合必须满足 $m/\\sigma_S\\ge q$。空集合合法且收益为零。求最大收益。",
+    "inputDescription": "首行 $n,m,q$；下一行 $n$ 个整数均值；再一行 $n$ 个标准差。",
+    "outputDescription": "最大收益整数。",
+    "constraintsDescription": "$1\\le n\\le100$，$1\\le m\\le10$，$0.5\\le q\\le1.0$，$1\\le\\mu_i\\le100$，$0.1\\le\\sigma_i\\le3.0$。$q$ 三位小数，标准差一位小数；80%点全部均值相同。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored rules, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站模拟评分；自行构造20个正式点，每点5分，按已核对的规模档比例组织。不是官方隐藏数据或认证成绩。",
+    "samples": [
+      {
+        "input": "3 1 1.000\n5 8 7\n1.0 0.6 0.8\n",
+        "output": "15\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null,
+    "outputLimitKb": 1024
+  },
+  {
+    "code": "202609-3",
+    "title": "轮转调度",
+    "sourceYear": 2026,
+    "sourceBatch": "202609",
+    "sourcePosition": 3,
+    "difficulty": "MEDIUM",
+    "tags": [
+      "模拟",
+      "事件调度"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202609C",
+    "statement": "任务 $i$ 工作量为 $a_i$，初始放到队列 $((i-1)\\bmod m)+1$，同一队列按编号升序。CPU $j$ 的时间片为 $t_j$；取出任务后以每毫秒1单位工作量执行，若 $j\\in S_i$ 则每毫秒2单位，最后不足2单位仍需1毫秒。一次运行最长为时间片；未完成任务放回该CPU当前对应队列的尾部，已完成任务移除。\n\n每过 $T$ 毫秒，CPU与队列的对应关系循环改变：原对应队列 $j$ 改为 $j\\bmod m+1$。正在执行的任务不中断，也不属于队列。相同时刻先把未完成任务放回旧对应队列，然后改变对应关系，最后由空闲CPU取任务。任务始终按CPU的实际编号决定偏好速度。求每个任务从首次执行到完成的经过时间。",
+    "inputDescription": "首行 $n,m,T$；第二行 $m$ 个时间片；随后每任务一行 $a_i,|S_i|$ 及偏好CPU编号，偏好编号互不重复。",
+    "outputDescription": "按任务编号输出 $n$ 个经过时间整数。",
+    "constraintsDescription": "$1\\le n,m\\le100$，$1\\le T\\le10^9$，$1\\le t_j,a_i\\le100$，$0\\le|S_i|\\le m$。40%点 $T=10^9$；另外40%点所有时间片为1。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored rules, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站模拟评分；自行构造20个正式点，每点5分，按已核对的规模档比例组织。不是官方隐藏数据或认证成绩。",
+    "samples": [
+      {
+        "input": "2 1 1000000000\n2\n3 0\n2 1 1\n",
+        "output": "4 1\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null,
+    "outputLimitKb": 1024
+  },
+  {
+    "code": "202609-4",
+    "title": "数字分组",
+    "sourceYear": 2026,
+    "sourceBatch": "202609",
+    "sourcePosition": 4,
+    "difficulty": "HARD",
+    "tags": [
+      "构造",
+      "图论",
+      "二分图"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202609D",
+    "statement": "将互不相同的正整数划分成最少的集合。$op=0$ 时，同一集合不能有两个数满足 $x=ky$；$op=1$ 时，同一集合不能有两个数满足 $\\lfloor x/y\\rfloor=k$。每个输入数字必须恰好出现在一个集合中。求最少组数并输出任意合法划分。",
+    "inputDescription": "首行 $n,k,op$；下一行 $n$ 个不同正整数。",
+    "outputDescription": "第一行最少组数 $g$；随后 $g$ 行，每行先输出该组大小，再输出该组的数字。组及组内顺序任意。",
+    "constraintsDescription": "$1\\le n\\le5\\times10^5$，$2\\le k\\le10^9$，$1\\le a_i\\le10^{18}$，$op\\in\\{0,1\\}$。五个捆绑规模档：10分($n\\le10,op=1$)、20分($n\\le2000,op=0$)、25分($op=0$全规模)、20分($n\\le2000,op=1$)、25分($op=1$全规模)。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored rules, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站自建数据采用五档捆绑评分；每档最少组数正确得40%，完整划分正确再得60%。最低分部分仍要求符合输出格式，可输出g个空组。成绩为本站模拟值。",
+    "samples": [
+      {
+        "input": "3 2 0\n3 6 12\n",
+        "output": "2\n2 3 12\n1 6\n",
+        "checkerType": "CSP_GROUP_PARTITION"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null,
+    "outputLimitKb": 16384
+  },
+  {
+    "code": "202609-5",
+    "title": "奇",
+    "sourceYear": 2026,
+    "sourceBatch": "202609",
+    "sourcePosition": 5,
+    "difficulty": "HARD",
+    "tags": [
+      "树",
+      "点分治",
+      "状态压缩"
+    ],
+    "timeLimitMs": 8000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202609E",
+    "statement": "给定带正整数边权的树，每个节点有固定颜色和可开关的灯。一个无序点对 $\\{u,v\\}$（允许 $u=v$）合格，当且仅当两端灯都亮、路径边权总和是 $k$ 的倍数、路径节点中恰有一种颜色出现奇数次。路径中的颜色统计包括未亮的中间节点。先输出初始合格点对数量；每次翻转一个节点的灯后再次输出数量。",
+    "inputDescription": "首行 $n,m,k,q$；然后初始01串、$n$ 个颜色；接着 $n-1$ 行边 $u,v,w$；最后 $q$ 行要翻转的节点。",
+    "outputDescription": "共 $q+1$ 行，每行合格无序点对数量。",
+    "constraintsDescription": "$1\\le n\\le10^5$，$1\\le m\\le40$，$1\\le k\\le4$，$q\\le10^5$，颜色在 $[1,m]$，边权在 $[1,10^6]$。规模档：15%小树($n,q\\le2000$)、15%单色且$k=1$、20%$k=1$、20%颜色不超过4且$k=1$、30%完整范围。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored rules, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站模拟评分；自行构造20个正式点，每点5分，按已核对的规模档比例组织。不是官方隐藏数据或认证成绩。",
+    "samples": [
+      {
+        "input": "3 2 2 2\n111\n1 2 1\n1 2 1\n2 3 1\n2\n1\n",
+        "output": "4\n3\n1\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null,
+    "outputLimitKb": 4096
+  }
+]

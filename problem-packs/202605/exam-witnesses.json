@@ -1,0 +1,33 @@
+[
+  {
+    "position": 4,
+    "label": "small-scale-only",
+    "edits": [
+      [
+        "int l=in.next(),r=in.next(),answer=0;",
+        "int l=in.next(),r=in.next(),answer=0;if(n>100){output+=\"0\\n\";continue;}"
+      ]
+    ],
+    "expectedStatus": "WA",
+    "expectedScore": 30
+  },
+  {
+    "position": 5,
+    "label": "up-to-3000-only",
+    "edits": [
+      [
+        "auto answer=search.solve();",
+        "auto answer=search.solve();if(n>3000)iota(answer.begin(),answer.end(),0);"
+      ]
+    ],
+    "expectedStatus": "WA",
+    "expectedScore": 60
+  },
+  {
+    "position": 5,
+    "label": "one-GiB-memory-bound",
+    "sourceCode": "#include <cstdlib>\nint main(){for(;;){volatile char *p=(volatile char*)malloc(8*1024*1024);if(!p)continue;for(int i=0;i<8*1024*1024;i+=4096)p[i]=1;}}\n",
+    "expectedStatus": "MLE",
+    "expectedScore": 0
+  }
+]

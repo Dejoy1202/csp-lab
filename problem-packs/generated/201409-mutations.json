@@ -1,0 +1,150 @@
+{
+  "batch": "201409",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "201409-1",
+      "mutant": "ignore-zero-pair",
+      "reason": "0和1也是合法相邻数对",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "1e7a4f32fb9185df1c6fd771a5cf931f03681ea1d0ee5e4efb66e78a58277eeb",
+      "sourceSha256": "54e1023edd2cf42c8a4b84c7c1146daae26b60bc1719d743e838cc46fdc6f925"
+    },
+    {
+      "problem": "201409-1",
+      "mutant": "forget-sort",
+      "reason": "输入顺序不保证有序",
+      "rejectedAtTestPoint": 6,
+      "status": "WA",
+      "inputSha256": "0566ba91938488df4477ae1a83b7ec85db730ef73030edd2751454ac816c92b7",
+      "sourceSha256": "7142a3c19bc7aea930b9065ab8c9d8056a048bb36527726f0bc7146a90cb75c9"
+    },
+    {
+      "problem": "201409-2",
+      "mutant": "double-count-overlap",
+      "reason": "重叠区域只能计一次",
+      "rejectedAtTestPoint": 4,
+      "status": "WA",
+      "inputSha256": "5a4c40463078be0cca6d2e006d82162f48d58afd77e85d5d5ed160e99c408335",
+      "sourceSha256": "837ff1cd500774bc7c12a5d63b1f8e822c1371347ff3e2750c03618f093cd129"
+    },
+    {
+      "problem": "201409-2",
+      "mutant": "count-boundary-grid-points",
+      "reason": "连续面积与端点数量不同，零面积矩形贡献0",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "edac17e9429dd9013be8a66bc5a7532c386b60f56f10e96cde444467f4abb5cb",
+      "sourceSha256": "626c78bd990a09ecd07e173c7f68a7aef673c06698517b5796102926ada2df80"
+    },
+    {
+      "problem": "201409-3",
+      "mutant": "always-case-sensitive",
+      "reason": "标志0时忽略字母大小写",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "b3733a7018b0599129fa0616cef33a244d7c316ff07cd9a78d5633d45889f590",
+      "sourceSha256": "dbd15958eaca15d2703106cb07baadf4dcd9fa2907952e17d2a4bc580def7949"
+    },
+    {
+      "problem": "201409-3",
+      "mutant": "output-normalized-instead-original",
+      "reason": "输出必须保留原始字符串及顺序",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "b3733a7018b0599129fa0616cef33a244d7c316ff07cd9a78d5633d45889f590",
+      "sourceSha256": "7f12f29b68bea86104be64e52dd43adff43a1691e5d0b901245d7a1c7d7c3afd"
+    },
+    {
+      "problem": "201409-4",
+      "mutant": "cost-int32-overflow",
+      "reason": "一百万条需求的总费用可超过32位范围",
+      "rejectedAtTestPoint": 14,
+      "status": "WA",
+      "inputSha256": "f3a63fefc5c8e058b17043a510fe84426d9e09d3f28fbb5261022e53e6a6e42c",
+      "sourceSha256": "8cddb342e3f05b3f3a2726f8e510071cb610b266b81c27648840301863799a33"
+    },
+    {
+      "problem": "201409-4",
+      "mutant": "overwrite-repeated-customers",
+      "reason": "同一位置的多条需求都应累计",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "3d6779f2c3d755036566115b852cfb03cb84477702e221abcb21381a4f30b4d0",
+      "sourceSha256": "58f337cdaf8d98752857c2a2d955dca604f0254335d3b598223c40f4b86f46b8"
+    },
+    {
+      "problem": "201409-5",
+      "mutant": "truncate-board-height-int32",
+      "reason": "n最大10的15次方，不能用32位",
+      "rejectedAtTestPoint": 15,
+      "status": "MLE",
+      "inputSha256": "120c269855d161aa239f611cf83ae0ce8adce0992eeb94ff9a588c8908e26d9a",
+      "sourceSha256": "8851467c9de07576552d7f289d0d0261bafa117e63c0480f376fa6325456eeab"
+    },
+    {
+      "problem": "201409-5",
+      "mutant": "omit-one-tile-orientation",
+      "reason": "L型三格骨牌的四个朝向均可使用",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "ece3d232c1ca9ef8a80b6fdb1585b8f5cf653b9dd023b0521c8da64db859ffac",
+      "sourceSha256": "86125fb0b42f5b39fd45a6bb2e96617b704d9d9f0bdf587f227035214e581870"
+    },
+    {
+      "problem": "201409-1",
+      "mutant": "skip-first-adjacent-pair",
+      "reason": "排序后第一个相邻数对也须检查",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "1e7a4f32fb9185df1c6fd771a5cf931f03681ea1d0ee5e4efb66e78a58277eeb",
+      "sourceSha256": "20e08d3ce9ad7f33d8c2afb3cc20168c51d391fa5a20023224c1d8815f6e728a"
+    },
+    {
+      "problem": "201409-2",
+      "mutant": "miss-coordinate-99-cell",
+      "reason": "坐标100之前的最后一列也有面积",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "edac17e9429dd9013be8a66bc5a7532c386b60f56f10e96cde444467f4abb5cb",
+      "sourceSha256": "ea2f8f19581687afaf53691d9437090ddbc693a0452e2f94f9ad7961587da589"
+    },
+    {
+      "problem": "201409-3",
+      "mutant": "prefix-instead-substring",
+      "reason": "匹配不要求从字符串开头开始",
+      "rejectedAtTestPoint": 3,
+      "status": "WA",
+      "inputSha256": "138ea9b0a96c89abe2df3ea9ef3466f2c33a662e76677fd08f05326bb0592945",
+      "sourceSha256": "5e105d7b09f4c39e1d1fe381974685092a9fc0c089248ae74471a4fed92b9dad"
+    },
+    {
+      "problem": "201409-4",
+      "mutant": "ignore-blocked-cells",
+      "reason": "障碍格不能穿越",
+      "rejectedAtTestPoint": 7,
+      "status": "WA",
+      "inputSha256": "4aba8155b68f22a31b7518b5f7646c1fe72a8cf92899b82d5d2f6b1ad433eb62",
+      "sourceSha256": "7000d81fbb1ce653d20249c6fa1bde7c0b25539b34d2e4da6073f641c8bf54f4"
+    },
+    {
+      "problem": "201409-5",
+      "mutant": "wrong-modulus",
+      "reason": "方案数取模必须使用题目指定模数",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "3081729fa5e313b30c26a9e614a857cebad4212b1b083933d9f5ce7523b4c828",
+      "sourceSha256": "9a3862d0393d21dfacdf33b97b2a85d3b3cbd1fc3ed87e3aba2e25db2c6aed07"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

@@ -1,0 +1,24 @@
+{
+  "batch": "202509",
+  "status": "PASS",
+  "scheduleExhaustiveAndRandomCases": 7601,
+  "huffmanCompletePaddingTraces": 2,
+  "paddingResidues": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "schedule": {
+    "timeMs": 14,
+    "memoryKb": 13140
+  },
+  "huffman": {
+    "timeMs": 2,
+    "memoryKb": 13188
+  }
+}

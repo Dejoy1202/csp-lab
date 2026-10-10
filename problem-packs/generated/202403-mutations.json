@@ -1,0 +1,105 @@
+{
+  "batch": "202403",
+  "status": "PASS",
+  "positions": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "allSelectedMutantsRejected": true,
+  "mutants": [
+    {
+      "problem": "202403-1",
+      "mutant": "count-word-per-occurrence",
+      "reason": "每篇文章内重复出现只能计一篇",
+      "rejectedAtTestPoint": 2,
+      "status": "WA",
+      "inputSha256": "95b48ece80c8cb9838dc391561d498d3b38cd4cb33017a6387a05d38d42d4d79",
+      "sourceSha256": "00ada960bb35d26fa3354969229782eb151e67c61f880cb4136ec56e0c1d962b"
+    },
+    {
+      "problem": "202403-2",
+      "mutant": "case-sensitive-sets",
+      "reason": "单词集合必须忽略大小写",
+      "rejectedAtTestPoint": 9,
+      "status": "WA",
+      "inputSha256": "11e994fce6f3823c93c02ffe4a490b05d8234947254466481820ec89c023fea5",
+      "sourceSha256": "43ed8937e308c8b36c90329c870c6d23f296fc4032dca354db4318ab18e1608d"
+    },
+    {
+      "problem": "202403-3",
+      "mutant": "accept-full-rank",
+      "reason": "满列秩不存在非零解",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "8aae352ad0a587b1d74a91c64ec08e9254c7cc1f927446e87b48c7ac113f57ed",
+      "sourceSha256": "45dbe884301e42ee4ae5e991b80ff08ee53dbb554b1560d8e068a9dc00e79ec3"
+    },
+    {
+      "problem": "202403-4",
+      "mutant": "burst-at-six",
+      "reason": "水量达到五时就要爆裂",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "61e79e49585d2b8549da296b32fda593f9133c85435e8c705e13f970085d1d84",
+      "sourceSha256": "e5d739f8d1c2b7bd20878f2b3c6e0e6929d7e8356c48b50de521ca3daf9ccc77"
+    },
+    {
+      "problem": "202403-5",
+      "mutant": "root-depth-zero",
+      "reason": "根节点深度为一",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "c6f0ccca6216eb003eba16a7f47bc8be9afe1dc7cee1dca9232c89e7de6713f4",
+      "sourceSha256": "9c3554bd368ba382859a6ea1db225f7c605eb5825b83b71c6f32b892359dba23"
+    },
+    {
+      "problem": "202403-1",
+      "mutant": "first-article-already-seen",
+      "reason": "第0篇文章中首次出现也必须计入篇数",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "f5c5e583808c61ef64c7c606dbd9f107efadadc78ef231dae68662e333a2d573",
+      "sourceSha256": "7f23f64744fab1a0cf0ff7c2f70cce9b3ca927d6daadeb5af202f926729e55df"
+    },
+    {
+      "problem": "202403-2",
+      "mutant": "union-counts-duplicate-input",
+      "reason": "并集按不同单词而非输入条数统计",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "106ceb937eedfc751462a43998467233042574b423780dfc6c1a67b4372c20e1",
+      "sourceSha256": "8d8be5d837ca078ac621ec35e452f8838087909acdc74ec85ee629970b051ebc"
+    },
+    {
+      "problem": "202403-3",
+      "mutant": "no-pivot-row-swap",
+      "reason": "主元为零时必须换行",
+      "rejectedAtTestPoint": 8,
+      "status": "WA",
+      "inputSha256": "05923aab6b724afa749e02f3cb5a0a8d2796fcf11a94f577b83b125421ea55ff",
+      "sourceSha256": "749e76df0a9c8126955845ee23bd9ed1adc66a529719ef8183d0f5d7dd13f393"
+    },
+    {
+      "problem": "202403-4",
+      "mutant": "no-right-chain-reaction",
+      "reason": "爆裂会向右侧最近存活点传播",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "61e79e49585d2b8549da296b32fda593f9133c85435e8c705e13f970085d1d84",
+      "sourceSha256": "2684d82a15839071b4aa0f72d32dabffc3069ac218a9819af92359bc1447a601"
+    },
+    {
+      "problem": "202403-5",
+      "mutant": "euler-right-end-off-by-one",
+      "reason": "子树深度变化须包括最后一个节点",
+      "rejectedAtTestPoint": 1,
+      "status": "WA",
+      "inputSha256": "c6f0ccca6216eb003eba16a7f47bc8be9afe1dc7cee1dca9232c89e7de6713f4",
+      "sourceSha256": "3e2f678b9b3b9b653e2277ec5dd26e81db0496df70ab42106383dcddb8f9a768"
+    }
+  ],
+  "limitation": "Selected defect witnesses; not proof of exhaustive error detection"
+}

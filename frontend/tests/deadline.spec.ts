@@ -1,0 +1,9 @@
+import{test,expect,request}from'@playwright/test';import{execFileSync}from'node:child_process';import{readFileSync}from'node:fs';import{gunzipSync}from'node:zlib';import{randomBytes}from'node:crypto';
+test('服务端到期结算及跨账号活动考试的题目编辑保护',async()=>{
+ const key=readFileSync('../.env','utf8').match(/^API_KEY=(.+)$/m)![1].trim();const student=await request.newContext({baseURL:'http://127.0.0.1:8080'});const tool=await request.newContext({baseURL:'http://127.0.0.1:8080',extraHTTPHeaders:{'X-API-Key':key}});const token=async()=>(await(await student.get('/api/auth/csrf')).json()).token;const post=async(path:string,data?:unknown)=>student.post(path,{headers:{'X-CSRF-TOKEN':await token()},data});
+ await post('/api/auth/register',{username:'expiry_'+Date.now().toString(36),password:randomBytes(18).toString('hex')});const created=await post('/api/exams',{batch:'202403'});expect(created.status()).toBe(201);const exam=await created.json();
+ try{const pack=JSON.parse(gunzipSync(readFileSync('../problem-packs/generated/202403-1.json.gz')).toString());expect((await tool.put('/api/admin/problems/'+exam.problems[0].problemId,{data:pack.problems[0]})).status()).toBe(409);
+  execFileSync('docker',['compose','exec','-T','mysql','sh','-c','MYSQL_PWD="$MYSQL_PASSWORD" mysql -u"$MYSQL_USER" "$MYSQL_DATABASE" -e "$1"','expire-fixture','UPDATE mock_exams SET ends_at=DATE_SUB(NOW(6),INTERVAL 1 SECOND) WHERE id='+Number(exam.id)],{cwd:'..'});
+  expect((await post('/api/submissions',{problemId:exam.problems[0].problemId,examId:exam.id,language:'CPP17',sourceCode:'int main(){}'})).status()).toBe(409);const ended=await(await student.get('/api/exams/'+exam.id)).json();expect(ended.status).toBe('FINISHED');expect(ended.remainingSeconds).toBe(0);expect(ended.durationSeconds).toBe(14400);
+ }finally{await post('/api/exams/'+exam.id+'/finish');await student.dispose();await tool.dispose();}
+});

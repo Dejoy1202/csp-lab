@@ -1,0 +1,177 @@
+[
+  {
+    "code": "201412-1",
+    "title": "门禁系统",
+    "sourceYear": 2014,
+    "sourceBatch": "201412",
+    "sourcePosition": 1,
+    "difficulty": "EASY",
+    "tags": [
+      "计数",
+      "模拟"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "outputLimitKb": 1024,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP201412A",
+    "statement": "输入按时间排列的编号。对每条记录输出该编号从序列开头到当前位置累计出现了几次；当前这次也计入。",
+    "inputDescription": "首行为记录数 $n$，第二行为 $n$ 个编号。",
+    "outputDescription": "按原顺序输出 $n$ 个累计出现次数。",
+    "constraintsDescription": "$1\\le n\\le1000$，每个编号为 $[1,n]$ 内的整数。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored specification, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站自行构造20个正式测试点，每点5分；部分分为本站模拟评分，非官方隐藏测试或认证成绩。",
+    "samples": [
+      {
+        "input": "6\n2 6 2 2 6 1\n",
+        "output": "1 1 2 3 2 1\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "code": "201412-2",
+    "title": "Z字形扫描",
+    "sourceYear": 2014,
+    "sourceBatch": "201412",
+    "sourcePosition": 2,
+    "difficulty": "EASY",
+    "tags": [
+      "矩阵",
+      "模拟"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitMb": 256,
+    "outputLimitKb": 4096,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP201412B",
+    "statement": "将 $n\\times n$ 矩阵转成序列。从左上角开始，依次处理行下标与列下标之和为 $0,1,\\ldots,2n-2$ 的反对角线（下标从0开始）。和为偶数时从较大的行下标走向较小的行下标；和为奇数时方向相反。每个元素恰好输出一次。",
+    "inputDescription": "首行 $n$，随后 $n$ 行每行 $n$ 个正整数。",
+    "outputDescription": "一行 $n^2$ 个整数，按上述扫描次序输出。",
+    "constraintsDescription": "$1\\le n\\le500$，元素在 $[1,1000]$ 内。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored specification, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站自行构造20个正式测试点，每点5分；部分分为本站模拟评分，非官方隐藏测试或认证成绩。",
+    "samples": [
+      {
+        "input": "3\n11 12 13\n21 22 23\n31 32 33\n",
+        "output": "11 12 21 31 22 13 23 32 33\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "code": "201412-3",
+    "title": "集合竞价",
+    "sourceYear": 2014,
+    "sourceBatch": "201412",
+    "sourcePosition": 3,
+    "difficulty": "MEDIUM",
+    "tags": [
+      "排序",
+      "模拟",
+      "前缀和",
+      "精度"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "outputLimitKb": 1024,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP201412C",
+    "statement": "输入按行编号的委托与撤销记录。buy p s表示以价格 $p$ 买入 $s$ 股；sell p s表示以价格 $p$ 卖出 $s$ 股；cancel i撤销第 $i$ 行的有效委托。开盘价 $p_0$ 下，买入需求为所有有效买价 $\\ge p_0$ 的股数之和，卖出供给为所有有效卖价 $\\le p_0$ 的股数之和。成交量是两者较小值。选择成交量最大的价格；并列时取最高价。",
+    "inputDescription": "读到文件结束，每行是buy p s、sell p s或cancel i。撤销行也占用行号；引用的是更早、尚未撤销的买卖委托。",
+    "outputDescription": "输出价格与成交量。价格恰好两位小数，成交量为整数。",
+    "constraintsDescription": "最多5000行。价格为两位小数的正数，且 $p\\le10000.00$；$1\\le s\\le10^8$。本站正式数据保证最大成交量大于0，避免原题未明确的零成交开盘价约定；参考程序保留有效委托价格中的最高零成交价作为扩展处理。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored specification, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站自行构造20个正式测试点，每点5分；部分分为本站模拟评分，非官方隐藏测试或认证成绩。",
+    "samples": [
+      {
+        "input": "buy 5.00 6\nsell 4.00 4\nbuy 6.00 3\ncancel 1\nbuy 5.50 2\n",
+        "output": "5.50 4\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "code": "201412-4",
+    "title": "最优灌溉",
+    "sourceYear": 2014,
+    "sourceBatch": "201412",
+    "sourcePosition": 4,
+    "difficulty": "MEDIUM",
+    "tags": [
+      "图论",
+      "最小生成树",
+      "并查集"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "outputLimitKb": 1024,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP201412D",
+    "statement": "有 $n$ 个点，第1个点提供水源。候选无向边各有建设费用；水可以经过已建边连续传递。选择部分边，使每个点都能从第1点获得水，求费用总和的最小值。",
+    "inputDescription": "首行 $n,m$。之后 $m$ 行，每行两个端点 $a_i,b_i$ 和费用 $c_i$。",
+    "outputDescription": "最小建设费用整数。",
+    "constraintsDescription": "$1\\le n\\le1000$，$1\\le m\\le10^5$，$1\\le c_i\\le10^4$；输入保证能够连通全部点。按 $n\\le5,20,100$ 和完整范围组织20%、20%、20%、40%的本站测试点。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored specification, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站自行构造20个正式测试点，每点5分；部分分为本站模拟评分，非官方隐藏测试或认证成绩。",
+    "samples": [
+      {
+        "input": "5 6\n1 2 9\n2 3 2\n1 3 4\n3 4 3\n4 5 1\n2 5 8\n",
+        "output": "10\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "code": "201412-5",
+    "title": "货物调度",
+    "sourceYear": 2014,
+    "sourceBatch": "201412",
+    "sourcePosition": 5,
+    "difficulty": "HARD",
+    "tags": [
+      "图论",
+      "最小费用流",
+      "网络流",
+      "循环时间"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 256,
+    "outputLimitKb": 1024,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP201412E",
+    "statement": "每周循环7天。城市 $i$ 在第 $j$ 天生产 $a_{i,j}$ 吨货物并消耗 $b_{i,j}$ 吨。道路无向，每吨运输费用固定，当天可以经过任意多条道路，运输容量不限。每个城市仓库最多存 $v_i$ 吨，存一吨过一夜花费 $w_i$。第7天夜间库存进入下周第1天，采用同一套每周重复的调度方案。求每周运输和过夜存储费用的最小总和。",
+    "inputDescription": "首行城市数 $n$ 与道路数 $m$。随后每个城市一行16个整数：7天生产量、7天消耗量、仓库容量和单位过夜费。最后 $m$ 行给出道路两端和单位运输费。",
+    "outputDescription": "最小周费用整数。",
+    "constraintsDescription": "$1\\le n\\le100$，$1\\le m\\le500$；$0\\le a_{i,j},b_{i,j},v_i\\le100$；$1\\le w_i,c_k\\le100$。道路没有自环和重边。全周总生产等于总消耗，且存在满足每日供需与仓库容量的循环方案。",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently authored specification, examples and data; original CSP title/rules attributed",
+    "scoringNotes": "本站自行构造20个正式测试点，每点5分；部分分为本站模拟评分，非官方隐藏测试或认证成绩。",
+    "samples": [
+      {
+        "input": "2 1\n0 0 0 0 0 0 4 0 0 0 0 0 0 0 4 3\n0 0 0 0 0 0 0 4 0 0 0 0 0 0 4 1\n1 2 2\n",
+        "output": "12\n"
+      }
+    ],
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  }
+]

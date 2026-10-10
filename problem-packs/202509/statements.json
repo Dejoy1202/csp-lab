@@ -1,0 +1,178 @@
+[
+  {
+    "title": "蒙特卡洛",
+    "difficulty": "EASY",
+    "tags": [
+      "数学",
+      "模拟",
+      "精度"
+    ],
+    "timeLimitMs": 1000,
+    "statement": "给定正整数半径 $a$ 和正方形 $[-a,a]\\times[-a,a]$ 内的 $n$ 个采样点。统计满足 $x^2+y^2\\le a^2$ 的点数 $c$，圆周边界也计入。输出这个采样实验给出的估计值 $4c/n$。",
+    "inputDescription": "第一行 $n,a$；随后 $n$ 行，每行两个坐标。坐标可为整数或至多两位小数的十进制数。",
+    "outputDescription": "输出一个实数。与精确值的绝对误差必须严格小于 $10^{-4}$；建议保留至少六位小数。",
+    "constraintsDescription": "$1\\le n,a\\le1000$，每个坐标均在 $[-a,a]$。50%的测试点仅有整数坐标。",
+    "samples": [
+      {
+        "input": "5 10\n6 8\n-10 0\n9 9\n0 0\n6.01 8\n",
+        "output": "2.400000\n",
+        "checkerType": "FLOAT_ABS_1E_4"
+      }
+    ],
+    "scoringNotes": "20点各5分，前10点仅有整数坐标。圆周包含在内。本站自建数据与模拟评分。",
+    "code": "202509-1",
+    "sourceYear": 2025,
+    "sourceBatch": "202509",
+    "sourcePosition": 1,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202509A",
+    "memoryLimitMb": 512,
+    "outputLimitKb": 1024,
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "水印检查",
+    "difficulty": "EASY",
+    "tags": [
+      "枚举",
+      "区间合并",
+      "矩阵"
+    ],
+    "timeLimitMs": 1000,
+    "statement": "给出 $n\\times n$ 灰度矩阵，像素值在 $[0,L-1]$。对整数阈值 $k\\in[0,L-1]$，把灰度值至少为 $k$ 的位置记作1，其余记作0。\n\n若某个连续5行、9列的窗口恰好等于下表，就能检测到水印：\n\n    111111111\n    100100101\n    100111110\n    100001100\n    111111100\n\n图案方向固定。找出所有可行阈值，按升序输出。",
+    "inputDescription": "第一行 $n,L$。随后 $n$ 行，各含 $n$ 个整数，按行给出矩阵。",
+    "outputDescription": "每行一个可行阈值，不能重复，按从小到大排列。",
+    "constraintsDescription": "$9\\le n\\le200$，$L\\in\\{256,65536\\}$。至少有一个可行阈值。80%的测试点满足 $n\\le50,L=256$。",
+    "samples": [
+      {
+        "input": "9 256\n2 2 2 2 2 2 2 2 2\n2 0 0 2 0 0 2 0 2\n2 0 0 2 2 2 2 2 0\n2 0 0 0 0 2 2 0 0\n2 2 2 2 2 2 2 0 0\n0 0 0 0 0 0 0 0 0\n0 0 0 0 0 0 0 0 0\n0 0 0 0 0 0 0 0 0\n0 0 0 0 0 0 0 0 0\n",
+        "output": "1\n2\n"
+      }
+    ],
+    "scoringNotes": "20点各5分；前16点满足n≤50且L=256。本站自建数据与模拟评分。",
+    "code": "202509-2",
+    "sourceYear": 2025,
+    "sourceBatch": "202509",
+    "sourcePosition": 2,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202509B",
+    "memoryLimitMb": 512,
+    "outputLimitKb": 1024,
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "HTTP 头信息",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "模拟",
+      "Huffman编码",
+      "动态表"
+    ],
+    "timeLimitMs": 1000,
+    "statement": "解码一个简化的头字段协议。字段是两个非空字符串组成的键值对。静态表按输入顺序编号1至 $S$；动态表起初为空，最多保存 $D$ 项，新项插到最前面，超出容量时删除最旧的一项。动态项的当前编号从 $S+1$ 起，两张表均允许重复。\n\n指令：\n\n- 1 i：输出当前编号i的键和值。\n- 2 0 k v：解码字符串k、v，输出后插入动态表。\n- 2 i v（i>0）：先取当前编号i的键，再解码v，输出后插入动态表。\n- 3 0 k v 或 3 i v：与类型2相同，但不更新动态表。\n\n静态表中的键和值已经是原文。指令中的字符串按以下规则解码：首字符不是H时直接使用；以HH开头时删去第一个H；否则H后是一串偶数长度的小写十六进制数字。将其每两位转换为一字节，最后一字节记录补零数 $p\\in[0,7]$，不是数据。其余字节从高位到低位拼接，删去末尾p个补零，通过给定二叉树解码：0走左边，1走右边，抵达叶子输出该字符并返回根。\n\n树用先序表示：叶子为1后接字符；内部结点为0后接左子树和右子树的表示。编码不超过8位。所有字段仅含英文字母与数字，所有引用和编码都合法。",
+    "inputDescription": "第一行 $S,D$；随后S行静态键值对。下一行树描述，下一行指令数N，随后N行指令。",
+    "outputDescription": "按指令顺序输出N行，每行 key: value，其中冒号后有一个空格。",
+    "constraintsDescription": "$1\\le S\\le64$，$1\\le D\\le120$，$1\\le N\\le1000$；每个字段在解码前后的长度均不超过150。树叶字符为英文字母或数字。",
+    "samples": [
+      {
+        "input": "1 1\nName Old\n01a1b\n6\n1 1\n2 0 HHI H4006\n1 2\n2 2 New\n1 2\n3 0 H0007 HHH\n",
+        "output": "Name: Old\nHI: ab\nHI: ab\nHI: New\nHI: New\na: HH\n"
+      }
+    ],
+    "scoringNotes": "20点各5分：前4点仅表格引用；接着4点只含引用和不索引字面量，且无Huffman串；接着4点含全部指令但插入次数≤D；最后8点含动态淘汰。累计覆盖20%、40%、60%的限制。本站模拟评分。",
+    "code": "202509-3",
+    "sourceYear": 2025,
+    "sourceBatch": "202509",
+    "sourcePosition": 3,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202509C",
+    "memoryLimitMb": 512,
+    "outputLimitKb": 1024,
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "造题计划（上）",
+    "difficulty": "HARD",
+    "tags": [
+      "树链剖分",
+      "路径查询",
+      "mex"
+    ],
+    "timeLimitMs": 1000,
+    "statement": "给出一棵n个结点的树，结点权值 $a_1,\\ldots,a_n$ 恰好是 $0,\\ldots,n-1$ 的一个排列。每个询问给出x、y，求它们之间唯一简单路径（含两个端点）上权值集合的 $\\operatorname{mex}$，即没有出现在集合中的最小非负整数。\n\n例如 $\\operatorname{mex}(\\{0,1,3\\})=2$。答案可以是0，也可以是n；x与y允许相同。",
+    "inputDescription": "第一行n、m；第二行n个权值；随后n−1行边的两个端点，结点编号从1开始；最后m行询问x、y。",
+    "outputDescription": "每次询问输出一行mex。",
+    "constraintsDescription": "$1\\le n,m\\le2\\times10^5$；权值是0至n−1的排列。",
+    "samples": [
+      {
+        "input": "5 4\n0 2 1 4 3\n1 2\n2 3\n3 4\n3 5\n1 3\n4 5\n1 1\n2 2\n",
+        "output": "3\n0\n1\n0\n"
+      }
+    ],
+    "scoringNotes": "四组捆绑：20分n,m≤1000；20分树为链；30分n,m≤50000；30分完整范围。每组全部通过才得分。本站自建数据与模拟评分。",
+    "code": "202509-4",
+    "sourceYear": 2025,
+    "sourceBatch": "202509",
+    "sourcePosition": 4,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202509D",
+    "memoryLimitMb": 512,
+    "outputLimitKb": 4096,
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "造题计划（下）",
+    "difficulty": "HARD",
+    "tags": [
+      "凸性",
+      "斜率优化",
+      "最小费用流"
+    ],
+    "timeLimitMs": 5000,
+    "statement": "有n天可以筹备题目。第i天上午可选择制作至多一题，费用为 $a_i$；当天下午可选择验证至多一题，费用为 $b_i$。只有已经制作完成的题才能验证，同一天上午制作的题可在下午验证。\n\n只有制作并验证完毕的题计入完成数。所有工作的费用之和不能超过预算m。可以任意选择哪些天工作，求最多完成多少题；可以一题也不完成。",
+    "inputDescription": "第一行n、m；第二行n个制作费用；第三行n个验证费用。",
+    "outputDescription": "输出预算内最多完成的题数。",
+    "constraintsDescription": "$1\\le n\\le5\\times10^5$，$1\\le a_i,b_i\\le10^9$，$1\\le m\\le10^{18}$。",
+    "samples": [
+      {
+        "input": "4 10\n2 8 3 9\n7 1 6 2\n",
+        "output": "2\n"
+      }
+    ],
+    "scoringNotes": "四组捆绑：20分n≤100；30分n≤3000；20分n≤100000；30分完整范围。组内全部通过才能得分。本站自建数据与模拟评分。",
+    "code": "202509-5",
+    "sourceYear": 2025,
+    "sourceBatch": "202509",
+    "sourcePosition": 5,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202509E",
+    "memoryLimitMb": 512,
+    "outputLimitKb": 1024,
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  }
+]

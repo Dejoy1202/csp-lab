@@ -1,0 +1,136 @@
+[
+  {
+    "code": "202403-1",
+    "title": "词频统计",
+    "sourceYear": 2024,
+    "sourceBatch": "202403",
+    "sourcePosition": 1,
+    "difficulty": "EASY",
+    "tags": [
+      "计数",
+      "模拟"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403A/",
+    "statement": "给定 n 个非空整数序列，整数代表单词编号。对每个编号 i，分别统计包含它的序列数量和它在全部序列中的出现次数。一个序列中的重复出现只对第一项计一次。本站题意为独立表述，样例及评测数据自行构造。",
+    "inputDescription": "第一行输入两个整数 $n$ 和 $m$。接下来 $n$ 行描述各篇文章：第 $i$ 行先给出长度 $l_i$，随后给出 $l_i$ 个单词编号。",
+    "outputDescription": "按 $i=1,2,\\ldots,m$ 的顺序输出 $m$ 行。每行两个整数：包含编号 $i$ 的文章数量、编号 $i$ 在全部文章中的出现总次数。",
+    "constraintsDescription": "$1 \\le n,m,l_i \\le 100$；单词编号属于 $[1,m]$。",
+    "scoringNotes": "本站模拟评分：10 个独立测试点，各 10 分；覆盖重复、跨文章去重、边界与随机数据。",
+    "samples": [
+      {
+        "input": "3 4\n4 1 1 2 4\n2 2 3\n3 1 3 3\n",
+        "output": "2 3\n2 2\n2 3\n1 1\n"
+      }
+    ]
+  },
+  {
+    "code": "202403-2",
+    "title": "相似度计算",
+    "sourceYear": 2024,
+    "sourceBatch": "202403",
+    "sourcePosition": 2,
+    "difficulty": "EASY",
+    "tags": [
+      "字符串",
+      "集合"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403B/",
+    "statement": "读入两组英文单词，比较时忽略大小写，分别去除重复得到集合 $A$、$B$。求交集与并集的元素数量；无需输出相似度比值。本站题意独立表述，样例及评测数据自行构造。",
+    "inputDescription": "第一行 n m；第二行 n 个单词；第三行 m 个单词。单词只含 ASCII 英文字母。",
+    "outputDescription": "先输出交集大小 $|A\\cap B|$，再输出并集大小 $|A\\cup B|$，各占一行。",
+    "constraintsDescription": "$1 \\le n,m \\le 10000$；每个单词只含 ASCII 英文字母，长度为 $1$ 到 $10$。",
+    "scoringNotes": "本站模拟评分：前 8 个测试点均为小写（80 分），后 2 个覆盖大小写归一化（20 分）；每点 10 分。",
+    "samples": [
+      {
+        "input": "4 3\nLab lab Code Go\nLAB Rust code\n",
+        "output": "2\n4\n"
+      }
+    ]
+  },
+  {
+    "code": "202403-3",
+    "title": "化学方程式配平",
+    "sourceYear": 2024,
+    "sourceBatch": "202403",
+    "sourcePosition": 3,
+    "difficulty": "MEDIUM",
+    "tags": [
+      "字符串",
+      "线性代数",
+      "高斯消元"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403C/",
+    "statement": "每组给出 m 个物质。化学式由连续小写字母（元素名）及紧随的正整数（原子数）交替组成，不含括号，同一式内元素不重复，数量 1 也显式写出。用元素作行、物质作列构造原子计数矩阵 A。判断下面的方程是否存在非零向量解：\n\n$AX=0$\n\n系数可以为负或零，不要求每个物质都参与，也不检查化学可行性。本站题意独立表述，样例及数据自行构造。",
+    "inputDescription": "第一行组数 n；每组先输入 m，再输入 m 个上述格式的化学式。",
+    "outputDescription": "每组输出一行：存在非零解为 Y，否则为 N。",
+    "constraintsDescription": "$1 \\le n \\le 10$；每组物质数、元素种类数均在 $[1,40]$ 内；每种元素的原子数在 $[1,50]$ 内。",
+    "scoringNotes": "本站模拟评分：20 分覆盖至多 2 物质/2 元素，40 分覆盖至多 3/3，40 分覆盖至多 40/40。三档按子任务捆绑计分，档内全部测试点通过才得分；答案由精确整数参考程序和有理数校验程序核对。",
+    "samples": [
+      {
+        "input": "4\n2 h2 h3\n2 h1 o1\n3 c1o1 c1o2 o2\n4 c1o1 c1o2 o2 he1\n",
+        "output": "Y\nN\nY\nY\n"
+      }
+    ]
+  },
+  {
+    "code": "202403-4",
+    "title": "十滴水",
+    "sourceYear": 2024,
+    "sourceBatch": "202403",
+    "sourcePosition": 4,
+    "difficulty": "HARD",
+    "tags": [
+      "模拟",
+      "有序集合",
+      "优先队列"
+    ],
+    "timeLimitMs": 3000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403D/",
+    "statement": "一维网格宽 c，初始 m 个不同位置各有 1..4 滴水。每次对一个仍有水的位置加一滴。数量达到 5 的位置爆开：清空自身，并分别给左右最近的非空位置各加一滴；没有对应邻居则跳过。当多个位置同时达到 5，优先处理位置最小者。完成整个连锁过程后才执行下一次操作。输出每次稳定后非空位置数量。所有操作保证合法。本站题意独立表述，样例及数据自行构造。",
+    "inputDescription": "第一行 c m n；之后 m 行位置 x 和水量 w；再之后 n 行操作位置 p。初始位置可以无序。",
+    "outputDescription": "n 行，每行一个整数，表示该次操作及连锁结束后的非空格数。",
+    "constraintsDescription": "$1 \\le c \\le 10^9$；$1 \\le m \\le \\min(c,300000)$；$1 \\le n \\le 4m$。初始位置互不相同，水量在 $[1,4]$ 内。特殊性质 $S$：连锁过程中任意时刻至多一个位置达到 $5$ 滴。",
+    "scoringNotes": "本站自造数据，按原子任务框架捆绑评分：(c<=30,m<=30,S)15分；(c<=3000,m<=3000,S)15分；(c<=3000,m<=3000)10分；(c<=$10^9$,m<=3000)15分；(c<=300000,m<=300000)15分；(c<=$10^9$,m<=300000,S)15分；完整范围15分。本站分数不代表官方认证成绩。",
+    "samples": [
+      {
+        "input": "7 4 2\n1 1\n3 4\n5 4\n7 1\n3\n1\n",
+        "output": "2\n2\n"
+      }
+    ]
+  },
+  {
+    "code": "202403-5",
+    "title": "文件夹合并",
+    "sourceYear": 2024,
+    "sourceBatch": "202403",
+    "sourcePosition": 5,
+    "difficulty": "HARD",
+    "tags": [
+      "树",
+      "DFS序",
+      "树状数组",
+      "链表"
+    ],
+    "timeLimitMs": 2000,
+    "memoryLimitMb": 512,
+    "sourceUrl": "https://pcs2.roj.ac.cn/problems/shumeng/CSP202403E/",
+    "statement": "n 个文件夹构成以 1 为根的树，每个节点直接存储 $d_i$ 字节。操作 1 x：删除 x 当前的全部直接子节点，将这些子节点的直接数据并入 x，将它们的子节点提升为 x 的直接子节点。本次新提升的节点不继续合并。输出 x 的直接子节点数及直接数据总量。操作 2 z：输出当前根到 z 的路径上的节点数（包括根和 z）。操作对象始终存在；不需要处理同名冲突。本站题意独立表述，样例及数据自行构造。",
+    "inputDescription": "第一行输入 $n,m$。第二行给出 $f_2,\\ldots,f_n$，表示原始父节点编号；第三行给出 $d_1,\\ldots,d_n$。接下来 $m$ 行各给出操作类型与节点编号。父节点编号可能大于子节点编号。",
+    "outputDescription": "每次合并输出两个整数：合并后直接子节点数和直接数据量；每次访问输出一个整数：路径节点数。",
+    "constraintsDescription": "$1 \\le n \\le 500000$；$1 \\le m \\le 3n$；$0 \\le d_i \\le 100000$。输入保证为树。特殊性质：$A$ 为链（$f_i=i-1$）；$B$ 为星形（$f_i=1$）；$C$ 为所有合并对象都是根；$D$ 为仅合并；$E$ 为仅访问。数据总量可能超过 $32$ 位整数。",
+    "scoringNotes": "本站自造数据按原框架捆绑：n<=500（10）；n<=5000（15）；n<=100000（15）；n<=500000 且 A（5）、B（5）、C（10）、D（15）、E（10）；完整范围（15）。每档全部通过才得分。本站分数不代表官方认证成绩。",
+    "samples": [
+      {
+        "input": "5 5\n1 1 3 4\n10 20 30 40 50\n2 5\n1 1\n2 5\n1 1\n2 5\n",
+        "output": "4\n1 60\n3\n1 100\n2\n"
+      }
+    ]
+  }
+]

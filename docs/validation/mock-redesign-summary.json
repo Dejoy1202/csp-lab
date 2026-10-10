@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-09T05:48:34.811Z",
+  "status": "PASS_WITH_REMAINING_CATALOG_CONSTRUCTION",
+  "java": {
+    "passed": 8
+  },
+  "playwright": {
+    "passed": 16,
+    "failed": 0,
+    "skipped": 0,
+    "durationMs": 181613.371,
+    "focusedMathRegressionPassed": 1
+  },
+  "sandboxIntegration": {
+    "tests": 19,
+    "failures": 0,
+    "errors": 0,
+    "passed": true,
+    "durationSeconds": 114.555
+  },
+  "frontend": {
+    "productionBuildPassed": true,
+    "lintErrors": 0,
+    "lintWarnings": 16,
+    "initialJsKb": 267.84,
+    "judgeChunkKb": 3082.64,
+    "localMonaco": true,
+    "localLatex": true,
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      390,
+      844
+    ],
+    "reviewMaterialFixesApplied": 4
+  },
+  "databasePersistence": {
+    "passed": true,
+    "businessTables": 16,
+    "fullBusinessDumpIdentical": true,
+    "passwordLoginAfterRestart": true
+  },
+  "catalog": {
+    "batches": 44,
+    "titles": 220,
+    "readyBatches": [
+      "201312",
+      "202403"
+    ],
+    "buildingBatches": 42,
+    "verifiedProblems": 10,
+    "formalTestPoints": 114,
+    "independentDifferentialCases": 250,
+    "officialHiddenData": false,
+    "scoreType": "SITE_SIMULATION"
+  },
+  "removedUi": [
+    "notes",
+    "training-dashboard",
+    "ordinary-problem-list"
+  ],
+  "recordsDeleted": false,
+  "scoringUnit": {
+    "passed": 2
+  },
+  "screenshotEvidence": "docs/validation/mock-ui/",
+  "colorContrastEvidence": "docs/validation/mock-ui-contrast.json"
+}

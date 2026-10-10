@@ -1,0 +1,249 @@
+.paper-lobby,
+.history-page {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 42px 32px 32px;
+}
+.lobby-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.lobby-heading h1 {
+  font-size: 26px;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  margin-bottom: 8px;
+}
+.lobby-heading p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.exam-format {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.running-banner {
+  background: var(--accent-light);
+  padding: 18px 22px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.running-banner strong {
+  font-size: 14px;
+}
+.running-banner p {
+  font-size: 13px;
+  margin-top: 5px;
+  color: var(--text-secondary);
+}
+.catalog-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+.year-selector {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.year-selector select {
+  min-width: 115px;
+  padding: 7px 10px;
+}
+.ready-filter {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-left: 8px;
+  color: var(--text-secondary);
+}
+.coverage-note {
+  color: var(--text-secondary);
+}
+.paper-list {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.paper-row {
+  display: flex;
+  gap: 26px;
+  padding: 24px;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+}
+.paper-row:last-child {
+  border-bottom: 0;
+}
+.paper-date {
+  width: 64px;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 4px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.paper-date strong {
+  font-size: 22px;
+  font-weight: 550;
+  color: var(--text-primary);
+}
+.paper-content {
+  flex: 1;
+  min-width: 0;
+}
+.paper-title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.paper-title h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.readiness {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 3px 8px;
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.readiness.ready {
+  color: var(--success);
+  background: var(--success-bg);
+}
+.paper-problems {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 22px;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+.paper-problems li {
+  display: flex;
+  gap: 6px;
+  align-items: baseline;
+}
+.paper-problems li span {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+.paper-meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 12px;
+}
+.paper-start {
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.catalog-footnote {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 22px;
+}
+.lobby-empty {
+  padding: 50px 24px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+.history-table-wrap {
+  overflow-x: auto;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+.history-chart {
+  height: 200px;
+  margin: 16px 0 30px;
+}
+.history-page table {
+  margin: 0;
+  width: 100%;
+  font-size: 14px;
+}
+.history-page th,
+.history-page td {
+  padding: 18px 20px;
+}
+.score-number {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  font-size: 17px;
+}
+.history-empty {
+  padding: 70px 20px;
+  text-align: center;
+}
+.history-empty h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.history-empty p {
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+}
+@media (max-width: 720px) {
+  .paper-lobby,
+  .history-page {
+    padding: 26px 16px;
+  }
+  .lobby-heading {
+    display: block;
+  }
+  .exam-format {
+    display: block;
+    margin-top: 12px;
+  }
+  .paper-row {
+    gap: 14px;
+    padding: 20px 16px;
+    flex-wrap: wrap;
+  }
+  .paper-date {
+    width: 48px;
+  }
+  .paper-start {
+    margin-left: 62px;
+  }
+  .paper-title {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .paper-problems {
+    display: grid;
+    gap: 5px;
+  }
+  .catalog-toolbar {
+    align-items: start;
+  }
+  .year-selector {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .coverage-note {
+    max-width: 100px;
+    text-align: right;
+  }
+  .ready-filter {
+    margin-left: 0;
+  }
+  .running-banner {
+    flex-wrap: wrap;
+  }
+}

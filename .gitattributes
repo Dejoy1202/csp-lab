@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+*.java text eol=lf
+*.json.gz binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

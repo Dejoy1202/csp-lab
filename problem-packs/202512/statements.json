@@ -1,0 +1,176 @@
+[
+  {
+    "title": "集合",
+    "difficulty": "EASY",
+    "tags": [
+      "集合",
+      "位运算"
+    ],
+    "timeLimitMs": 1000,
+    "memoryLimitMb": 512,
+    "statement": "给定 $n$ 个非负整数 $a_1,\\ldots,a_n$。对于集合 $S\\subseteq\\{1,\\ldots,n\\}$，定义 $h(S)=\\bigoplus_{i\\in S}a_i$。一种集合判断方法只比较 $h(S)$ 与 $h(T)$ 是否相等。\n\n每个询问给出两个非空集合，判断这种方法在本次询问中是否与真实的集合相等性一致。结果一致输出 correct，否则输出 wrong。",
+    "inputDescription": "第一行 $n,m$，第二行 $n$ 个 $a_i$。随后先读入全部 $m$ 个 $S_i$，再读入全部 $m$ 个 $T_i$。每个集合占一行，先给元素个数，再给严格递增的元素编号。",
+    "outputDescription": "按询问顺序输出 $m$ 行，每行 correct 或 wrong。",
+    "constraintsDescription": "$1\\le n\\le10^4$，$1\\le m\\le100$，$0\\le a_i<2^{31}$；每个集合有 $1$ 至 $\\min(n,1000)$ 个元素。50%的测试点两个集合大小不同。",
+    "samples": [
+      {
+        "input": "4 3\n1 2 3 7\n1 1\n2 1 2\n2 1 4\n1 2\n1 3\n2 1 4\n",
+        "output": "correct\nwrong\ncorrect\n"
+      }
+    ],
+    "scoringNotes": "20个独立测试点，每点5分；前10点所有询问集合大小不同。本站自建测试与模拟评分。",
+    "code": "202512-1",
+    "sourceYear": 2025,
+    "sourceBatch": "202512",
+    "sourcePosition": 1,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202512A",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "数字变换",
+    "difficulty": "EASY",
+    "tags": [
+      "位运算",
+      "逆变换",
+      "预处理"
+    ],
+    "timeLimitMs": 1500,
+    "memoryLimitMb": 512,
+    "outputLimitKb": 4096,
+    "statement": "将 $0\\le x<512$ 拆为三个三位数：$x=64a+8b+c$，其中 $a,b,c\\in[0,7]$。定义\n\n$$f(v,k)=((v^2+k^2)\\bmod8)\\oplus k.$$\n\n使用密钥 $k$ 的一轮变换把 $(a,b,c)$ 变为\n\n$$(b,\\ c\\oplus f(b,k),\\ a\\oplus f(c,k)).$$\n\n按给定的 $k_1,\\ldots,k_m$ 依次执行各轮变换。现在给出 $n$ 个最终值，请恢复各自的初始值。",
+    "inputDescription": "第一行 $n,m$；第二行按执行顺序给出 $m$ 个密钥；第三行给出 $n$ 个最终值。",
+    "outputDescription": "输出一行 $n$ 个对应的初始值，用空格分隔。",
+    "constraintsDescription": "$1\\le n\\le5\\times10^5$，$1\\le m\\le1000$，$0\\le k_i<8$，$0\\le a_i<512$。每个结果都有唯一初始值。80%的测试点满足 $n\\le100,m\\le20$。",
+    "samples": [
+      {
+        "input": "3 1\n0\n0 9 502\n",
+        "output": "0 1 511\n"
+      }
+    ],
+    "scoringNotes": "20个独立点，每点5分；前16点满足小规模限制。本站自建测试与模拟评分。",
+    "code": "202512-2",
+    "sourceYear": 2025,
+    "sourceBatch": "202512",
+    "sourcePosition": 2,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202512B",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "图片解码",
+    "difficulty": "MEDIUM",
+    "tags": [
+      "模拟",
+      "矩阵",
+      "坐标变换"
+    ],
+    "timeLimitMs": 1500,
+    "memoryLimitMb": 512,
+    "statement": "原图有 $n$ 行、$m$ 列，字符只包含英文字母、数字及下划线。将它放在 $Z\\times Z$ 方阵的左上角，其余位置补问号 ?，随后依次进行 $t$ 次加密。\n\n类型1的参数为 $(1,u,v,L,d,r)$：先把左上角 $(u,v)$、边长 $L$ 的正方形区域顺时针旋转 $d$ 度，再把整个方阵逆时针旋转 $r$ 次90度。\n\n类型2的参数为 $(2,u,d,l,r,o)$：选取第 $u$ 至 $d$ 行、第 $l$ 至 $r$ 列；$o=1$ 时交换上下方向，$o=-1$ 时交换左右方向。两种操作都只改变字符位置。\n\n所有坐标从1开始。给定最终方阵与按原执行顺序记录的密钥，恢复原图。",
+    "inputDescription": "第一行 $Z$，接着 $Z$ 行最终方阵，每行 $Z$ 个字符。下一行是密钥序列长度 $k$，然后是 $k$ 个整数：第一个数为 $t$，随后每项操作恰好6个数，因此 $k=6t+1$。",
+    "outputDescription": "先输出行数 $n$ 与列数 $m$，然后输出 $n$ 行原图，每行 $m$ 个字符，不含补齐用的问号。",
+    "constraintsDescription": "$1\\le n,m\\le Z\\le400$，$1\\le t\\le5\\times10^4$。类型1：$1\\le L\\le\\min(Z,10)$，区域不越界，$d\\in\\{90,180,270\\}$，$0\\le r\\le3$。类型2：区域不越界且高、宽均不超过10，$o\\in\\{-1,1\\}$。输入保证由合法原图和密钥生成。",
+    "samples": [
+      {
+        "input": "2\nbA\n??\n7\n1 2 1 1 1 2 -1\n",
+        "output": "1 2\nAb\n"
+      }
+    ],
+    "scoringNotes": "四组捆绑测试各25分：仅翻转且Z≤10；仅翻转；Z≤10；完整范围。组内全部通过才能得分。本站自建数据与模拟评分。",
+    "code": "202512-3",
+    "sourceYear": 2025,
+    "sourceBatch": "202512",
+    "sourcePosition": 3,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202512C",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "C 形阵",
+    "difficulty": "HARD",
+    "tags": [
+      "数论",
+      "乘法函数",
+      "容斥"
+    ],
+    "timeLimitMs": 3000,
+    "memoryLimitMb": 1024,
+    "statement": "考虑正整数七元组 $(A,B,C,D,E,F,G)$，满足\n\n$$AC=B^2,\\qquad EG=F^2,\\qquad ABC=CDE=EFG.$$\n\n其大小定义为 $B$，价值定义为 $D$。当七个位置上的值恰好有6种不同的整数时，称其为完美数阵。\n\n输入 $op,n$。$op=0$ 时，对所有 $B\\le n$ 的合法七元组求 $D$ 的总和；$op=1$ 时，只对其中完美的七元组求和。不同的有序七元组分别计算。答案对 $998244353$ 取模。",
+    "inputDescription": "一行两个整数 $op,n$。",
+    "outputDescription": "输出指定总和对 $998244353$ 取模后的整数；结果可能为0。",
+    "constraintsDescription": "$op\\in\\{0,1\\}$，$1\\le n\\le10^7$。",
+    "samples": [
+      {
+        "input": "1 3\n",
+        "output": "0\n"
+      }
+    ],
+    "scoringNotes": "五组捆绑测试：30分 n≤10；20分 op=0且n≤10⁵；30分 n≤10⁵；10分 op=0且n≤10⁷；10分完整范围。组内全部通过才得分。本站模拟评分。",
+    "code": "202512-4",
+    "sourceYear": 2025,
+    "sourceBatch": "202512",
+    "sourcePosition": 4,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202512D",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  },
+  {
+    "title": "数据抢修",
+    "difficulty": "HARD",
+    "tags": [
+      "二进制Trie",
+      "图染色",
+      "合并"
+    ],
+    "timeLimitMs": 3000,
+    "memoryLimitMb": 1024,
+    "statement": "有 $n$ 个激活的数据包，每个数据包是一个允许重复权值的多重集，也可以为空。给定正整数 $W$，一个子包稳定，当且仅当任意两个不同元素的权值 $x,y$ 满足 $x\\oplus y\\ge W$。相同权值的多个元素仍是不同元素。\n\n数据包的维修代价是把全部元素分配到稳定非空子包所需的最少子包数；空包代价为0。系统代价是全部激活包的代价之和。\n\n依次处理操作：\n\n- 1 u x：向激活包u加入权值x。\n- 2 u v：把激活包v的全部元素并入u，随后v离线，后续不会再使用v。\n- 3：输出当前系统代价。\n\n合并时 $u\\ne v$。",
+    "inputDescription": "第一行 $n,W$。随后 $n$ 行，第i行先给初始元素数 $m_i$，再给这些元素的权值。下一行是操作数 $q$，随后 $q$ 行操作。",
+    "outputDescription": "每次操作3输出一行系统维修代价。",
+    "constraintsDescription": "$1\\le n,q,\\sum m_i\\le5\\times10^5$。初始及后来插入的权值均在 $[0,10^9]$；$W>0$。总插入次数不超过q，因此最终元素总数最多 $10^6$。",
+    "samples": [
+      {
+        "input": "2 3\n2 0 3\n0\n5\n3\n1 2 0\n3\n2 1 2\n3\n",
+        "output": "1\n2\n2\n"
+      }
+    ],
+    "scoringNotes": "五组捆绑测试：20分规模≤10、权值≤10³；15分规模≤100、权值≤10³；15分规模≤10³、权值≤10⁶；20分规模≤10⁵、权值≤10⁶；30分完整范围。规模指n、q及初始元素总数。本站模拟评分。",
+    "code": "202512-5",
+    "sourceYear": 2025,
+    "sourceBatch": "202512",
+    "sourcePosition": 5,
+    "sourceUrl": "https://oj.shumeng.tech/p/CSP202512E",
+    "evaluationType": "FULL",
+    "constructionStatus": "BUILDING",
+    "license": "CSP Lab independently worded mathematical rules and original examples; CCF title/rules attributed",
+    "outputLimitKb": 1024,
+    "testCases": [],
+    "subtasks": [],
+    "assets": [],
+    "validationReport": null
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "position": 2,
+    "label": "scientific-notation",
+    "expectedStatus": "AC",
+    "expectedScore": 100,
+    "edits": [
+      [
+        "cout<<fixed<<setprecision(15)",
+        "cout<<scientific<<setprecision(12)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "label": "error-below-one-thousandth",
+    "expectedStatus": "AC",
+    "expectedScore": 100,
+    "edits": [
+      [
+        "<<(total-best)",
+        "<<(total-best+0.0005L)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "label": "error-above-one-thousandth",
+    "expectedStatus": "WA",
+    "expectedScore": 0,
+    "edits": [
+      [
+        "<<(total-best)",
+        "<<(total-best+0.002L)"
+      ]
+    ]
+  },
+  {
+    "position": 2,
+    "label": "nonfinite-rejected",
+    "expectedStatus": "WA",
+    "expectedScore": 0,
+    "sourceCode": "#include <iostream>\nint main(){std::cout<<\"nan\\n\";}\n"
+  },
+  {
+    "position": 4,
+    "label": "small-scales-only",
+    "expectedStatus": "WA",
+    "expectedScore": 50,
+    "edits": [
+      [
+        "Tree tree(a,d,k);",
+        "if(n>1000){for(auto op:ops)if(op.type==2)cout<<0<<'\\n';return 0;}Tree tree(a,d,k);"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "label": "small-scales-only",
+    "expectedStatus": "WA",
+    "expectedScore": 30,
+    "edits": [
+      [
+        "last=travel.answer;cout<<last",
+        "last=travel.answer;cout<<(n<=100?last:0)"
+      ]
+    ]
+  }
+]

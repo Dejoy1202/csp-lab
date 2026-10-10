@@ -1,0 +1,50 @@
+[
+  {
+    "position": 2,
+    "label": "将阈值错误限制在255以内",
+    "expectedStatus": "WA",
+    "expectedScore": 85,
+    "edits": [
+      [
+        "int low=1,high=L-1;",
+        "int low=1,high=min(L-1,255);"
+      ]
+    ]
+  },
+  {
+    "position": 3,
+    "label": "错误地给类型3建立索引",
+    "expectedStatus": "WA",
+    "expectedScore": 40,
+    "edits": [
+      [
+        "if(type==2){",
+        "if(type>=2){"
+      ]
+    ]
+  },
+  {
+    "position": 4,
+    "label": "仅实现n,m≤1000子任务",
+    "expectedStatus": "WA",
+    "expectedScore": 20,
+    "edits": [
+      [
+        "cin>>n>>m;",
+        "cin>>n>>m;if(n>1000||m>1000){cout<<-1;return 0;}"
+      ]
+    ]
+  },
+  {
+    "position": 5,
+    "label": "仅实现n≤100子任务",
+    "expectedStatus": "WA",
+    "expectedScore": 20,
+    "edits": [
+      [
+        "cin>>n>>budget;",
+        "cin>>n>>budget;if(n>100){cout<<-1;return 0;}"
+      ]
+    ]
+  }
+]

@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "checkedAt": "2026-10-10T17:28:50.148331",
+  "applicationStopStart": true,
+  "mysqlServiceStopped": false,
+  "tables": {
+    "auth_failures": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "code_drafts": {
+      "rows": 5,
+      "sha256": "4257af972cfb601a0cac9adb2bdc355230dc24f6ded735855292e24677df8051"
+    },
+    "csp_papers": {
+      "rows": 44,
+      "sha256": "d4ced111f78555bb4075f9027573e274e1b0eaa9f91a31cc244cb63c73163681"
+    },
+    "mock_exam_problems": {
+      "rows": 50,
+      "sha256": "cdc4a17ac561a31883c258b3db5c4530543b8b0dfc3dd7755a72b32337626f31"
+    },
+    "mock_exams": {
+      "rows": 10,
+      "sha256": "79e8548264263501e6c25cb03925da8067a3ee2c28149898ccfa05496174d1ae"
+    },
+    "notes": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "practice_sessions": {
+      "rows": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "problem_assets": {
+      "rows": 172,
+      "sha256": "6902eb5f4b7ef8542e475c970bda3d0d1e7e8d0fb816873cb82ec8950d596535"
+    },
+    "problem_samples": {
+      "rows": 74,
+      "sha256": "bd2f5827c443dadef1994691a2c4a27e66ad06f3707679782954c8c20faac59c"
+    },
+    "problem_subtasks": {
+      "rows": 75,
+      "sha256": "bd167b9521813603f637666b6359c4469ce16c7db199f563a1bb197694826ee8"
+    },
+    "problem_versions": {
+      "rows": 79,
+      "sha256": "63aeab694362fd0258a01737d1b2d221dbfe648b694e4454f10981a0595c8fe0"
+    },
+    "problems": {
+      "rows": 240,
+      "sha256": "4bbde14bd0e2c72c6bbcdd7cb548bfd4794cd17f29cbce77590670dbcd25e70b"
+    },
+    "submission_results": {
+      "rows": 922,
+      "sha256": "c4f59bbaca2e114769d4a4b4eabd8e418fc99e01f09b2b90b05ba014531ddda5"
+    },
+    "submission_subtasks": {
+      "rows": 86,
+      "sha256": "eded783d371b081fb1d43164a57d7377619b26e509523860ec76c94d95848f42"
+    },
+    "submissions": {
+      "rows": 107,
+      "sha256": "2437eeb55ee2ea4bcf26a74822f4eb94a07ff08fe1dd95543d18e4e1666567d9"
+    },
+    "test_cases": {
+      "rows": 982,
+      "sha256": "947d8163ad59fa107cf7d5b5a1f0a8df012ff9b68c1b4ad1bf0bdb48a6e944a2"
+    },
+    "users": {
+      "rows": 14,
+      "sha256": "e3bf637d4720c64332587d88efa6b46b7b46828c636161f00d6fdf7de24f450e"
+    }
+  }
+}

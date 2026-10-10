@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "problems": [
+    {
+      "code": "LAB-001",
+      "submissionId": 23,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-002",
+      "submissionId": 24,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-003",
+      "submissionId": 25,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-004",
+      "submissionId": 26,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-005",
+      "submissionId": 27,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-006",
+      "submissionId": 28,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-007",
+      "submissionId": 29,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-008",
+      "submissionId": 30,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-009",
+      "submissionId": 31,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-010",
+      "submissionId": 32,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-011",
+      "submissionId": 33,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    },
+    {
+      "code": "LAB-012",
+      "submissionId": 34,
+      "status": "AC",
+      "score": 100,
+      "testPoints": 8
+    }
+  ]
+}

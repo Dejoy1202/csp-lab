@@ -1,0 +1,2 @@
+FROM csp-lab-worker:latest
+COPY *.py /app/

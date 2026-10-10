@@ -1,0 +1,6 @@
+.git
+.env
+backend/target
+test-results
+problem-packs/generated
+**/__pycache__
